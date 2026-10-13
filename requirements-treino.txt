@@ -1,0 +1,7 @@
+-r requirements.txt
+torch
+transformers
+peft
+datasets
+accelerate
+bitsandbytes
