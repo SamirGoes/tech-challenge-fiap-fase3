@@ -1,0 +1,51 @@
+id,nome,idade,sexo,motivo,alergias,comorbidades,pas,pad,fc,fr,spo2,temp
+1,Maria Aparecida Souza,67,F,"febre, confusão mental e hipotensão",dipirona,hipertensão;diabetes tipo 2,88,52,118,26,93,38.9
+2,João Carlos Pereira,58,M,dor torácica em aperto há 40 minutos,,tabagismo,150,95,96,20,96,36.6
+3,Ana Beatriz Lima,45,F,cefaleia intensa e visão turva,penicilina,hipertensão,212,128,88,18,98,36.5
+4,Carlos Eduardo Ramos,23,M,"vômitos, dor abdominal e hálito cetônico",,diabetes tipo 1,104,66,124,30,97,37.2
+5,Fernanda Oliveira Costa,72,F,"tosse produtiva, febre e dispneia",sulfa,DPOC,118,70,104,31,89,38.4
+6,José Roberto Alves,80,M,fraqueza e palpitações,,doença renal crônica,132,78,54,18,95,36.2
+7,Kátia Cardoso,65,F,"febre, confusão mental e hipotensão",AAS,doença renal crônica,89,58,111,23,92,38.5
+8,Beatriz Teixeira,77,M,dor torácica em aperto há 40 minutos,,dislipidemia,133,74,75,18,98,36.2
+9,Tiago Barbosa,71,F,cefaleia intensa e visão turva,dipirona,doença renal crônica;obesidade,210,121,79,19,98,36.2
+10,Olívia Ferreira,37,F,"vômitos, dor abdominal e hálito cetônico",penicilina,diabetes tipo 1;diabetes tipo 2,98,63,111,29,98,37.2
+11,Leonardo Teixeira,81,M,"tosse produtiva, febre e dispneia",AAS,insuficiência cardíaca,117,73,96,30,91,39.2
+12,Mariana Gomes,56,M,fraqueza muscular e palpitações,,insuficiência cardíaca,112,80,48,17,95,36.9
+13,Tiago Ferreira,48,M,"febre alta, calafrios e hipotensão",,doença renal crônica;câncer em quimioterapia,95,59,109,24,90,38.5
+14,Nelson Rocha,63,M,dor torácica em aperto há 40 minutos,sulfa,diabetes tipo 2,160,93,105,21,96,36.4
+15,Cláudia Dias,63,F,cefaleia intensa e visão turva,,hipertensão,182,114,73,17,96,36.9
+16,Leonardo Nunes,21,F,"poliúria, desidratação e hálito cetônico",dipirona,diabetes tipo 2;diabetes tipo 1,97,57,119,26,98,36.7
+17,Sílvia Gomes,59,F,"tosse, febre e dor pleurítica",sulfa,insuficiência cardíaca,118,78,102,26,90,38.5
+18,Gabriela Dias,80,F,fraqueza e palpitações,penicilina,insuficiência cardíaca;doença renal crônica,145,81,57,17,95,36.3
+19,Leonardo Gomes,45,F,"febre, confusão mental e hipotensão",,diabetes tipo 2;câncer em quimioterapia,80,52,129,30,92,39.1
+20,Gabriela Nunes,51,M,dor torácica e aperto no peito após esforço,,diabetes tipo 2,141,92,73,17,99,36.0
+21,Rafael Gomes,44,F,cefaleia intensa e visão turva,,obesidade,218,113,100,17,99,36.0
+22,Kátia Ferreira,35,M,"vômitos, dor abdominal e hálito cetônico",,diabetes tipo 2;diabetes tipo 1,112,70,113,25,97,37.6
+23,Eduarda Cardoso,59,M,"tosse produtiva, febre e dispneia",penicilina,insuficiência cardíaca,124,71,105,31,93,37.9
+24,Daniel Rocha,83,F,fraqueza e palpitações,dipirona,diabetes tipo 2;doença renal crônica,134,74,58,18,97,36.7
+25,Isabel Rocha,52,M,"febre, confusão mental e hipotensão",dipirona,câncer em quimioterapia,86,41,111,23,93,39.3
+26,Eduarda Ferreira,48,M,dor torácica em aperto há 40 minutos,sulfa,diabetes tipo 2,160,75,97,17,98,37.0
+27,Cláudia Gomes,36,M,cefaleia e tontura com pressão muito elevada,dipirona,doença renal crônica,198,126,85,16,99,36.8
+28,Beatriz Cardoso,26,F,"poliúria, desidratação e hálito cetônico",AAS,diabetes tipo 2;diabetes tipo 1,106,64,122,27,96,37.5
+29,Isabel Almeida,90,F,"tosse, febre e dor pleurítica",,DPOC,109,62,95,33,89,39.1
+30,Hugo Barbosa,65,M,fraqueza e palpitações,,insuficiência cardíaca,132,76,50,18,96,36.3
+31,Beatriz Almeida,41,F,"febre alta, calafrios e hipotensão",dipirona,câncer em quimioterapia,78,56,117,26,94,38.8
+32,Eduarda Moreira,62,F,dor torácica em aperto há 40 minutos,,hipertensão,139,72,97,18,97,37.0
+33,Fábio Cardoso,52,M,cefaleia intensa e visão turva,,doença renal crônica;obesidade,194,134,79,17,96,36.4
+34,Sílvia Almeida,20,M,"vômitos, dor abdominal e hálito cetônico",,diabetes tipo 1;diabetes tipo 2,95,60,116,29,97,37.5
+35,Rafael Cardoso,68,F,"tosse produtiva, febre e dispneia",AAS,tabagismo;insuficiência cardíaca,126,71,111,24,91,38.9
+36,Antônio Almeida,63,M,fraqueza e palpitações,dipirona,diabetes tipo 2;doença renal crônica,132,78,62,18,93,36.8
+37,Sílvia Barbosa,87,M,"febre, confusão e taquipneia após infecção urinária",AAS,doença renal crônica,81,55,111,28,92,39.4
+38,Gabriela Barbosa,78,F,dor torácica com sudorese irradiada para o braço esquerdo,,dislipidemia;tabagismo,142,85,109,17,95,36.5
+39,Gabriela Ferreira,40,M,cefaleia intensa e visão turva,,hipertensão;doença renal crônica,230,120,97,20,96,36.1
+40,Sílvia Ferreira,21,M,"vômitos, dor abdominal e hálito cetônico",dipirona,diabetes tipo 2;diabetes tipo 1,98,71,127,27,98,37.0
+41,Kátia Almeida,70,M,"tosse, febre e dor pleurítica",,DPOC,132,66,102,28,94,38.6
+42,Isabel Barbosa,58,M,fraqueza e palpitações,,insuficiência cardíaca;diabetes tipo 2,117,72,69,20,96,36.6
+43,Tiago Dias,86,F,"febre, confusão mental e hipotensão",sulfa,câncer em quimioterapia;doença renal crônica,93,53,113,22,95,38.4
+44,Isabel Moreira,81,F,dor torácica com sudorese irradiada para o braço esquerdo,dipirona,tabagismo;diabetes tipo 2,149,72,90,21,97,36.5
+45,Fábio Gomes,70,F,cefaleia e tontura com pressão muito elevada,,doença renal crônica;hipertensão,225,129,82,18,98,36.4
+46,Leonardo Cardoso,39,F,"vômitos, dor abdominal e hálito cetônico",,diabetes tipo 2,103,63,134,31,98,36.5
+47,Rafael Teixeira,81,F,"tosse produtiva, febre e dispneia",dipirona,diabetes tipo 2;DPOC,127,64,98,33,87,39.0
+48,Olívia Barbosa,90,F,fraqueza e palpitações,AAS,doença renal crônica,130,66,63,20,96,36.5
+49,Daniel Barbosa,59,F,"febre, confusão e taquipneia após infecção urinária",,hipertensão,76,46,117,31,93,39.4
+50,Jorge Almeida,41,F,dor torácica com sudorese irradiada para o braço esquerdo,sulfa,tabagismo;dislipidemia,130,83,85,19,97,36.7

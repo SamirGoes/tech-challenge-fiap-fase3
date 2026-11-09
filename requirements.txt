@@ -1,3 +1,8 @@
-langchain-core
-langgraph
-pytest
+# Núcleo (assistente, RAG vetorial, fluxo, logs, testes): roda em CPU
+langchain-core>=0.3
+langchain-chroma>=0.2
+chromadb>=0.5
+pytest>=8
+
+# Opcional: embeddings semânticos multilíngues (MEDASSIST_EMBEDDINGS=hf)
+# pip install langchain-huggingface sentence-transformers

@@ -1,7 +1,8 @@
+# Fine-tuning no Google Colab (GPU T4). O notebook instala o Unsloth; aqui ficam as dependências do projeto.
 -r requirements.txt
-torch
-transformers
-peft
+unsloth
+trl
 datasets
+peft
 accelerate
 bitsandbytes

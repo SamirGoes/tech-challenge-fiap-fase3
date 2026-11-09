@@ -1,0 +1,23 @@
+{
+  "pacientes": 50,
+  "entrada": 207,
+  "duplicados": 0,
+  "anonimizacoes": {
+    "TELEFONE": 40,
+    "CPF": 40,
+    "NOME": 64,
+    "DATA": 40
+  },
+  "saida": {
+    "train": 152,
+    "val": 21,
+    "test": 34
+  },
+  "por_tipo": {
+    "caso": 50,
+    "caso_livre": 40,
+    "faq": 90,
+    "modelo": 3,
+    "recusa": 24
+  }
+}
