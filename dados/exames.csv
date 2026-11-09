@@ -15,157 +15,885 @@ paciente_id,nome,valor,unidade,status
 6,potássio,6.8,mEq/L,resultado
 6,creatinina,3.4,mg/dL,resultado
 6,ecg,,,pendente
-7,lactato,,mmol/L,pendente
-7,leucócitos,17089,/mm3,resultado
-7,creatinina,2.5,mg/dL,resultado
-7,hemocultura,,,pendente
-8,troponina,49,ng/L,resultado
-8,ecg,,,pendente
-8,potássio,4.0,mEq/L,resultado
-9,creatinina,1.6,mg/dL,resultado
-9,troponina,18,ng/L,resultado
+7,glicemia,116,mg/dL,resultado
+7,tomografia de crânio,,,pendente
+7,ecg,,,pendente
+7,coagulograma,,,pendente
+8,gasometria arterial,,,pendente
+8,radiografia de tórax,,,pendente
 9,urina tipo 1,,,pendente
-10,glicemia,525,mg/dL,resultado
-10,potássio,3.6,mEq/L,resultado
-10,gasometria venosa,,,pendente
-10,cetonemia,,,pendente
-11,ureia,71,mg/dL,resultado
-11,PCR,106,mg/L,resultado
-11,radiografia de tórax,,,pendente
-11,hemocultura,,,pendente
-12,potássio,5.4,mEq/L,resultado
-12,creatinina,2.8,mg/dL,resultado
-12,ecg,,,pendente
-13,lactato,3.8,mmol/L,resultado
-13,leucócitos,14365,/mm3,resultado
-13,creatinina,0.9,mg/dL,resultado
-13,hemocultura,,,pendente
-14,troponina,13,ng/L,resultado
-14,ecg,,,pendente
-14,potássio,3.7,mEq/L,resultado
-15,creatinina,1.7,mg/dL,resultado
-15,troponina,,ng/L,pendente
-15,urina tipo 1,,,pendente
-16,glicemia,286,mg/dL,resultado
-16,potássio,5.3,mEq/L,resultado
-16,gasometria venosa,,,pendente
-16,cetonemia,,,pendente
-17,ureia,62,mg/dL,resultado
-17,PCR,158,mg/L,resultado
-17,radiografia de tórax,,,pendente
-17,hemocultura,,,pendente
-18,potássio,7.0,mEq/L,resultado
-18,creatinina,3.4,mg/dL,resultado
-18,ecg,,,pendente
-19,lactato,,mmol/L,pendente
-19,leucócitos,17945,/mm3,resultado
-19,creatinina,2.4,mg/dL,resultado
+9,urocultura,,,pendente
+9,leucócitos,12875,/mm3,resultado
+9,creatinina,1.3,mg/dL,resultado
+10,BNP,1697,pg/mL,resultado
+10,creatinina,2.0,mg/dL,resultado
+10,potássio,3.5,mEq/L,resultado
+10,radiografia de tórax,,,pendente
+11,PCR,1,mg/L,resultado
+11,radiografia de coluna,,,pendente
+12,potássio,4.0,mEq/L,resultado
+12,creatinina,1.0,mg/dL,resultado
+12,exame de fezes,,,pendente
+13,PCR,2,mg/L,resultado
+14,radiografia de tornozelo,,,pendente
+15,lactato,5.3,mmol/L,resultado
+15,leucócitos,17915,/mm3,resultado
+15,creatinina,1.5,mg/dL,resultado
+15,hemocultura,,,pendente
+16,troponina,,ng/L,pendente
+16,ecg,,,pendente
+16,potássio,4.6,mEq/L,resultado
+17,creatinina,0.9,mg/dL,resultado
+17,troponina,,ng/L,pendente
+17,urina tipo 1,,,pendente
+18,glicemia,314,mg/dL,resultado
+18,potássio,4.8,mEq/L,resultado
+18,gasometria venosa,,,pendente
+18,cetonemia,,,pendente
+19,ureia,53,mg/dL,resultado
+19,PCR,173,mg/L,resultado
+19,radiografia de tórax,,,pendente
 19,hemocultura,,,pendente
-20,troponina,,ng/L,pendente
+20,potássio,5.6,mEq/L,resultado
+20,creatinina,3.8,mg/dL,resultado
 20,ecg,,,pendente
-20,potássio,4.4,mEq/L,resultado
-21,creatinina,1.2,mg/dL,resultado
-21,troponina,17,ng/L,resultado
-21,urina tipo 1,,,pendente
-22,glicemia,497,mg/dL,resultado
-22,potássio,4.4,mEq/L,resultado
-22,gasometria venosa,,,pendente
-22,cetonemia,,,pendente
-23,ureia,40,mg/dL,resultado
-23,PCR,67,mg/L,resultado
-23,radiografia de tórax,,,pendente
-23,hemocultura,,,pendente
-24,potássio,7.1,mEq/L,resultado
-24,creatinina,3.9,mg/dL,resultado
-24,ecg,,,pendente
-25,lactato,5.6,mmol/L,resultado
-25,leucócitos,18445,/mm3,resultado
-25,creatinina,2.0,mg/dL,resultado
-25,hemocultura,,,pendente
-26,troponina,,ng/L,pendente
-26,ecg,,,pendente
-26,potássio,4.0,mEq/L,resultado
-27,creatinina,2.2,mg/dL,resultado
-27,troponina,,ng/L,pendente
-27,urina tipo 1,,,pendente
-28,glicemia,331,mg/dL,resultado
-28,potássio,5.1,mEq/L,resultado
-28,gasometria venosa,,,pendente
-28,cetonemia,,,pendente
-29,ureia,61,mg/dL,resultado
-29,PCR,67,mg/L,resultado
-29,radiografia de tórax,,,pendente
+21,glicemia,191,mg/dL,resultado
+21,tomografia de crânio,,,pendente
+21,ecg,,,pendente
+21,coagulograma,,,pendente
+22,gasometria arterial,,,pendente
+22,radiografia de tórax,,,pendente
+23,urina tipo 1,,,pendente
+23,urocultura,,,pendente
+23,leucócitos,9407,/mm3,resultado
+23,creatinina,0.9,mg/dL,resultado
+24,BNP,1632,pg/mL,resultado
+24,creatinina,1.6,mg/dL,resultado
+24,potássio,3.9,mEq/L,resultado
+24,radiografia de tórax,,,pendente
+25,PCR,5,mg/L,resultado
+25,radiografia de coluna,,,pendente
+26,potássio,4.2,mEq/L,resultado
+26,creatinina,1.0,mg/dL,resultado
+26,exame de fezes,,,pendente
+27,PCR,7,mg/L,resultado
+28,radiografia de tornozelo,,,pendente
+29,lactato,3.1,mmol/L,resultado
+29,leucócitos,15096,/mm3,resultado
+29,creatinina,1.4,mg/dL,resultado
 29,hemocultura,,,pendente
-30,potássio,7.0,mEq/L,resultado
-30,creatinina,4.0,mg/dL,resultado
+30,troponina,,ng/L,pendente
 30,ecg,,,pendente
-31,lactato,3.9,mmol/L,resultado
-31,leucócitos,20842,/mm3,resultado
-31,creatinina,1.5,mg/dL,resultado
-31,hemocultura,,,pendente
-32,troponina,50,ng/L,resultado
-32,ecg,,,pendente
-32,potássio,3.7,mEq/L,resultado
-33,creatinina,1.5,mg/dL,resultado
-33,troponina,,ng/L,pendente
-33,urina tipo 1,,,pendente
-34,glicemia,464,mg/dL,resultado
-34,potássio,4.7,mEq/L,resultado
-34,gasometria venosa,,,pendente
-34,cetonemia,,,pendente
-35,ureia,66,mg/dL,resultado
-35,PCR,213,mg/L,resultado
-35,radiografia de tórax,,,pendente
-35,hemocultura,,,pendente
-36,potássio,6.8,mEq/L,resultado
-36,creatinina,2.9,mg/dL,resultado
-36,ecg,,,pendente
-37,lactato,2.1,mmol/L,resultado
-37,leucócitos,14586,/mm3,resultado
-37,creatinina,1.0,mg/dL,resultado
-37,hemocultura,,,pendente
-38,troponina,,ng/L,pendente
-38,ecg,,,pendente
-38,potássio,4.2,mEq/L,resultado
-39,creatinina,1.9,mg/dL,resultado
-39,troponina,,ng/L,pendente
-39,urina tipo 1,,,pendente
-40,glicemia,385,mg/dL,resultado
-40,potássio,3.1,mEq/L,resultado
-40,gasometria venosa,,,pendente
-40,cetonemia,,,pendente
-41,ureia,48,mg/dL,resultado
-41,PCR,128,mg/L,resultado
-41,radiografia de tórax,,,pendente
-41,hemocultura,,,pendente
-42,potássio,7.2,mEq/L,resultado
-42,creatinina,3.9,mg/dL,resultado
-42,ecg,,,pendente
-43,lactato,3.8,mmol/L,resultado
-43,leucócitos,14680,/mm3,resultado
-43,creatinina,2.2,mg/dL,resultado
+30,potássio,4.0,mEq/L,resultado
+31,creatinina,1.2,mg/dL,resultado
+31,troponina,23,ng/L,resultado
+31,urina tipo 1,,,pendente
+32,glicemia,528,mg/dL,resultado
+32,potássio,4.7,mEq/L,resultado
+32,gasometria venosa,,,pendente
+32,cetonemia,,,pendente
+33,ureia,74,mg/dL,resultado
+33,PCR,63,mg/L,resultado
+33,radiografia de tórax,,,pendente
+33,hemocultura,,,pendente
+34,potássio,6.8,mEq/L,resultado
+34,creatinina,3.9,mg/dL,resultado
+34,ecg,,,pendente
+35,glicemia,95,mg/dL,resultado
+35,tomografia de crânio,,,pendente
+35,ecg,,,pendente
+35,coagulograma,,,pendente
+36,gasometria arterial,,,pendente
+36,radiografia de tórax,,,pendente
+37,urina tipo 1,,,pendente
+37,urocultura,,,pendente
+37,leucócitos,14365,/mm3,resultado
+37,creatinina,1.2,mg/dL,resultado
+38,BNP,1578,pg/mL,resultado
+38,creatinina,2.1,mg/dL,resultado
+38,potássio,4.1,mEq/L,resultado
+38,radiografia de tórax,,,pendente
+39,PCR,3,mg/L,resultado
+39,radiografia de coluna,,,pendente
+40,potássio,4.1,mEq/L,resultado
+40,creatinina,1.2,mg/dL,resultado
+40,exame de fezes,,,pendente
+41,PCR,3,mg/L,resultado
+42,radiografia de tornozelo,,,pendente
+43,lactato,5.9,mmol/L,resultado
+43,leucócitos,20372,/mm3,resultado
+43,creatinina,1.5,mg/dL,resultado
 43,hemocultura,,,pendente
-44,troponina,30,ng/L,resultado
+44,troponina,,ng/L,pendente
 44,ecg,,,pendente
-44,potássio,4.1,mEq/L,resultado
-45,creatinina,1.3,mg/dL,resultado
-45,troponina,,ng/L,pendente
+44,potássio,4.2,mEq/L,resultado
+45,creatinina,1.2,mg/dL,resultado
+45,troponina,4,ng/L,resultado
 45,urina tipo 1,,,pendente
-46,glicemia,289,mg/dL,resultado
-46,potássio,4.6,mEq/L,resultado
+46,glicemia,335,mg/dL,resultado
+46,potássio,3.1,mEq/L,resultado
 46,gasometria venosa,,,pendente
 46,cetonemia,,,pendente
-47,ureia,65,mg/dL,resultado
-47,PCR,195,mg/L,resultado
+47,ureia,75,mg/dL,resultado
+47,PCR,67,mg/L,resultado
 47,radiografia de tórax,,,pendente
 47,hemocultura,,,pendente
-48,potássio,6.2,mEq/L,resultado
-48,creatinina,3.5,mg/dL,resultado
+48,potássio,6.6,mEq/L,resultado
+48,creatinina,3.6,mg/dL,resultado
 48,ecg,,,pendente
-49,lactato,3.8,mmol/L,resultado
-49,leucócitos,14224,/mm3,resultado
-49,creatinina,2.5,mg/dL,resultado
-49,hemocultura,,,pendente
-50,troponina,,ng/L,pendente
-50,ecg,,,pendente
-50,potássio,3.6,mEq/L,resultado
+49,glicemia,194,mg/dL,resultado
+49,tomografia de crânio,,,pendente
+49,ecg,,,pendente
+49,coagulograma,,,pendente
+50,gasometria arterial,,,pendente
+50,radiografia de tórax,,,pendente
+51,urina tipo 1,,,pendente
+51,urocultura,,,pendente
+51,leucócitos,15641,/mm3,resultado
+51,creatinina,1.1,mg/dL,resultado
+52,BNP,877,pg/mL,resultado
+52,creatinina,2.0,mg/dL,resultado
+52,potássio,3.4,mEq/L,resultado
+52,radiografia de tórax,,,pendente
+53,PCR,7,mg/L,resultado
+53,radiografia de coluna,,,pendente
+54,potássio,4.2,mEq/L,resultado
+54,creatinina,1.0,mg/dL,resultado
+54,exame de fezes,,,pendente
+55,PCR,9,mg/L,resultado
+56,radiografia de tornozelo,,,pendente
+57,lactato,2.4,mmol/L,resultado
+57,leucócitos,12384,/mm3,resultado
+57,creatinina,1.0,mg/dL,resultado
+57,hemocultura,,,pendente
+58,troponina,,ng/L,pendente
+58,ecg,,,pendente
+58,potássio,4.7,mEq/L,resultado
+59,creatinina,1.0,mg/dL,resultado
+59,troponina,,ng/L,pendente
+59,urina tipo 1,,,pendente
+60,glicemia,287,mg/dL,resultado
+60,potássio,3.3,mEq/L,resultado
+60,gasometria venosa,,,pendente
+60,cetonemia,,,pendente
+61,ureia,65,mg/dL,resultado
+61,PCR,141,mg/L,resultado
+61,radiografia de tórax,,,pendente
+61,hemocultura,,,pendente
+62,potássio,6.6,mEq/L,resultado
+62,creatinina,2.0,mg/dL,resultado
+62,ecg,,,pendente
+63,glicemia,127,mg/dL,resultado
+63,tomografia de crânio,,,pendente
+63,ecg,,,pendente
+63,coagulograma,,,pendente
+64,gasometria arterial,,,pendente
+64,radiografia de tórax,,,pendente
+65,urina tipo 1,,,pendente
+65,urocultura,,,pendente
+65,leucócitos,11469,/mm3,resultado
+65,creatinina,1.1,mg/dL,resultado
+66,BNP,2119,pg/mL,resultado
+66,creatinina,2.2,mg/dL,resultado
+66,potássio,4.2,mEq/L,resultado
+66,radiografia de tórax,,,pendente
+67,PCR,4,mg/L,resultado
+67,radiografia de coluna,,,pendente
+68,potássio,4.3,mEq/L,resultado
+68,creatinina,1.0,mg/dL,resultado
+68,exame de fezes,,,pendente
+69,PCR,4,mg/L,resultado
+70,radiografia de tornozelo,,,pendente
+71,lactato,5.9,mmol/L,resultado
+71,leucócitos,15103,/mm3,resultado
+71,creatinina,1.2,mg/dL,resultado
+71,hemocultura,,,pendente
+72,troponina,73,ng/L,resultado
+72,ecg,,,pendente
+72,potássio,4.3,mEq/L,resultado
+73,creatinina,1.7,mg/dL,resultado
+73,troponina,,ng/L,pendente
+73,urina tipo 1,,,pendente
+74,glicemia,520,mg/dL,resultado
+74,potássio,3.4,mEq/L,resultado
+74,gasometria venosa,,,pendente
+74,cetonemia,,,pendente
+75,ureia,66,mg/dL,resultado
+75,PCR,87,mg/L,resultado
+75,radiografia de tórax,,,pendente
+75,hemocultura,,,pendente
+76,potássio,6.6,mEq/L,resultado
+76,creatinina,3.2,mg/dL,resultado
+76,ecg,,,pendente
+77,glicemia,223,mg/dL,resultado
+77,tomografia de crânio,,,pendente
+77,ecg,,,pendente
+77,coagulograma,,,pendente
+78,gasometria arterial,,,pendente
+78,radiografia de tórax,,,pendente
+79,urina tipo 1,,,pendente
+79,urocultura,,,pendente
+79,leucócitos,13439,/mm3,resultado
+79,creatinina,1.7,mg/dL,resultado
+80,BNP,1112,pg/mL,resultado
+80,creatinina,2.5,mg/dL,resultado
+80,potássio,4.1,mEq/L,resultado
+80,radiografia de tórax,,,pendente
+81,PCR,,mg/L,pendente
+81,radiografia de coluna,,,pendente
+82,potássio,3.7,mEq/L,resultado
+82,creatinina,1.0,mg/dL,resultado
+82,exame de fezes,,,pendente
+83,PCR,9,mg/L,resultado
+84,radiografia de tornozelo,,,pendente
+85,lactato,5.2,mmol/L,resultado
+85,leucócitos,13261,/mm3,resultado
+85,creatinina,0.9,mg/dL,resultado
+85,hemocultura,,,pendente
+86,troponina,15,ng/L,resultado
+86,ecg,,,pendente
+86,potássio,4.4,mEq/L,resultado
+87,creatinina,1.8,mg/dL,resultado
+87,troponina,19,ng/L,resultado
+87,urina tipo 1,,,pendente
+88,glicemia,367,mg/dL,resultado
+88,potássio,4.2,mEq/L,resultado
+88,gasometria venosa,,,pendente
+88,cetonemia,,,pendente
+89,ureia,57,mg/dL,resultado
+89,PCR,96,mg/L,resultado
+89,radiografia de tórax,,,pendente
+89,hemocultura,,,pendente
+90,potássio,5.9,mEq/L,resultado
+90,creatinina,2.1,mg/dL,resultado
+90,ecg,,,pendente
+91,glicemia,95,mg/dL,resultado
+91,tomografia de crânio,,,pendente
+91,ecg,,,pendente
+91,coagulograma,,,pendente
+92,gasometria arterial,,,pendente
+92,radiografia de tórax,,,pendente
+93,urina tipo 1,,,pendente
+93,urocultura,,,pendente
+93,leucócitos,11795,/mm3,resultado
+93,creatinina,1.0,mg/dL,resultado
+94,BNP,1324,pg/mL,resultado
+94,creatinina,2.1,mg/dL,resultado
+94,potássio,3.6,mEq/L,resultado
+94,radiografia de tórax,,,pendente
+95,PCR,,mg/L,pendente
+95,radiografia de coluna,,,pendente
+96,potássio,3.6,mEq/L,resultado
+96,creatinina,1.2,mg/dL,resultado
+96,exame de fezes,,,pendente
+97,PCR,7,mg/L,resultado
+98,radiografia de tornozelo,,,pendente
+99,lactato,3.1,mmol/L,resultado
+99,leucócitos,12035,/mm3,resultado
+99,creatinina,1.4,mg/dL,resultado
+99,hemocultura,,,pendente
+100,troponina,,ng/L,pendente
+100,ecg,,,pendente
+100,potássio,3.6,mEq/L,resultado
+101,creatinina,2.1,mg/dL,resultado
+101,troponina,,ng/L,pendente
+101,urina tipo 1,,,pendente
+102,glicemia,312,mg/dL,resultado
+102,potássio,4.2,mEq/L,resultado
+102,gasometria venosa,,,pendente
+102,cetonemia,,,pendente
+103,ureia,72,mg/dL,resultado
+103,PCR,80,mg/L,resultado
+103,radiografia de tórax,,,pendente
+103,hemocultura,,,pendente
+104,potássio,6.1,mEq/L,resultado
+104,creatinina,2.9,mg/dL,resultado
+104,ecg,,,pendente
+105,glicemia,101,mg/dL,resultado
+105,tomografia de crânio,,,pendente
+105,ecg,,,pendente
+105,coagulograma,,,pendente
+106,gasometria arterial,,,pendente
+106,radiografia de tórax,,,pendente
+107,urina tipo 1,,,pendente
+107,urocultura,,,pendente
+107,leucócitos,16508,/mm3,resultado
+107,creatinina,1.6,mg/dL,resultado
+108,BNP,2143,pg/mL,resultado
+108,creatinina,1.9,mg/dL,resultado
+108,potássio,4.2,mEq/L,resultado
+108,radiografia de tórax,,,pendente
+109,PCR,,mg/L,pendente
+109,radiografia de coluna,,,pendente
+110,potássio,3.6,mEq/L,resultado
+110,creatinina,1.1,mg/dL,resultado
+110,exame de fezes,,,pendente
+111,PCR,3,mg/L,resultado
+112,radiografia de tornozelo,,,pendente
+113,lactato,,mmol/L,pendente
+113,leucócitos,18192,/mm3,resultado
+113,creatinina,1.2,mg/dL,resultado
+113,hemocultura,,,pendente
+114,troponina,,ng/L,pendente
+114,ecg,,,pendente
+114,potássio,4.0,mEq/L,resultado
+115,creatinina,1.8,mg/dL,resultado
+115,troponina,8,ng/L,resultado
+115,urina tipo 1,,,pendente
+116,glicemia,462,mg/dL,resultado
+116,potássio,3.3,mEq/L,resultado
+116,gasometria venosa,,,pendente
+116,cetonemia,,,pendente
+117,ureia,69,mg/dL,resultado
+117,PCR,82,mg/L,resultado
+117,radiografia de tórax,,,pendente
+117,hemocultura,,,pendente
+118,potássio,6.7,mEq/L,resultado
+118,creatinina,3.6,mg/dL,resultado
+118,ecg,,,pendente
+119,glicemia,108,mg/dL,resultado
+119,tomografia de crânio,,,pendente
+119,ecg,,,pendente
+119,coagulograma,,,pendente
+120,gasometria arterial,,,pendente
+120,radiografia de tórax,,,pendente
+121,urina tipo 1,,,pendente
+121,urocultura,,,pendente
+121,leucócitos,11040,/mm3,resultado
+121,creatinina,1.0,mg/dL,resultado
+122,BNP,2233,pg/mL,resultado
+122,creatinina,2.4,mg/dL,resultado
+122,potássio,4.6,mEq/L,resultado
+122,radiografia de tórax,,,pendente
+123,PCR,,mg/L,pendente
+123,radiografia de coluna,,,pendente
+124,potássio,4.3,mEq/L,resultado
+124,creatinina,0.8,mg/dL,resultado
+124,exame de fezes,,,pendente
+125,PCR,8,mg/L,resultado
+126,radiografia de tornozelo,,,pendente
+127,lactato,4.3,mmol/L,resultado
+127,leucócitos,18670,/mm3,resultado
+127,creatinina,1.3,mg/dL,resultado
+127,hemocultura,,,pendente
+128,troponina,,ng/L,pendente
+128,ecg,,,pendente
+128,potássio,4.3,mEq/L,resultado
+129,creatinina,1.8,mg/dL,resultado
+129,troponina,,ng/L,pendente
+129,urina tipo 1,,,pendente
+130,glicemia,318,mg/dL,resultado
+130,potássio,3.6,mEq/L,resultado
+130,gasometria venosa,,,pendente
+130,cetonemia,,,pendente
+131,ureia,55,mg/dL,resultado
+131,PCR,116,mg/L,resultado
+131,radiografia de tórax,,,pendente
+131,hemocultura,,,pendente
+132,potássio,7.3,mEq/L,resultado
+132,creatinina,3.9,mg/dL,resultado
+132,ecg,,,pendente
+133,glicemia,133,mg/dL,resultado
+133,tomografia de crânio,,,pendente
+133,ecg,,,pendente
+133,coagulograma,,,pendente
+134,gasometria arterial,,,pendente
+134,radiografia de tórax,,,pendente
+135,urina tipo 1,,,pendente
+135,urocultura,,,pendente
+135,leucócitos,17953,/mm3,resultado
+135,creatinina,1.0,mg/dL,resultado
+136,BNP,1990,pg/mL,resultado
+136,creatinina,1.5,mg/dL,resultado
+136,potássio,3.8,mEq/L,resultado
+136,radiografia de tórax,,,pendente
+137,PCR,,mg/L,pendente
+137,radiografia de coluna,,,pendente
+138,potássio,3.7,mEq/L,resultado
+138,creatinina,1.1,mg/dL,resultado
+138,exame de fezes,,,pendente
+139,PCR,8,mg/L,resultado
+140,radiografia de tornozelo,,,pendente
+141,lactato,2.2,mmol/L,resultado
+141,leucócitos,17139,/mm3,resultado
+141,creatinina,0.9,mg/dL,resultado
+141,hemocultura,,,pendente
+142,troponina,,ng/L,pendente
+142,ecg,,,pendente
+142,potássio,4.6,mEq/L,resultado
+143,creatinina,1.9,mg/dL,resultado
+143,troponina,9,ng/L,resultado
+143,urina tipo 1,,,pendente
+144,glicemia,294,mg/dL,resultado
+144,potássio,5.0,mEq/L,resultado
+144,gasometria venosa,,,pendente
+144,cetonemia,,,pendente
+145,ureia,52,mg/dL,resultado
+145,PCR,128,mg/L,resultado
+145,radiografia de tórax,,,pendente
+145,hemocultura,,,pendente
+146,potássio,5.8,mEq/L,resultado
+146,creatinina,3.2,mg/dL,resultado
+146,ecg,,,pendente
+147,glicemia,186,mg/dL,resultado
+147,tomografia de crânio,,,pendente
+147,ecg,,,pendente
+147,coagulograma,,,pendente
+148,gasometria arterial,,,pendente
+148,radiografia de tórax,,,pendente
+149,urina tipo 1,,,pendente
+149,urocultura,,,pendente
+149,leucócitos,17474,/mm3,resultado
+149,creatinina,1.1,mg/dL,resultado
+150,BNP,2475,pg/mL,resultado
+150,creatinina,2.4,mg/dL,resultado
+150,potássio,4.7,mEq/L,resultado
+150,radiografia de tórax,,,pendente
+151,PCR,,mg/L,pendente
+151,radiografia de coluna,,,pendente
+152,potássio,4.5,mEq/L,resultado
+152,creatinina,1.1,mg/dL,resultado
+152,exame de fezes,,,pendente
+153,PCR,9,mg/L,resultado
+154,radiografia de tornozelo,,,pendente
+155,lactato,4.4,mmol/L,resultado
+155,leucócitos,12792,/mm3,resultado
+155,creatinina,1.4,mg/dL,resultado
+155,hemocultura,,,pendente
+156,troponina,,ng/L,pendente
+156,ecg,,,pendente
+156,potássio,3.6,mEq/L,resultado
+157,creatinina,2.0,mg/dL,resultado
+157,troponina,6,ng/L,resultado
+157,urina tipo 1,,,pendente
+158,glicemia,390,mg/dL,resultado
+158,potássio,4.7,mEq/L,resultado
+158,gasometria venosa,,,pendente
+158,cetonemia,,,pendente
+159,ureia,38,mg/dL,resultado
+159,PCR,178,mg/L,resultado
+159,radiografia de tórax,,,pendente
+159,hemocultura,,,pendente
+160,potássio,6.3,mEq/L,resultado
+160,creatinina,2.7,mg/dL,resultado
+160,ecg,,,pendente
+161,glicemia,132,mg/dL,resultado
+161,tomografia de crânio,,,pendente
+161,ecg,,,pendente
+161,coagulograma,,,pendente
+162,gasometria arterial,,,pendente
+162,radiografia de tórax,,,pendente
+163,urina tipo 1,,,pendente
+163,urocultura,,,pendente
+163,leucócitos,15687,/mm3,resultado
+163,creatinina,1.6,mg/dL,resultado
+164,BNP,2004,pg/mL,resultado
+164,creatinina,1.7,mg/dL,resultado
+164,potássio,4.3,mEq/L,resultado
+164,radiografia de tórax,,,pendente
+165,PCR,,mg/L,pendente
+165,radiografia de coluna,,,pendente
+166,potássio,3.6,mEq/L,resultado
+166,creatinina,0.8,mg/dL,resultado
+166,exame de fezes,,,pendente
+167,PCR,8,mg/L,resultado
+168,radiografia de tornozelo,,,pendente
+169,lactato,,mmol/L,pendente
+169,leucócitos,19319,/mm3,resultado
+169,creatinina,2.6,mg/dL,resultado
+169,hemocultura,,,pendente
+170,troponina,56,ng/L,resultado
+170,ecg,,,pendente
+170,potássio,4.5,mEq/L,resultado
+171,creatinina,1.2,mg/dL,resultado
+171,troponina,,ng/L,pendente
+171,urina tipo 1,,,pendente
+172,glicemia,529,mg/dL,resultado
+172,potássio,5.2,mEq/L,resultado
+172,gasometria venosa,,,pendente
+172,cetonemia,,,pendente
+173,ureia,64,mg/dL,resultado
+173,PCR,217,mg/L,resultado
+173,radiografia de tórax,,,pendente
+173,hemocultura,,,pendente
+174,potássio,6.3,mEq/L,resultado
+174,creatinina,2.8,mg/dL,resultado
+174,ecg,,,pendente
+175,glicemia,195,mg/dL,resultado
+175,tomografia de crânio,,,pendente
+175,ecg,,,pendente
+175,coagulograma,,,pendente
+176,gasometria arterial,,,pendente
+176,radiografia de tórax,,,pendente
+177,urina tipo 1,,,pendente
+177,urocultura,,,pendente
+177,leucócitos,15778,/mm3,resultado
+177,creatinina,1.0,mg/dL,resultado
+178,BNP,2333,pg/mL,resultado
+178,creatinina,1.7,mg/dL,resultado
+178,potássio,5.0,mEq/L,resultado
+178,radiografia de tórax,,,pendente
+179,PCR,5,mg/L,resultado
+179,radiografia de coluna,,,pendente
+180,potássio,4.2,mEq/L,resultado
+180,creatinina,0.8,mg/dL,resultado
+180,exame de fezes,,,pendente
+181,PCR,7,mg/L,resultado
+182,radiografia de tornozelo,,,pendente
+183,lactato,2.7,mmol/L,resultado
+183,leucócitos,15251,/mm3,resultado
+183,creatinina,1.1,mg/dL,resultado
+183,hemocultura,,,pendente
+184,troponina,54,ng/L,resultado
+184,ecg,,,pendente
+184,potássio,3.6,mEq/L,resultado
+185,creatinina,1.5,mg/dL,resultado
+185,troponina,30,ng/L,resultado
+185,urina tipo 1,,,pendente
+186,glicemia,479,mg/dL,resultado
+186,potássio,3.2,mEq/L,resultado
+186,gasometria venosa,,,pendente
+186,cetonemia,,,pendente
+187,ureia,66,mg/dL,resultado
+187,PCR,75,mg/L,resultado
+187,radiografia de tórax,,,pendente
+187,hemocultura,,,pendente
+188,potássio,5.4,mEq/L,resultado
+188,creatinina,3.8,mg/dL,resultado
+188,ecg,,,pendente
+189,glicemia,245,mg/dL,resultado
+189,tomografia de crânio,,,pendente
+189,ecg,,,pendente
+189,coagulograma,,,pendente
+190,gasometria arterial,,,pendente
+190,radiografia de tórax,,,pendente
+191,urina tipo 1,,,pendente
+191,urocultura,,,pendente
+191,leucócitos,16394,/mm3,resultado
+191,creatinina,1.4,mg/dL,resultado
+192,BNP,2437,pg/mL,resultado
+192,creatinina,1.2,mg/dL,resultado
+192,potássio,4.0,mEq/L,resultado
+192,radiografia de tórax,,,pendente
+193,PCR,,mg/L,pendente
+193,radiografia de coluna,,,pendente
+194,potássio,3.8,mEq/L,resultado
+194,creatinina,0.9,mg/dL,resultado
+194,exame de fezes,,,pendente
+195,PCR,9,mg/L,resultado
+196,radiografia de tornozelo,,,pendente
+197,lactato,2.2,mmol/L,resultado
+197,leucócitos,17731,/mm3,resultado
+197,creatinina,1.4,mg/dL,resultado
+197,hemocultura,,,pendente
+198,troponina,,ng/L,pendente
+198,ecg,,,pendente
+198,potássio,4.6,mEq/L,resultado
+199,creatinina,1.9,mg/dL,resultado
+199,troponina,23,ng/L,resultado
+199,urina tipo 1,,,pendente
+200,glicemia,291,mg/dL,resultado
+200,potássio,2.9,mEq/L,resultado
+200,gasometria venosa,,,pendente
+200,cetonemia,,,pendente
+201,ureia,45,mg/dL,resultado
+201,PCR,141,mg/L,resultado
+201,radiografia de tórax,,,pendente
+201,hemocultura,,,pendente
+202,potássio,5.4,mEq/L,resultado
+202,creatinina,2.5,mg/dL,resultado
+202,ecg,,,pendente
+203,glicemia,184,mg/dL,resultado
+203,tomografia de crânio,,,pendente
+203,ecg,,,pendente
+203,coagulograma,,,pendente
+204,gasometria arterial,,,pendente
+204,radiografia de tórax,,,pendente
+205,urina tipo 1,,,pendente
+205,urocultura,,,pendente
+205,leucócitos,15016,/mm3,resultado
+205,creatinina,0.9,mg/dL,resultado
+206,BNP,944,pg/mL,resultado
+206,creatinina,1.4,mg/dL,resultado
+206,potássio,4.2,mEq/L,resultado
+206,radiografia de tórax,,,pendente
+207,PCR,,mg/L,pendente
+207,radiografia de coluna,,,pendente
+208,potássio,3.7,mEq/L,resultado
+208,creatinina,1.0,mg/dL,resultado
+208,exame de fezes,,,pendente
+209,PCR,6,mg/L,resultado
+210,radiografia de tornozelo,,,pendente
+211,lactato,3.2,mmol/L,resultado
+211,leucócitos,17482,/mm3,resultado
+211,creatinina,2.2,mg/dL,resultado
+211,hemocultura,,,pendente
+212,troponina,60,ng/L,resultado
+212,ecg,,,pendente
+212,potássio,4.7,mEq/L,resultado
+213,creatinina,1.1,mg/dL,resultado
+213,troponina,9,ng/L,resultado
+213,urina tipo 1,,,pendente
+214,glicemia,433,mg/dL,resultado
+214,potássio,5.1,mEq/L,resultado
+214,gasometria venosa,,,pendente
+214,cetonemia,,,pendente
+215,ureia,78,mg/dL,resultado
+215,PCR,209,mg/L,resultado
+215,radiografia de tórax,,,pendente
+215,hemocultura,,,pendente
+216,potássio,5.4,mEq/L,resultado
+216,creatinina,2.7,mg/dL,resultado
+216,ecg,,,pendente
+217,glicemia,123,mg/dL,resultado
+217,tomografia de crânio,,,pendente
+217,ecg,,,pendente
+217,coagulograma,,,pendente
+218,gasometria arterial,,,pendente
+218,radiografia de tórax,,,pendente
+219,urina tipo 1,,,pendente
+219,urocultura,,,pendente
+219,leucócitos,16718,/mm3,resultado
+219,creatinina,0.9,mg/dL,resultado
+220,BNP,1068,pg/mL,resultado
+220,creatinina,2.3,mg/dL,resultado
+220,potássio,5.0,mEq/L,resultado
+220,radiografia de tórax,,,pendente
+221,PCR,,mg/L,pendente
+221,radiografia de coluna,,,pendente
+222,potássio,3.8,mEq/L,resultado
+222,creatinina,0.8,mg/dL,resultado
+222,exame de fezes,,,pendente
+223,PCR,8,mg/L,resultado
+224,radiografia de tornozelo,,,pendente
+225,lactato,2.8,mmol/L,resultado
+225,leucócitos,14177,/mm3,resultado
+225,creatinina,2.3,mg/dL,resultado
+225,hemocultura,,,pendente
+226,troponina,,ng/L,pendente
+226,ecg,,,pendente
+226,potássio,4.5,mEq/L,resultado
+227,creatinina,1.4,mg/dL,resultado
+227,troponina,,ng/L,pendente
+227,urina tipo 1,,,pendente
+228,glicemia,432,mg/dL,resultado
+228,potássio,5.4,mEq/L,resultado
+228,gasometria venosa,,,pendente
+228,cetonemia,,,pendente
+229,ureia,69,mg/dL,resultado
+229,PCR,186,mg/L,resultado
+229,radiografia de tórax,,,pendente
+229,hemocultura,,,pendente
+230,potássio,5.5,mEq/L,resultado
+230,creatinina,2.6,mg/dL,resultado
+230,ecg,,,pendente
+231,glicemia,94,mg/dL,resultado
+231,tomografia de crânio,,,pendente
+231,ecg,,,pendente
+231,coagulograma,,,pendente
+232,gasometria arterial,,,pendente
+232,radiografia de tórax,,,pendente
+233,urina tipo 1,,,pendente
+233,urocultura,,,pendente
+233,leucócitos,12032,/mm3,resultado
+233,creatinina,0.8,mg/dL,resultado
+234,BNP,763,pg/mL,resultado
+234,creatinina,1.1,mg/dL,resultado
+234,potássio,4.2,mEq/L,resultado
+234,radiografia de tórax,,,pendente
+235,PCR,5,mg/L,resultado
+235,radiografia de coluna,,,pendente
+236,potássio,3.9,mEq/L,resultado
+236,creatinina,0.9,mg/dL,resultado
+236,exame de fezes,,,pendente
+237,PCR,12,mg/L,resultado
+238,radiografia de tornozelo,,,pendente
+239,lactato,2.3,mmol/L,resultado
+239,leucócitos,12204,/mm3,resultado
+239,creatinina,2.4,mg/dL,resultado
+239,hemocultura,,,pendente
+240,troponina,,ng/L,pendente
+240,ecg,,,pendente
+240,potássio,3.8,mEq/L,resultado
+241,creatinina,1.8,mg/dL,resultado
+241,troponina,,ng/L,pendente
+241,urina tipo 1,,,pendente
+242,glicemia,511,mg/dL,resultado
+242,potássio,4.0,mEq/L,resultado
+242,gasometria venosa,,,pendente
+242,cetonemia,,,pendente
+243,ureia,79,mg/dL,resultado
+243,PCR,148,mg/L,resultado
+243,radiografia de tórax,,,pendente
+243,hemocultura,,,pendente
+244,potássio,5.4,mEq/L,resultado
+244,creatinina,2.8,mg/dL,resultado
+244,ecg,,,pendente
+245,glicemia,220,mg/dL,resultado
+245,tomografia de crânio,,,pendente
+245,ecg,,,pendente
+245,coagulograma,,,pendente
+246,gasometria arterial,,,pendente
+246,radiografia de tórax,,,pendente
+247,urina tipo 1,,,pendente
+247,urocultura,,,pendente
+247,leucócitos,17823,/mm3,resultado
+247,creatinina,1.7,mg/dL,resultado
+248,BNP,922,pg/mL,resultado
+248,creatinina,1.1,mg/dL,resultado
+248,potássio,3.9,mEq/L,resultado
+248,radiografia de tórax,,,pendente
+249,PCR,4,mg/L,resultado
+249,radiografia de coluna,,,pendente
+250,potássio,4.4,mEq/L,resultado
+250,creatinina,1.1,mg/dL,resultado
+250,exame de fezes,,,pendente
+251,PCR,3,mg/L,resultado
+252,radiografia de tornozelo,,,pendente
+253,lactato,4.3,mmol/L,resultado
+253,leucócitos,13338,/mm3,resultado
+253,creatinina,1.4,mg/dL,resultado
+253,hemocultura,,,pendente
+254,troponina,53,ng/L,resultado
+254,ecg,,,pendente
+254,potássio,4.3,mEq/L,resultado
+255,creatinina,1.5,mg/dL,resultado
+255,troponina,,ng/L,pendente
+255,urina tipo 1,,,pendente
+256,glicemia,557,mg/dL,resultado
+256,potássio,5.3,mEq/L,resultado
+256,gasometria venosa,,,pendente
+256,cetonemia,,,pendente
+257,ureia,75,mg/dL,resultado
+257,PCR,213,mg/L,resultado
+257,radiografia de tórax,,,pendente
+257,hemocultura,,,pendente
+258,potássio,7.1,mEq/L,resultado
+258,creatinina,2.4,mg/dL,resultado
+258,ecg,,,pendente
+259,glicemia,125,mg/dL,resultado
+259,tomografia de crânio,,,pendente
+259,ecg,,,pendente
+259,coagulograma,,,pendente
+260,gasometria arterial,,,pendente
+260,radiografia de tórax,,,pendente
+261,urina tipo 1,,,pendente
+261,urocultura,,,pendente
+261,leucócitos,12000,/mm3,resultado
+261,creatinina,1.5,mg/dL,resultado
+262,BNP,2066,pg/mL,resultado
+262,creatinina,1.9,mg/dL,resultado
+262,potássio,3.7,mEq/L,resultado
+262,radiografia de tórax,,,pendente
+263,PCR,1,mg/L,resultado
+263,radiografia de coluna,,,pendente
+264,potássio,4.4,mEq/L,resultado
+264,creatinina,0.9,mg/dL,resultado
+264,exame de fezes,,,pendente
+265,PCR,7,mg/L,resultado
+266,radiografia de tornozelo,,,pendente
+267,lactato,2.3,mmol/L,resultado
+267,leucócitos,12009,/mm3,resultado
+267,creatinina,2.3,mg/dL,resultado
+267,hemocultura,,,pendente
+268,troponina,44,ng/L,resultado
+268,ecg,,,pendente
+268,potássio,4.8,mEq/L,resultado
+269,creatinina,1.3,mg/dL,resultado
+269,troponina,,ng/L,pendente
+269,urina tipo 1,,,pendente
+270,glicemia,391,mg/dL,resultado
+270,potássio,3.3,mEq/L,resultado
+270,gasometria venosa,,,pendente
+270,cetonemia,,,pendente
+271,ureia,77,mg/dL,resultado
+271,PCR,132,mg/L,resultado
+271,radiografia de tórax,,,pendente
+271,hemocultura,,,pendente
+272,potássio,6.1,mEq/L,resultado
+272,creatinina,2.1,mg/dL,resultado
+272,ecg,,,pendente
+273,glicemia,246,mg/dL,resultado
+273,tomografia de crânio,,,pendente
+273,ecg,,,pendente
+273,coagulograma,,,pendente
+274,gasometria arterial,,,pendente
+274,radiografia de tórax,,,pendente
+275,urina tipo 1,,,pendente
+275,urocultura,,,pendente
+275,leucócitos,10555,/mm3,resultado
+275,creatinina,0.9,mg/dL,resultado
+276,BNP,2113,pg/mL,resultado
+276,creatinina,1.7,mg/dL,resultado
+276,potássio,4.7,mEq/L,resultado
+276,radiografia de tórax,,,pendente
+277,PCR,,mg/L,pendente
+277,radiografia de coluna,,,pendente
+278,potássio,3.8,mEq/L,resultado
+278,creatinina,0.9,mg/dL,resultado
+278,exame de fezes,,,pendente
+279,PCR,10,mg/L,resultado
+280,radiografia de tornozelo,,,pendente
+281,lactato,5.1,mmol/L,resultado
+281,leucócitos,16280,/mm3,resultado
+281,creatinina,1.5,mg/dL,resultado
+281,hemocultura,,,pendente
+282,troponina,,ng/L,pendente
+282,ecg,,,pendente
+282,potássio,3.7,mEq/L,resultado
+283,creatinina,1.6,mg/dL,resultado
+283,troponina,29,ng/L,resultado
+283,urina tipo 1,,,pendente
+284,glicemia,302,mg/dL,resultado
+284,potássio,5.0,mEq/L,resultado
+284,gasometria venosa,,,pendente
+284,cetonemia,,,pendente
+285,ureia,31,mg/dL,resultado
+285,PCR,162,mg/L,resultado
+285,radiografia de tórax,,,pendente
+285,hemocultura,,,pendente
+286,potássio,5.8,mEq/L,resultado
+286,creatinina,2.0,mg/dL,resultado
+286,ecg,,,pendente
+287,glicemia,211,mg/dL,resultado
+287,tomografia de crânio,,,pendente
+287,ecg,,,pendente
+287,coagulograma,,,pendente
+288,gasometria arterial,,,pendente
+288,radiografia de tórax,,,pendente
+289,urina tipo 1,,,pendente
+289,urocultura,,,pendente
+289,leucócitos,12965,/mm3,resultado
+289,creatinina,1.1,mg/dL,resultado
+290,BNP,791,pg/mL,resultado
+290,creatinina,2.2,mg/dL,resultado
+290,potássio,4.8,mEq/L,resultado
+290,radiografia de tórax,,,pendente
+291,PCR,,mg/L,pendente
+291,radiografia de coluna,,,pendente
+292,potássio,4.8,mEq/L,resultado
+292,creatinina,0.8,mg/dL,resultado
+292,exame de fezes,,,pendente
+293,PCR,11,mg/L,resultado
+294,radiografia de tornozelo,,,pendente
+295,lactato,2.9,mmol/L,resultado
+295,leucócitos,19398,/mm3,resultado
+295,creatinina,1.9,mg/dL,resultado
+295,hemocultura,,,pendente
+296,troponina,,ng/L,pendente
+296,ecg,,,pendente
+296,potássio,4.1,mEq/L,resultado
+297,creatinina,1.0,mg/dL,resultado
+297,troponina,,ng/L,pendente
+297,urina tipo 1,,,pendente
+298,glicemia,428,mg/dL,resultado
+298,potássio,4.4,mEq/L,resultado
+298,gasometria venosa,,,pendente
+298,cetonemia,,,pendente
+299,ureia,38,mg/dL,resultado
+299,PCR,193,mg/L,resultado
+299,radiografia de tórax,,,pendente
+299,hemocultura,,,pendente
+300,potássio,5.8,mEq/L,resultado
+300,creatinina,3.8,mg/dL,resultado
+300,ecg,,,pendente

@@ -1,28 +1,33 @@
 # Plano do projeto
 
-Branch de trabalho: `feat/rafael-fase3`. Escopo: LangChain apenas (LangGraph fica como evolução).
+Branch de trabalho: `feat/rafael-fase3`. Escopo: LangChain apenas, **sem LLM no início (só RAG)**. Fine-tuning e
+LangGraph ficam como evolução.
 
-## Pronto (roda em CPU, 27 testes)
-- [x] Dados sintéticos: 50 pacientes (CSV -> SQLite), 6 protocolos em Markdown, dataset de treino anonimizado
-- [x] RAG vetorial mutável (Chroma): indexar, adicionar, remover e buscar sem queries
-- [x] Agente LangChain: entrada -> prontuário -> RAG -> LLM -> guardrail de saída -> saída
+## Pronto (roda em CPU, 17 testes)
+- [x] 5 arquivos Python: `dados`, `assistente`, `fluxo`, `treino`, `main`
+- [x] Base com 300 pacientes sintéticos (CSV -> SQLite) e 10 protocolos em Markdown
+- [x] RAG vetorial mutável (Chroma): indexar, adicionar, remover, listar e buscar sem queries
+- [x] Assistente LangChain sem LLM: entrada -> prontuário -> RAG -> resposta -> guardrail -> saída
+- [x] Chat no console (`python -m medassist chat`) com `/paciente`, `/log` e `/sair`
 - [x] Guardrails: sem prescrição, sem linguagem conclusiva, anonimização, fonte obrigatória, aviso
-- [x] Log de ponta a ponta com trace_id, ordem e duração; LangSmith opcional
-- [x] Fluxo automatizado: pendências, valores críticos, revisão humana e alertas por e-mail (ou caixa de saída)
-- [x] Notebook do Colab com Unsloth, avaliação base x treinado, README e esqueleto do relatório
+- [x] Log de ponta a ponta com trace_id, ordem e tempo; LangSmith por variáveis de ambiente
+- [x] Fluxo automatizado: pendências, valores críticos, revisão humana e alertas (SMTP ou `logs/alertas.txt`)
+- [x] Avaliação do RAG no conjunto de teste (F1 0,62; fonte correta 98%; recusa 100%; prescrição direta 0%)
 
-## Falta (depende de GPU ou de você)
-- [ ] Rodar o notebook no Colab: baseline, treino e avaliação (código de treino não foi testado em GPU)
-- [ ] Empurrar a branch para o GitHub (o notebook clona `feat/rafael-fase3`)
-- [ ] Preencher o relatório técnico (campos **[PREENCHER]**) com métricas, curva de loss e exemplos de log
-- [ ] Rodar o assistente e o fluxo com `MEDASSIST_LLM=treinado` e ajustar prompt e guardrails
+## Falta (depende de você)
+- [ ] Empurrar a branch para o GitHub
+- [ ] Preencher o relatório técnico (campos **[PREENCHER]**, se quiser incluir a fase 2)
 - [ ] Gravar o vídeo (até 15 min) e entregar na plataforma
+
+## Fase 2 (opcional, precisa de GPU)
+- [ ] Rodar `notebooks/treino_colab.ipynb` no Colab: baseline, treino QLoRA e avaliação
+- [ ] Usar `--modelo treinado` no chat e no fluxo; comparar métricas com o RAG
 
 ## Roteiro do vídeo (15 min)
 1. Problema e arquitetura (2 min)
 2. Dados: pacientes CSV, protocolos, anonimização (2 min)
-3. Fine-tuning no Colab e métricas base x treinado (3 min)
-4. Pergunta clínica contextualizada com fontes e RAG mutável (2 min)
-5. Fluxo automatizado: valor crítico, revisão humana, alerta por e-mail (3 min)
-6. Pedido de prescrição recusado e linha do tempo da auditoria (2 min)
-7. Limitações (1 min)
+3. RAG mutável: adicionar um protocolo novo e perguntar sobre ele (2 min)
+4. Chat no console com paciente, fontes e pedido de prescrição recusado (3 min)
+5. Fluxo automatizado: valor crítico, revisão humana, alerta (3 min)
+6. Auditoria (`auditoria <trace_id>`) e testes (2 min)
+7. Limitações e fase 2 (1 min)

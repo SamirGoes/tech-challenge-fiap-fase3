@@ -1,51 +1,301 @@
-id,nome,idade,sexo,motivo,alergias,comorbidades,pas,pad,fc,fr,spo2,temp
-1,Maria Aparecida Souza,67,F,"febre, confusão mental e hipotensão",dipirona,hipertensão;diabetes tipo 2,88,52,118,26,93,38.9
-2,João Carlos Pereira,58,M,dor torácica em aperto há 40 minutos,,tabagismo,150,95,96,20,96,36.6
-3,Ana Beatriz Lima,45,F,cefaleia intensa e visão turva,penicilina,hipertensão,212,128,88,18,98,36.5
-4,Carlos Eduardo Ramos,23,M,"vômitos, dor abdominal e hálito cetônico",,diabetes tipo 1,104,66,124,30,97,37.2
-5,Fernanda Oliveira Costa,72,F,"tosse produtiva, febre e dispneia",sulfa,DPOC,118,70,104,31,89,38.4
-6,José Roberto Alves,80,M,fraqueza e palpitações,,doença renal crônica,132,78,54,18,95,36.2
-7,Kátia Cardoso,65,F,"febre, confusão mental e hipotensão",AAS,doença renal crônica,89,58,111,23,92,38.5
-8,Beatriz Teixeira,77,M,dor torácica em aperto há 40 minutos,,dislipidemia,133,74,75,18,98,36.2
-9,Tiago Barbosa,71,F,cefaleia intensa e visão turva,dipirona,doença renal crônica;obesidade,210,121,79,19,98,36.2
-10,Olívia Ferreira,37,F,"vômitos, dor abdominal e hálito cetônico",penicilina,diabetes tipo 1;diabetes tipo 2,98,63,111,29,98,37.2
-11,Leonardo Teixeira,81,M,"tosse produtiva, febre e dispneia",AAS,insuficiência cardíaca,117,73,96,30,91,39.2
-12,Mariana Gomes,56,M,fraqueza muscular e palpitações,,insuficiência cardíaca,112,80,48,17,95,36.9
-13,Tiago Ferreira,48,M,"febre alta, calafrios e hipotensão",,doença renal crônica;câncer em quimioterapia,95,59,109,24,90,38.5
-14,Nelson Rocha,63,M,dor torácica em aperto há 40 minutos,sulfa,diabetes tipo 2,160,93,105,21,96,36.4
-15,Cláudia Dias,63,F,cefaleia intensa e visão turva,,hipertensão,182,114,73,17,96,36.9
-16,Leonardo Nunes,21,F,"poliúria, desidratação e hálito cetônico",dipirona,diabetes tipo 2;diabetes tipo 1,97,57,119,26,98,36.7
-17,Sílvia Gomes,59,F,"tosse, febre e dor pleurítica",sulfa,insuficiência cardíaca,118,78,102,26,90,38.5
-18,Gabriela Dias,80,F,fraqueza e palpitações,penicilina,insuficiência cardíaca;doença renal crônica,145,81,57,17,95,36.3
-19,Leonardo Gomes,45,F,"febre, confusão mental e hipotensão",,diabetes tipo 2;câncer em quimioterapia,80,52,129,30,92,39.1
-20,Gabriela Nunes,51,M,dor torácica e aperto no peito após esforço,,diabetes tipo 2,141,92,73,17,99,36.0
-21,Rafael Gomes,44,F,cefaleia intensa e visão turva,,obesidade,218,113,100,17,99,36.0
-22,Kátia Ferreira,35,M,"vômitos, dor abdominal e hálito cetônico",,diabetes tipo 2;diabetes tipo 1,112,70,113,25,97,37.6
-23,Eduarda Cardoso,59,M,"tosse produtiva, febre e dispneia",penicilina,insuficiência cardíaca,124,71,105,31,93,37.9
-24,Daniel Rocha,83,F,fraqueza e palpitações,dipirona,diabetes tipo 2;doença renal crônica,134,74,58,18,97,36.7
-25,Isabel Rocha,52,M,"febre, confusão mental e hipotensão",dipirona,câncer em quimioterapia,86,41,111,23,93,39.3
-26,Eduarda Ferreira,48,M,dor torácica em aperto há 40 minutos,sulfa,diabetes tipo 2,160,75,97,17,98,37.0
-27,Cláudia Gomes,36,M,cefaleia e tontura com pressão muito elevada,dipirona,doença renal crônica,198,126,85,16,99,36.8
-28,Beatriz Cardoso,26,F,"poliúria, desidratação e hálito cetônico",AAS,diabetes tipo 2;diabetes tipo 1,106,64,122,27,96,37.5
-29,Isabel Almeida,90,F,"tosse, febre e dor pleurítica",,DPOC,109,62,95,33,89,39.1
-30,Hugo Barbosa,65,M,fraqueza e palpitações,,insuficiência cardíaca,132,76,50,18,96,36.3
-31,Beatriz Almeida,41,F,"febre alta, calafrios e hipotensão",dipirona,câncer em quimioterapia,78,56,117,26,94,38.8
-32,Eduarda Moreira,62,F,dor torácica em aperto há 40 minutos,,hipertensão,139,72,97,18,97,37.0
-33,Fábio Cardoso,52,M,cefaleia intensa e visão turva,,doença renal crônica;obesidade,194,134,79,17,96,36.4
-34,Sílvia Almeida,20,M,"vômitos, dor abdominal e hálito cetônico",,diabetes tipo 1;diabetes tipo 2,95,60,116,29,97,37.5
-35,Rafael Cardoso,68,F,"tosse produtiva, febre e dispneia",AAS,tabagismo;insuficiência cardíaca,126,71,111,24,91,38.9
-36,Antônio Almeida,63,M,fraqueza e palpitações,dipirona,diabetes tipo 2;doença renal crônica,132,78,62,18,93,36.8
-37,Sílvia Barbosa,87,M,"febre, confusão e taquipneia após infecção urinária",AAS,doença renal crônica,81,55,111,28,92,39.4
-38,Gabriela Barbosa,78,F,dor torácica com sudorese irradiada para o braço esquerdo,,dislipidemia;tabagismo,142,85,109,17,95,36.5
-39,Gabriela Ferreira,40,M,cefaleia intensa e visão turva,,hipertensão;doença renal crônica,230,120,97,20,96,36.1
-40,Sílvia Ferreira,21,M,"vômitos, dor abdominal e hálito cetônico",dipirona,diabetes tipo 2;diabetes tipo 1,98,71,127,27,98,37.0
-41,Kátia Almeida,70,M,"tosse, febre e dor pleurítica",,DPOC,132,66,102,28,94,38.6
-42,Isabel Barbosa,58,M,fraqueza e palpitações,,insuficiência cardíaca;diabetes tipo 2,117,72,69,20,96,36.6
-43,Tiago Dias,86,F,"febre, confusão mental e hipotensão",sulfa,câncer em quimioterapia;doença renal crônica,93,53,113,22,95,38.4
-44,Isabel Moreira,81,F,dor torácica com sudorese irradiada para o braço esquerdo,dipirona,tabagismo;diabetes tipo 2,149,72,90,21,97,36.5
-45,Fábio Gomes,70,F,cefaleia e tontura com pressão muito elevada,,doença renal crônica;hipertensão,225,129,82,18,98,36.4
-46,Leonardo Cardoso,39,F,"vômitos, dor abdominal e hálito cetônico",,diabetes tipo 2,103,63,134,31,98,36.5
-47,Rafael Teixeira,81,F,"tosse produtiva, febre e dispneia",dipirona,diabetes tipo 2;DPOC,127,64,98,33,87,39.0
-48,Olívia Barbosa,90,F,fraqueza e palpitações,AAS,doença renal crônica,130,66,63,20,96,36.5
-49,Daniel Barbosa,59,F,"febre, confusão e taquipneia após infecção urinária",,hipertensão,76,46,117,31,93,39.4
-50,Jorge Almeida,41,F,dor torácica com sudorese irradiada para o braço esquerdo,sulfa,tabagismo;dislipidemia,130,83,85,19,97,36.7
+id,nome,idade,sexo,peso_kg,altura_cm,tipo_sanguineo,cidade,convenio,setor,data_admissao,medico,motivo,comorbidades,alergias,medicamentos,pas,pad,fc,fr,spo2,temp
+1,Maria Aparecida Souza,67,F,68,154,O+,Campinas,SulAmérica,Pronto-socorro,2026-06-19,Dra. Helena Prado,"febre, confusão mental e hipotensão",hipertensão;diabetes tipo 2,dipirona,losartana;metformina,88,52,118,26,93,38.9
+2,João Carlos Pereira,58,M,115,168,O+,São Bernardo do Campo,Amil,Pronto-socorro,2026-04-03,Dra. Paula Menezes,dor torácica em aperto há 40 minutos,tabagismo,,sinvastatina,150,95,96,20,96,36.6
+3,Ana Beatriz Lima,45,F,73,171,O+,Guarulhos,Particular,Pronto-socorro,2026-10-19,Dr. Renato Salles,cefaleia intensa e visão turva,hipertensão,penicilina,anlodipino,212,128,88,18,98,36.5
+4,Carlos Eduardo Ramos,23,M,65,168,B-,Santos,Bradesco Saúde,UTI,2026-03-18,Dra. Helena Prado,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 1,,insulina glargina,104,66,124,30,97,37.2
+5,Fernanda Oliveira Costa,72,F,81,164,A+,Campinas,SulAmérica,Observação,2026-06-04,Dra. Paula Menezes,"tosse produtiva, febre e dispneia",DPOC,sulfa,formoterol/budesonida,118,70,104,31,89,38.4
+6,José Roberto Alves,80,M,103,178,A+,Barueri,Particular,UTI,2026-06-15,Dra. Paula Menezes,fraqueza e palpitações,doença renal crônica,,espironolactona;enalapril,132,78,54,18,95,36.2
+7,Marcos Teixeira Nunes,55,M,82,188,O-,São Paulo,Particular,Pronto-socorro,2026-09-19,Dra. Cíntia Borges,desvio da face e fala arrastada,fibrilação atrial,látex,varfarina,175,95,83,18,94,36.8
+8,Marcos Ribeiro Guedes,78,M,88,182,AB+,São Paulo,Amil,Enfermaria,2026-03-20,Dra. Helena Prado,"tosse noturna, chiado e dispneia",asma;tabagismo,AAS,budesonida;salbutamol,131,66,122,27,92,36.8
+9,Bruno Moreira Xavier,49,M,103,190,O-,Guarulhos,Unimed,Pronto-socorro,2026-03-05,Dr. Marcos Vilela,disúria e febre,diabetes tipo 2,sulfa,metformina,133,75,84,18,96,37.4
+10,Ana Guedes Pinto,73,F,99,169,B-,São Bernardo do Campo,Amil,UTI,2026-07-04,Dr. Renato Salles,"falta de ar, inchaço nas pernas e ganho de peso",hipertensão,,anlodipino;hidroclorotiazida;losartana,121,71,100,28,93,36.5
+11,Bruno Moreira Cardoso,48,M,98,166,B+,Sorocaba,SulAmérica,Enfermaria,2026-08-04,Dra. Helena Prado,"dor lombar após esforço, sem febre",,,,119,66,62,15,96,36.4
+12,Rafael Guedes Guedes,27,M,115,183,B+,Campinas,Particular,Enfermaria,2026-09-12,Dr. Marcos Vilela,diarreia e vômitos há 2 dias,hipertensão,penicilina,anlodipino;hidroclorotiazida;losartana,129,75,85,17,97,37.1
+13,Hugo Machado Machado,58,M,64,170,B+,Guarulhos,Particular,Enfermaria,2026-08-26,Dra. Cíntia Borges,"coriza, dor de garganta e febre baixa há 3 dias",,,,130,81,86,15,98,36.4
+14,Carlos Nunes Dias,45,M,108,164,O+,São Bernardo do Campo,Particular,Observação,2026-08-06,Dr. Renato Salles,dor e inchaço no tornozelo após torção,,penicilina,,115,77,92,18,97,36.8
+15,Carlos Vieira Campos,45,M,94,166,O+,Campinas,SulAmérica,Observação,2026-07-28,Dr. Marcos Vilela,"febre alta, calafrios e hipotensão",câncer em quimioterapia;doença renal crônica,,enalapril,80,43,109,30,94,38.4
+16,Ana Rocha Moreira,77,F,98,153,A+,São Paulo,Amil,Observação,2026-10-01,Dr. Marcos Vilela,dor torácica com sudorese irradiada para o braço esquerdo,dislipidemia,dipirona,sinvastatina,144,95,72,20,98,36.7
+17,Eduarda Guedes Ribeiro,55,F,68,174,B-,Guarulhos,Particular,Enfermaria,2026-08-17,Dra. Paula Menezes,cefaleia e tontura com pressão muito elevada,hipertensão;obesidade,,anlodipino;hidroclorotiazida;losartana,224,111,76,16,96,36.5
+18,Tiago Nunes Tavares,22,M,116,180,AB+,Santos,Bradesco Saúde,Observação,2026-08-08,Dra. Helena Prado,"poliúria, desidratação e hálito cetônico",diabetes tipo 1;diabetes tipo 2,,insulina glargina;metformina,103,60,127,27,96,36.9
+19,Sérgio Gomes Silva,60,M,84,176,B+,Campinas,SUS,Observação,2026-02-03,Dra. Cíntia Borges,"tosse, febre e dor pleurítica",,látex,,114,68,102,25,89,38.3
+20,Bruno Xavier Gomes,71,M,78,162,O+,Osasco,SUS,Observação,2026-02-09,Dra. Helena Prado,fraqueza muscular e palpitações,doença renal crônica;insuficiência cardíaca,,carvedilol;enalapril;furosemida,129,75,57,17,94,36.8
+21,Antônio Araújo Machado,58,M,93,168,A-,Santos,Bradesco Saúde,Enfermaria,2026-01-09,Dra. Helena Prado,fraqueza súbita no braço direito e dificuldade para falar,diabetes tipo 2;dislipidemia,látex,metformina;sinvastatina,185,113,99,17,95,37.4
+22,Ana Vieira Lopes,48,F,78,167,A+,Sorocaba,Unimed,Observação,2026-07-12,Dra. Helena Prado,falta de ar e chiado no peito,tabagismo,AAS,,113,81,113,29,94,36.5
+23,Ana Cardoso Santos,38,F,65,150,AB+,Sorocaba,SulAmérica,Enfermaria,2026-04-02,Dra. Cíntia Borges,"ardência ao urinar, polaciúria e dor lombar",litíase renal;hipertensão,,anlodipino;hidroclorotiazida;losartana,125,73,93,22,97,38.4
+24,Larissa Gomes Almeida,85,F,85,152,B-,Santos,Particular,UTI,2026-06-24,Dr. Renato Salles,"falta de ar, inchaço nas pernas e ganho de peso",hipertensão;insuficiência cardíaca,látex,anlodipino;carvedilol;furosemida;hidroclorotiazida;losartana,133,67,107,21,94,36.1
+25,Júlia Vieira Ribeiro,65,F,88,167,A+,Campinas,SUS,Pronto-socorro,2026-03-21,Dra. Cíntia Borges,"dor lombar após esforço, sem febre",obesidade;tabagismo,látex,,113,75,79,18,98,37.0
+26,Mariana Farias Machado,58,F,54,168,B+,Campinas,Bradesco Saúde,Observação,2026-04-08,Dr. Renato Salles,diarreia e vômitos há 2 dias,,látex,,127,75,62,18,98,36.6
+27,Nelson Cardoso Guedes,20,M,90,189,O+,Guarulhos,Particular,UTI,2026-05-23,Dra. Paula Menezes,"coriza, dor de garganta e febre baixa há 3 dias",,,,125,72,84,17,98,36.2
+28,Rafael Farias Farias,50,M,88,170,A+,Guarulhos,SUS,Pronto-socorro,2026-03-24,Dra. Paula Menezes,dor e inchaço no tornozelo após torção,,dipirona,,134,84,63,16,98,37.2
+29,Marcos Ferreira Ribeiro,63,M,111,162,AB+,São Bernardo do Campo,SUS,Observação,2026-01-24,Dra. Cíntia Borges,"febre, confusão mental e hipotensão",hipertensão;doença renal crônica,AAS,anlodipino;enalapril;hidroclorotiazida;losartana,96,50,106,22,92,38.8
+30,Marcos Cardoso Campos,63,M,107,184,O-,São Paulo,Particular,UTI,2026-09-18,Dr. Marcos Vilela,dor torácica com sudorese irradiada para o braço esquerdo,tabagismo,dipirona,,158,78,72,20,97,36.1
+31,Beatriz Vieira Duarte,83,F,72,156,A-,São Bernardo do Campo,SUS,Observação,2026-03-03,Dr. Marcos Vilela,cefaleia intensa e visão turva,obesidade,dipirona,,205,133,87,17,97,36.3
+32,Vinícius Nunes Farias,22,M,86,174,B-,Guarulhos,Amil,Enfermaria,2026-06-25,Dra. Helena Prado,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 2;diabetes tipo 1,,insulina glargina;metformina,97,61,112,26,96,37.2
+33,Igor Pinto Batista,82,M,64,182,A-,Barueri,SUS,Pronto-socorro,2026-07-27,Dra. Paula Menezes,"tosse produtiva, febre e dispneia",,,,109,65,103,28,94,39.0
+34,Rafael Nunes Dias,64,M,98,177,O-,Campinas,SUS,Pronto-socorro,2026-05-17,Dra. Paula Menezes,fraqueza e palpitações,doença renal crônica,AAS,enalapril,113,81,45,17,95,36.0
+35,Mariana Rocha Nunes,84,F,73,166,O+,São Paulo,Unimed,UTI,2026-07-03,Dra. Cíntia Borges,desvio da face e fala arrastada,hipertensão,AAS,anlodipino;hidroclorotiazida;losartana,164,94,95,17,97,36.8
+36,Natália Batista Nunes,63,F,103,158,A+,Guarulhos,Amil,Observação,2026-05-25,Dra. Cíntia Borges,"tosse noturna, chiado e dispneia",asma;rinite alérgica,penicilina,budesonida;loratadina;salbutamol,130,69,124,31,92,36.2
+37,Vera Guedes Ribeiro,46,F,89,155,A-,Sorocaba,Particular,Pronto-socorro,2026-02-06,Dra. Cíntia Borges,disúria e febre,,sulfa,,132,66,95,22,95,37.2
+38,Fernanda Santos Lopes,79,F,92,158,O-,Campinas,SUS,UTI,2026-04-12,Dra. Paula Menezes,"falta de ar, inchaço nas pernas e ganho de peso",insuficiência cardíaca;hipertensão,penicilina,anlodipino;carvedilol;furosemida;hidroclorotiazida;losartana,122,63,83,21,91,36.9
+39,Gustavo Araújo Batista,60,M,114,171,B+,Sorocaba,SulAmérica,Pronto-socorro,2026-05-24,Dra. Cíntia Borges,"dor lombar após esforço, sem febre",tabagismo;obesidade,,,130,80,63,14,96,37.1
+40,Jorge Almeida Vieira,19,M,73,184,B+,Santos,SulAmérica,Observação,2026-06-28,Dra. Cíntia Borges,diarreia e vômitos há 2 dias,,,,122,84,93,16,97,36.5
+41,Marcos Ribeiro Cardoso,43,M,66,179,A+,Campinas,Amil,UTI,2026-08-06,Dr. Marcos Vilela,"coriza, dor de garganta e febre baixa há 3 dias",,,,120,78,78,17,96,36.5
+42,Natália Farias Ribeiro,62,F,63,154,A+,Sorocaba,SUS,UTI,2026-05-08,Dra. Paula Menezes,dor e inchaço no tornozelo após torção,,dipirona,,117,76,74,18,97,36.3
+43,Daniela Santos Farias,40,F,98,161,B+,São Paulo,SUS,Enfermaria,2026-04-02,Dra. Cíntia Borges,"febre, confusão e taquipneia após infecção urinária",hipertensão,,anlodipino;hidroclorotiazida;losartana,94,58,106,25,90,38.5
+44,Eduardo Barbosa Moreira,78,M,86,184,B-,Santos,Particular,Pronto-socorro,2026-03-13,Dra. Cíntia Borges,dor torácica e aperto no peito após esforço,tabagismo,,,157,95,86,18,97,36.1
+45,Jorge Silva Teixeira,54,M,87,185,O-,Sorocaba,Amil,Observação,2026-03-01,Dra. Helena Prado,cefaleia e tontura com pressão muito elevada,hipertensão,sulfa,anlodipino;hidroclorotiazida;losartana,202,132,100,17,97,36.7
+46,Mariana Cardoso Pinto,29,F,102,174,A-,Sorocaba,SUS,UTI,2026-02-23,Dra. Paula Menezes,"poliúria, desidratação e hálito cetônico",diabetes tipo 1;diabetes tipo 2,,insulina glargina;metformina,105,71,113,28,98,37.8
+47,Helena Ribeiro Campos,61,F,81,169,O+,Sorocaba,SUS,UTI,2026-10-15,Dra. Paula Menezes,"tosse produtiva, febre e dispneia",tabagismo;diabetes tipo 2,,metformina,114,70,103,25,88,38.8
+48,Paulo Teixeira Pinto,79,M,111,185,O-,Campinas,SUS,Observação,2026-06-14,Dra. Cíntia Borges,fraqueza muscular e palpitações,insuficiência cardíaca,AAS,carvedilol;furosemida,128,69,45,20,95,36.4
+49,Olívia Lopes Lopes,90,F,93,151,O+,Campinas,Unimed,Observação,2026-08-10,Dr. Marcos Vilela,fraqueza súbita no braço direito e dificuldade para falar,hipertensão,,anlodipino;hidroclorotiazida;losartana,196,94,92,16,98,37.3
+50,Cláudia Batista Ribeiro,75,F,68,151,A+,São Bernardo do Campo,Unimed,Enfermaria,2026-06-13,Dr. Marcos Vilela,"tosse noturna, chiado e dispneia",asma;rinite alérgica,AAS,budesonida;loratadina;salbutamol,114,75,128,26,90,36.6
+51,Daniel Xavier Lopes,64,M,84,172,A+,Sorocaba,Bradesco Saúde,Pronto-socorro,2026-08-08,Dr. Marcos Vilela,disúria e febre,,látex,,121,79,102,18,97,38.7
+52,Júlia Lopes Rocha,55,F,50,159,O+,Sorocaba,SulAmérica,Observação,2026-07-19,Dra. Cíntia Borges,"falta de ar, inchaço nas pernas e ganho de peso",fibrilação atrial;hipertensão,,anlodipino;hidroclorotiazida;losartana;varfarina,107,78,95,24,94,36.1
+53,Gabriela Batista Ribeiro,28,F,53,171,AB+,Barueri,SulAmérica,UTI,2026-04-06,Dra. Helena Prado,"dor lombar após esforço, sem febre",obesidade,,,128,74,64,15,98,36.3
+54,Beatriz Machado Almeida,33,F,86,160,A+,Osasco,SUS,Enfermaria,2026-01-24,Dr. Renato Salles,diarreia e vômitos há 2 dias,hipertensão,,anlodipino;hidroclorotiazida;losartana,133,67,82,17,97,36.5
+55,Mariana Duarte Vieira,23,F,96,168,B+,São Bernardo do Campo,Particular,Enfermaria,2026-05-21,Dr. Marcos Vilela,"coriza, dor de garganta e febre baixa há 3 dias",,,,116,67,70,14,97,36.9
+56,Renata Almeida Gomes,30,F,85,167,B-,Barueri,Amil,Pronto-socorro,2026-01-14,Dr. Marcos Vilela,dor e inchaço no tornozelo após torção,,,,129,72,91,16,97,37.1
+57,Gustavo Campos Ribeiro,49,M,65,186,AB+,Guarulhos,SulAmérica,Pronto-socorro,2026-07-04,Dr. Marcos Vilela,"febre, confusão mental e hipotensão",diabetes tipo 2,,metformina,78,52,109,31,93,38.2
+58,Gabriela Dias Barbosa,80,F,53,169,AB+,Barueri,Bradesco Saúde,Pronto-socorro,2026-07-01,Dr. Renato Salles,dor torácica em aperto há 40 minutos,,dipirona,,141,74,102,20,95,36.3
+59,Larissa Guedes Tavares,69,F,88,171,A-,Sorocaba,SulAmérica,Enfermaria,2026-10-06,Dra. Cíntia Borges,cefaleia intensa e visão turva,,,,210,117,83,18,97,36.8
+60,Helena Guedes Gomes,33,F,64,173,B-,Santos,Amil,Observação,2026-08-05,Dra. Paula Menezes,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 1,penicilina,insulina glargina,102,62,120,31,95,37.7
+61,Larissa Pinto Araújo,85,F,65,169,A+,Santos,Unimed,Enfermaria,2026-10-17,Dra. Cíntia Borges,"tosse, febre e dor pleurítica",tabagismo;diabetes tipo 2,,metformina,116,74,100,26,89,38.7
+62,Helena Araújo Moreira,65,F,61,160,O+,São Paulo,Amil,UTI,2026-04-17,Dra. Cíntia Borges,fraqueza e palpitações,diabetes tipo 2;doença renal crônica,,enalapril;metformina,123,85,65,19,95,36.2
+63,Antônio Ferreira Rocha,65,M,73,165,O-,Sorocaba,Bradesco Saúde,Pronto-socorro,2026-07-08,Dr. Renato Salles,desvio da face e fala arrastada,hipertensão;diabetes tipo 2,sulfa,anlodipino;hidroclorotiazida;losartana;metformina,192,105,90,20,97,36.9
+64,Isabel Duarte Guedes,51,F,59,170,A+,Sorocaba,SUS,UTI,2026-09-07,Dr. Renato Salles,falta de ar e chiado no peito,asma;rinite alérgica,penicilina,budesonida;loratadina;salbutamol,133,73,115,34,88,36.7
+65,Larissa Lopes Araújo,76,F,51,160,O-,Sorocaba,SulAmérica,Enfermaria,2026-02-08,Dra. Cíntia Borges,"ardência ao urinar, polaciúria e dor lombar",hipertensão,,anlodipino;hidroclorotiazida;losartana,117,80,83,22,96,37.3
+66,Tiago Nunes Campos,63,M,79,177,A+,Barueri,Bradesco Saúde,Observação,2026-05-23,Dr. Renato Salles,"falta de ar, inchaço nas pernas e ganho de peso",insuficiência cardíaca;fibrilação atrial,,carvedilol;furosemida;varfarina,123,77,88,28,90,36.6
+67,Paulo Silva Gomes,66,M,112,164,AB+,Santos,SulAmérica,Enfermaria,2026-10-01,Dra. Helena Prado,"dor lombar após esforço, sem febre",obesidade,penicilina,,116,71,78,16,98,36.8
+68,Cláudia Santos Teixeira,55,F,104,152,B-,Osasco,Unimed,UTI,2026-04-17,Dra. Helena Prado,diarreia e vômitos há 2 dias,hipertensão,,anlodipino;hidroclorotiazida;losartana,115,74,88,15,97,36.6
+69,Daniel Machado Dias,44,M,97,183,A+,Sorocaba,Amil,UTI,2026-05-27,Dr. Renato Salles,"coriza, dor de garganta e febre baixa há 3 dias",,,,122,76,78,19,98,36.3
+70,Paulo Duarte Silva,26,M,90,183,A+,São Paulo,Unimed,UTI,2026-03-11,Dra. Helena Prado,dor e inchaço no tornozelo após torção,,,,111,66,86,19,98,36.1
+71,Leonardo Guedes Xavier,67,M,91,165,A+,Sorocaba,Particular,Enfermaria,2026-03-19,Dra. Helena Prado,"febre, confusão e taquipneia após infecção urinária",doença renal crônica,sulfa,enalapril,82,41,113,25,92,38.7
+72,Mariana Vieira Machado,65,F,84,167,O+,Guarulhos,SUS,UTI,2026-03-04,Dr. Marcos Vilela,dor torácica com sudorese irradiada para o braço esquerdo,tabagismo,,,120,76,107,20,97,36.8
+73,Natália Xavier Dias,43,F,79,171,O-,São Bernardo do Campo,Amil,Pronto-socorro,2026-01-22,Dr. Renato Salles,cefaleia e tontura com pressão muito elevada,hipertensão;doença renal crônica,látex,anlodipino;enalapril;hidroclorotiazida;losartana,216,132,76,16,96,36.6
+74,Patrícia Xavier Duarte,38,F,57,162,B+,Guarulhos,Amil,Observação,2026-01-12,Dr. Marcos Vilela,"poliúria, desidratação e hálito cetônico",diabetes tipo 1,,insulina glargina,113,66,121,24,98,37.8
+75,Júlia Santos Machado,66,F,97,162,O+,Sorocaba,Bradesco Saúde,UTI,2026-08-22,Dr. Marcos Vilela,"tosse produtiva, febre e dispneia",diabetes tipo 2;tabagismo,,metformina,100,60,108,31,87,38.2
+76,Daniela Batista Santos,81,F,94,165,O+,Santos,SulAmérica,Enfermaria,2026-10-14,Dr. Marcos Vilela,fraqueza muscular e palpitações,diabetes tipo 2,sulfa,metformina,137,74,52,19,94,36.3
+77,Nelson Silva Campos,68,M,109,186,A+,Osasco,SulAmérica,UTI,2026-06-18,Dra. Helena Prado,fraqueza súbita no braço direito e dificuldade para falar,dislipidemia,penicilina,sinvastatina,163,98,88,19,98,36.1
+78,Nelson Moreira Xavier,56,M,67,185,O+,Guarulhos,Amil,Enfermaria,2026-09-11,Dr. Renato Salles,falta de ar e chiado no peito,rinite alérgica,sulfa,loratadina,124,69,108,32,94,36.6
+79,Gabriela Moreira Moreira,41,F,70,162,O+,Santos,Bradesco Saúde,Pronto-socorro,2026-06-09,Dra. Paula Menezes,disúria e febre,,penicilina,,122,72,99,21,96,38.9
+80,Daniela Barbosa Moreira,71,F,52,151,AB+,Barueri,Amil,Pronto-socorro,2026-10-21,Dr. Renato Salles,"falta de ar, inchaço nas pernas e ganho de peso",fibrilação atrial;insuficiência cardíaca,sulfa,carvedilol;furosemida;varfarina,105,73,101,25,89,36.8
+81,Cláudia Rocha Araújo,62,F,100,173,O+,Osasco,SulAmérica,UTI,2026-01-04,Dr. Marcos Vilela,"dor lombar após esforço, sem febre",obesidade;tabagismo,,,121,68,94,19,97,36.0
+82,Antônio Moreira Silva,66,M,63,182,A+,São Paulo,Unimed,Observação,2026-02-20,Dra. Cíntia Borges,diarreia e vômitos há 2 dias,hipertensão,AAS,anlodipino;hidroclorotiazida;losartana,118,70,66,16,97,36.3
+83,Olívia Dias Campos,58,F,60,161,A+,Barueri,Unimed,Enfermaria,2026-07-14,Dr. Marcos Vilela,"coriza, dor de garganta e febre baixa há 3 dias",,AAS,,134,71,70,15,97,36.4
+84,Ana Rocha Pinto,36,F,99,167,A+,Barueri,Bradesco Saúde,Pronto-socorro,2026-05-25,Dr. Marcos Vilela,dor e inchaço no tornozelo após torção,,dipirona,,122,71,92,15,99,36.1
+85,Paulo Rocha Nunes,64,M,110,177,A+,Sorocaba,Amil,Pronto-socorro,2026-07-07,Dra. Cíntia Borges,"febre, confusão e taquipneia após infecção urinária",hipertensão,sulfa,anlodipino;hidroclorotiazida;losartana,96,41,125,25,95,38.2
+86,Eduarda Gomes Lopes,85,F,61,158,O+,Campinas,Particular,UTI,2026-01-17,Dra. Cíntia Borges,dor torácica em aperto há 40 minutos,,,,147,95,106,20,98,36.2
+87,Jorge Santos Guedes,35,M,83,188,B-,Campinas,SUS,Enfermaria,2026-04-27,Dra. Cíntia Borges,cefaleia e tontura com pressão muito elevada,,AAS,,188,127,77,18,99,36.0
+88,Wagner Xavier Barbosa,32,M,117,163,A+,Osasco,SUS,UTI,2026-09-08,Dr. Renato Salles,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 1;diabetes tipo 2,látex,insulina glargina;metformina,111,57,116,25,97,36.7
+89,Larissa Dias Tavares,52,F,62,167,A-,São Bernardo do Campo,Unimed,Pronto-socorro,2026-07-23,Dr. Renato Salles,"tosse, febre e dor pleurítica",,,,116,72,110,25,87,39.0
+90,Mariana Barbosa Xavier,70,F,87,159,O-,São Paulo,Bradesco Saúde,Pronto-socorro,2026-09-06,Dra. Helena Prado,fraqueza muscular e palpitações,insuficiência cardíaca;diabetes tipo 2,sulfa,carvedilol;furosemida;metformina,140,76,70,17,95,36.6
+91,Paulo Moreira Lopes,58,M,99,169,B+,São Paulo,SulAmérica,Pronto-socorro,2026-05-04,Dra. Paula Menezes,desvio da face e fala arrastada,fibrilação atrial,sulfa,varfarina,189,113,89,19,98,37.3
+92,Natália Nunes Barbosa,40,F,101,161,B-,Santos,Bradesco Saúde,UTI,2026-10-10,Dra. Cíntia Borges,falta de ar e chiado no peito,asma;rinite alérgica,,budesonida;loratadina;salbutamol,112,84,128,33,89,36.7
+93,Cláudia Vieira Machado,90,F,62,163,O-,São Bernardo do Campo,SUS,Enfermaria,2026-03-28,Dr. Marcos Vilela,"ardência ao urinar, polaciúria e dor lombar",litíase renal,sulfa,,111,79,92,19,97,38.0
+94,Vinícius Araújo Guedes,73,M,75,189,A+,São Bernardo do Campo,Bradesco Saúde,Enfermaria,2026-03-22,Dr. Marcos Vilela,"falta de ar, inchaço nas pernas e ganho de peso",hipertensão;insuficiência cardíaca,,anlodipino;carvedilol;furosemida;hidroclorotiazida;losartana,108,62,110,24,88,36.4
+95,Tiago Dias Vieira,70,M,107,186,O+,São Bernardo do Campo,Amil,UTI,2026-05-24,Dra. Cíntia Borges,"dor lombar após esforço, sem febre",tabagismo;obesidade,sulfa,,132,65,87,17,97,37.2
+96,Marcos Campos Lopes,18,M,81,186,A+,Sorocaba,Unimed,UTI,2026-01-01,Dra. Helena Prado,diarreia e vômitos há 2 dias,hipertensão,sulfa,anlodipino;hidroclorotiazida;losartana,121,69,72,15,98,36.7
+97,Wagner Guedes Teixeira,52,M,63,164,A+,Campinas,Amil,Enfermaria,2026-09-13,Dra. Paula Menezes,"coriza, dor de garganta e febre baixa há 3 dias",,látex,,131,80,76,16,96,36.8
+98,Gabriela Duarte Guedes,43,F,60,166,B+,Sorocaba,SulAmérica,UTI,2026-03-17,Dra. Cíntia Borges,dor e inchaço no tornozelo após torção,,látex,,129,67,74,16,96,36.4
+99,Renata Moreira Duarte,80,F,96,165,O+,Guarulhos,Unimed,UTI,2026-09-19,Dra. Cíntia Borges,"febre alta, calafrios e hipotensão",hipertensão,,anlodipino;hidroclorotiazida;losartana,84,60,122,22,91,39.3
+100,Tatiane Moreira Duarte,50,F,92,158,A+,Sorocaba,Bradesco Saúde,Observação,2026-01-09,Dra. Helena Prado,dor torácica e aperto no peito após esforço,tabagismo;diabetes tipo 2,látex,metformina,125,73,77,19,98,36.6
+101,Larissa Moreira Farias,38,F,99,170,B+,São Bernardo do Campo,SulAmérica,Enfermaria,2026-08-03,Dr. Marcos Vilela,cefaleia intensa e visão turva,doença renal crônica;hipertensão,sulfa,anlodipino;enalapril;hidroclorotiazida;losartana,210,134,83,18,97,36.0
+102,Wagner Nunes Duarte,18,M,84,173,O+,Campinas,Amil,Enfermaria,2026-09-08,Dr. Renato Salles,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 2;diabetes tipo 1,,insulina glargina;metformina,98,61,115,32,96,37.2
+103,Olívia Teixeira Batista,77,F,74,171,A+,Santos,Bradesco Saúde,Enfermaria,2026-04-24,Dr. Renato Salles,"tosse produtiva, febre e dispneia",,dipirona,,123,67,98,30,87,38.2
+104,Wagner Moreira Teixeira,69,M,69,183,B-,Campinas,SulAmérica,Enfermaria,2026-07-01,Dra. Paula Menezes,fraqueza muscular e palpitações,diabetes tipo 2;doença renal crônica,,enalapril;metformina,143,85,60,18,97,36.5
+105,Júlia Almeida Campos,64,F,67,156,A+,São Bernardo do Campo,Bradesco Saúde,Enfermaria,2026-07-28,Dr. Renato Salles,desvio da face e fala arrastada,fibrilação atrial,,varfarina,183,88,87,17,97,36.4
+106,Isabel Gomes Almeida,75,F,60,153,A+,São Paulo,Amil,Pronto-socorro,2026-10-06,Dr. Renato Salles,"tosse noturna, chiado e dispneia",tabagismo;rinite alérgica,,loratadina,130,79,107,32,90,36.8
+107,Júlia Ferreira Campos,40,F,66,151,O+,Guarulhos,Particular,Pronto-socorro,2026-01-26,Dra. Cíntia Borges,"ardência ao urinar, polaciúria e dor lombar",diabetes tipo 2;litíase renal,AAS,metformina,126,70,91,20,96,37.2
+108,Larissa Vieira Cardoso,69,F,53,167,O-,Santos,Amil,Observação,2026-01-23,Dra. Paula Menezes,"falta de ar, inchaço nas pernas e ganho de peso",fibrilação atrial;hipertensão,látex,anlodipino;hidroclorotiazida;losartana;varfarina,104,88,95,27,93,36.7
+109,Fábio Machado Gomes,35,M,76,176,A-,Santos,Particular,Enfermaria,2026-05-05,Dr. Marcos Vilela,"dor lombar após esforço, sem febre",obesidade;tabagismo,,,119,73,69,16,96,36.8
+110,Kátia Santos Dias,61,F,67,153,B+,Barueri,SUS,Observação,2026-06-15,Dr. Renato Salles,diarreia e vômitos há 2 dias,hipertensão,AAS,anlodipino;hidroclorotiazida;losartana,131,73,69,17,96,36.6
+111,Jorge Gomes Machado,20,M,90,174,A+,Sorocaba,SUS,Enfermaria,2026-02-21,Dra. Cíntia Borges,"coriza, dor de garganta e febre baixa há 3 dias",,AAS,,135,80,65,18,99,36.7
+112,Hugo Cardoso Ferreira,16,M,108,185,AB+,São Bernardo do Campo,Unimed,Enfermaria,2026-06-08,Dra. Cíntia Borges,dor e inchaço no tornozelo após torção,,,,117,69,83,18,99,36.2
+113,Sílvia Batista Rocha,42,F,74,174,O+,São Paulo,Amil,UTI,2026-04-07,Dra. Cíntia Borges,"febre, confusão mental e hipotensão",hipertensão,sulfa,anlodipino;hidroclorotiazida;losartana,96,59,118,26,90,38.6
+114,Beatriz Ribeiro Lopes,58,F,74,164,AB+,Guarulhos,Amil,Pronto-socorro,2026-09-11,Dra. Paula Menezes,dor torácica em aperto há 40 minutos,dislipidemia,,sinvastatina,143,83,84,19,97,36.8
+115,Paulo Machado Santos,60,M,93,180,A+,Guarulhos,Particular,UTI,2026-02-05,Dra. Paula Menezes,cefaleia intensa e visão turva,,,,217,118,90,18,97,36.4
+116,Vinícius Pinto Duarte,30,M,101,182,A+,Barueri,Unimed,Pronto-socorro,2026-09-19,Dra. Paula Menezes,"poliúria, desidratação e hálito cetônico",diabetes tipo 1;diabetes tipo 2,,insulina glargina;metformina,100,71,115,30,96,37.6
+117,Natália Silva Cardoso,82,F,93,151,A+,São Paulo,Bradesco Saúde,Pronto-socorro,2026-01-23,Dra. Paula Menezes,"tosse produtiva, febre e dispneia",tabagismo,látex,,104,77,103,26,94,38.6
+118,Olívia Teixeira Dias,60,F,57,159,B-,Sorocaba,Particular,UTI,2026-01-27,Dra. Paula Menezes,fraqueza e palpitações,insuficiência cardíaca,,carvedilol;furosemida,142,82,49,19,94,36.8
+119,Daniel Batista Machado,65,M,108,167,B-,Osasco,Particular,UTI,2026-03-19,Dra. Cíntia Borges,desvio da face e fala arrastada,hipertensão;dislipidemia,penicilina,anlodipino;hidroclorotiazida;losartana;sinvastatina,160,98,95,18,95,36.0
+120,Rafael Almeida Almeida,50,M,90,166,A-,São Bernardo do Campo,Unimed,Pronto-socorro,2026-06-11,Dra. Paula Menezes,"tosse noturna, chiado e dispneia",asma;rinite alérgica,,budesonida;loratadina;salbutamol,134,66,105,32,93,36.5
+121,Júlia Ferreira Pinto,39,F,98,165,A+,Santos,Bradesco Saúde,UTI,2026-05-03,Dra. Paula Menezes,disúria e febre,diabetes tipo 2;hipertensão,AAS,anlodipino;hidroclorotiazida;losartana;metformina,115,74,103,18,96,38.1
+122,Marcos Pinto Pinto,57,M,80,183,AB+,Guarulhos,Bradesco Saúde,UTI,2026-06-02,Dra. Cíntia Borges,"falta de ar, inchaço nas pernas e ganho de peso",fibrilação atrial,,varfarina,139,79,102,23,90,36.8
+123,Sérgio Lopes Batista,35,M,66,170,B+,Osasco,Particular,Enfermaria,2026-02-07,Dra. Paula Menezes,"dor lombar após esforço, sem febre",,,,113,65,91,16,97,36.7
+124,Tatiane Gomes Teixeira,40,F,51,151,A-,Guarulhos,SulAmérica,Enfermaria,2026-09-21,Dra. Helena Prado,diarreia e vômitos há 2 dias,hipertensão,,anlodipino;hidroclorotiazida;losartana,131,71,68,18,98,36.9
+125,Helena Vieira Barbosa,56,F,51,158,O+,Guarulhos,Bradesco Saúde,Enfermaria,2026-01-21,Dr. Renato Salles,"coriza, dor de garganta e febre baixa há 3 dias",,,,112,81,81,18,96,36.3
+126,Rodrigo Silva Araújo,18,M,113,163,AB+,Sorocaba,SUS,UTI,2026-10-23,Dra. Cíntia Borges,dor e inchaço no tornozelo após torção,,,,112,77,88,19,97,37.1
+127,Cláudia Almeida Ferreira,73,F,89,169,B+,Barueri,SulAmérica,Enfermaria,2026-06-17,Dra. Paula Menezes,"febre, confusão mental e hipotensão",diabetes tipo 2,penicilina,metformina,94,48,120,27,92,39.1
+128,Eduardo Rocha Almeida,81,M,73,188,AB+,Santos,Unimed,Observação,2026-09-01,Dra. Cíntia Borges,dor torácica com sudorese irradiada para o braço esquerdo,diabetes tipo 2;tabagismo,,metformina,165,77,100,17,94,36.1
+129,Olívia Guedes Moreira,64,F,71,173,O-,Guarulhos,SUS,Enfermaria,2026-01-09,Dr. Renato Salles,cefaleia intensa e visão turva,doença renal crônica;obesidade,penicilina,enalapril,220,111,90,16,98,36.9
+130,Helena Batista Moreira,27,F,55,150,A+,Santos,Bradesco Saúde,UTI,2026-04-19,Dra. Helena Prado,"poliúria, desidratação e hálito cetônico",diabetes tipo 2;diabetes tipo 1,,insulina glargina;metformina,115,68,122,31,98,37.7
+131,Larissa Barbosa Xavier,77,F,91,162,O-,Campinas,Amil,Enfermaria,2026-07-11,Dra. Helena Prado,"tosse produtiva, febre e dispneia",tabagismo,dipirona,,124,76,98,32,87,38.2
+132,Gabriela Santos Tavares,63,F,79,150,A+,Santos,Particular,Pronto-socorro,2026-09-12,Dr. Renato Salles,fraqueza e palpitações,doença renal crônica,sulfa,enalapril,134,80,46,20,93,36.1
+133,Larissa Moreira Nunes,61,F,68,151,A-,Osasco,SulAmérica,Enfermaria,2026-07-28,Dra. Cíntia Borges,fraqueza súbita no braço direito e dificuldade para falar,diabetes tipo 2,dipirona,metformina,163,114,76,16,98,37.4
+134,Paulo Araújo Machado,42,M,102,182,A+,Guarulhos,Particular,Pronto-socorro,2026-02-27,Dra. Paula Menezes,"tosse noturna, chiado e dispneia",rinite alérgica;asma,sulfa,budesonida;loratadina;salbutamol,134,83,119,26,92,37.2
+135,Beatriz Campos Tavares,88,F,85,169,O-,Sorocaba,Particular,Pronto-socorro,2026-07-17,Dra. Cíntia Borges,disúria e febre,litíase renal;hipertensão,AAS,anlodipino;hidroclorotiazida;losartana,134,65,99,21,97,38.3
+136,Carlos Santos Machado,71,M,72,172,A+,Santos,Particular,UTI,2026-03-21,Dra. Helena Prado,"falta de ar, inchaço nas pernas e ganho de peso",fibrilação atrial,AAS,varfarina,143,70,101,25,95,36.1
+137,Nelson Batista Duarte,46,M,88,165,A-,Santos,SulAmérica,Observação,2026-01-22,Dr. Marcos Vilela,"dor lombar após esforço, sem febre",,dipirona,,119,72,84,17,97,36.8
+138,Sérgio Lopes Silva,57,M,78,171,A+,Osasco,Amil,Pronto-socorro,2026-09-21,Dr. Renato Salles,diarreia e vômitos há 2 dias,,látex,,119,73,63,15,98,36.1
+139,Gabriela Ferreira Duarte,57,F,64,156,A+,Guarulhos,Particular,Enfermaria,2026-02-22,Dr. Marcos Vilela,"coriza, dor de garganta e febre baixa há 3 dias",,,,128,73,63,18,99,36.5
+140,Carlos Cardoso Xavier,39,M,116,182,O-,São Bernardo do Campo,Amil,Observação,2026-02-15,Dr. Renato Salles,dor e inchaço no tornozelo após torção,,látex,,120,84,83,18,96,36.7
+141,Eduardo Lopes Xavier,87,M,91,186,A+,Barueri,SUS,Observação,2026-06-16,Dra. Helena Prado,"febre, confusão mental e hipotensão",diabetes tipo 2,sulfa,metformina,88,59,113,25,91,38.8
+142,Wagner Ferreira Duarte,80,M,94,176,O-,São Paulo,Bradesco Saúde,Enfermaria,2026-04-28,Dr. Renato Salles,dor torácica em aperto há 40 minutos,,penicilina,,135,86,70,22,95,36.3
+143,Vinícius Rocha Teixeira,43,M,94,163,AB+,São Paulo,SulAmérica,Pronto-socorro,2026-07-19,Dra. Cíntia Borges,cefaleia intensa e visão turva,,,,208,119,84,18,98,36.4
+144,Isabel Nunes Farias,43,F,54,165,A+,São Paulo,Particular,Observação,2026-08-08,Dra. Cíntia Borges,"poliúria, desidratação e hálito cetônico",diabetes tipo 1;diabetes tipo 2,sulfa,insulina glargina;metformina,114,63,132,24,97,37.3
+145,Sílvia Gomes Ferreira,56,F,98,173,A+,São Paulo,Unimed,UTI,2026-05-25,Dr. Marcos Vilela,"tosse, febre e dor pleurítica",tabagismo;insuficiência cardíaca,,carvedilol;furosemida,107,62,96,26,93,38.8
+146,Vinícius Vieira Ferreira,90,M,102,168,A+,Santos,Amil,Enfermaria,2026-07-04,Dra. Helena Prado,fraqueza e palpitações,insuficiência cardíaca;diabetes tipo 2,,carvedilol;furosemida;metformina,143,78,51,20,94,36.2
+147,Daniel Silva Moreira,81,M,93,164,A+,Barueri,Bradesco Saúde,Observação,2026-10-10,Dra. Helena Prado,desvio da face e fala arrastada,diabetes tipo 2,,metformina,188,100,98,16,96,37.3
+148,Ana Batista Moreira,37,F,66,152,B-,Barueri,SUS,Pronto-socorro,2026-03-20,Dr. Renato Salles,falta de ar e chiado no peito,tabagismo,,,120,74,107,31,89,36.9
+149,Bruno Barbosa Barbosa,70,M,111,186,A-,Osasco,Unimed,Enfermaria,2026-02-04,Dr. Marcos Vilela,"ardência ao urinar, polaciúria e dor lombar",hipertensão;diabetes tipo 2,sulfa,anlodipino;hidroclorotiazida;losartana;metformina,122,72,89,20,96,37.5
+150,Eduarda Guedes Rocha,84,F,79,156,O+,São Paulo,SUS,Pronto-socorro,2026-08-26,Dra. Paula Menezes,"falta de ar, inchaço nas pernas e ganho de peso",hipertensão,,anlodipino;hidroclorotiazida;losartana,128,61,89,28,90,36.6
+151,Helena Cardoso Xavier,29,F,93,163,O+,Guarulhos,SUS,Enfermaria,2026-02-02,Dr. Marcos Vilela,"dor lombar após esforço, sem febre",,,,121,77,66,17,96,36.8
+152,Júlia Araújo Cardoso,18,F,61,173,AB+,Campinas,SUS,UTI,2026-01-16,Dra. Paula Menezes,diarreia e vômitos há 2 dias,hipertensão,sulfa,anlodipino;hidroclorotiazida;losartana,130,66,88,15,98,36.2
+153,Carlos Xavier Ribeiro,30,M,105,166,B+,São Paulo,Particular,UTI,2026-10-06,Dr. Renato Salles,"coriza, dor de garganta e febre baixa há 3 dias",,penicilina,,130,67,86,16,96,37.2
+154,Tiago Teixeira Vieira,19,M,114,163,O-,Sorocaba,Amil,UTI,2026-02-08,Dra. Cíntia Borges,dor e inchaço no tornozelo após torção,,,,116,77,81,18,98,37.1
+155,Jorge Almeida Teixeira,70,M,103,174,B-,Guarulhos,SUS,Observação,2026-01-13,Dr. Marcos Vilela,"febre, confusão e taquipneia após infecção urinária",hipertensão;câncer em quimioterapia,sulfa,anlodipino;hidroclorotiazida;losartana,89,49,114,24,91,39.4
+156,Igor Araújo Ferreira,54,M,112,165,A+,Barueri,SulAmérica,Enfermaria,2026-06-22,Dra. Helena Prado,dor torácica com sudorese irradiada para o braço esquerdo,dislipidemia,sulfa,sinvastatina,134,80,105,21,97,36.9
+157,Eduardo Xavier Rocha,67,M,91,181,O+,São Paulo,Particular,Pronto-socorro,2026-09-13,Dr. Renato Salles,cefaleia e tontura com pressão muito elevada,doença renal crônica;hipertensão,AAS,anlodipino;enalapril;hidroclorotiazida;losartana,195,117,79,19,98,36.9
+158,Tiago Ferreira Vieira,33,M,99,170,A+,Osasco,SulAmérica,Pronto-socorro,2026-07-18,Dr. Renato Salles,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 1;diabetes tipo 2,,insulina glargina;metformina,114,70,114,29,97,36.6
+159,Mariana Guedes Tavares,70,F,59,158,O+,Osasco,Amil,Enfermaria,2026-03-09,Dra. Cíntia Borges,"tosse produtiva, febre e dispneia",insuficiência cardíaca,AAS,carvedilol;furosemida,129,76,102,25,90,39.0
+160,Gustavo Ribeiro Araújo,71,M,71,187,O+,Santos,Bradesco Saúde,UTI,2026-09-28,Dr. Renato Salles,fraqueza muscular e palpitações,insuficiência cardíaca;doença renal crônica,sulfa,carvedilol;enalapril;furosemida,121,81,57,16,97,36.6
+161,Isabel Campos Batista,57,F,63,152,B-,Campinas,SulAmérica,UTI,2026-02-10,Dr. Marcos Vilela,desvio da face e fala arrastada,diabetes tipo 2;dislipidemia,AAS,metformina;sinvastatina,189,86,95,18,96,37.4
+162,Daniela Xavier Campos,43,F,87,173,A+,Guarulhos,Bradesco Saúde,Pronto-socorro,2026-07-03,Dra. Paula Menezes,"tosse noturna, chiado e dispneia",tabagismo;rinite alérgica,AAS,loratadina,134,72,106,33,92,36.6
+163,Tatiane Silva Nunes,45,F,86,172,A+,São Bernardo do Campo,SulAmérica,Enfermaria,2026-02-25,Dra. Paula Menezes,disúria e febre,litíase renal;hipertensão,,anlodipino;hidroclorotiazida;losartana,110,78,99,19,99,38.8
+164,Rodrigo Moreira Nunes,91,M,119,179,O+,São Paulo,SulAmérica,UTI,2026-02-16,Dr. Marcos Vilela,"falta de ar, inchaço nas pernas e ganho de peso",insuficiência cardíaca;hipertensão,penicilina,anlodipino;carvedilol;furosemida;hidroclorotiazida;losartana,101,76,84,28,90,36.5
+165,Leonardo Araújo Lopes,55,M,66,180,O+,Campinas,Amil,UTI,2026-09-19,Dr. Renato Salles,"dor lombar após esforço, sem febre",obesidade;tabagismo,dipirona,,131,81,80,14,98,36.0
+166,Beatriz Batista Machado,22,F,92,152,B-,São Paulo,Amil,Observação,2026-04-25,Dra. Cíntia Borges,diarreia e vômitos há 2 dias,hipertensão,,anlodipino;hidroclorotiazida;losartana,121,84,91,17,97,36.7
+167,Sílvia Xavier Tavares,19,F,85,164,AB+,Sorocaba,Bradesco Saúde,Pronto-socorro,2026-01-24,Dr. Marcos Vilela,"coriza, dor de garganta e febre baixa há 3 dias",,,,119,73,90,17,98,36.6
+168,Paulo Almeida Tavares,64,M,108,175,A+,Campinas,SulAmérica,Enfermaria,2026-09-13,Dr. Marcos Vilela,dor e inchaço no tornozelo após torção,,penicilina,,113,68,88,16,99,37.1
+169,Igor Silva Almeida,73,M,67,184,A+,Campinas,Bradesco Saúde,Enfermaria,2026-10-18,Dr. Renato Salles,"febre, confusão e taquipneia após infecção urinária",doença renal crônica,sulfa,enalapril,80,58,117,23,90,39.2
+170,Gustavo Almeida Nunes,62,M,95,182,A-,Santos,Amil,Observação,2026-08-23,Dr. Renato Salles,dor torácica com sudorese irradiada para o braço esquerdo,,,,124,96,108,19,97,36.9
+171,Daniela Guedes Ribeiro,79,F,50,162,O-,Guarulhos,Unimed,Pronto-socorro,2026-09-21,Dra. Paula Menezes,cefaleia intensa e visão turva,hipertensão,,anlodipino;hidroclorotiazida;losartana,182,124,92,17,98,36.6
+172,Igor Barbosa Ferreira,42,M,62,186,B-,Campinas,SulAmérica,Pronto-socorro,2026-01-22,Dra. Paula Menezes,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 1;diabetes tipo 2,,insulina glargina;metformina,99,69,114,28,95,37.5
+173,Rafael Campos Silva,85,M,98,164,B-,Sorocaba,Particular,Pronto-socorro,2026-02-24,Dr. Marcos Vilela,"tosse produtiva, febre e dispneia",,,,107,70,112,26,92,38.8
+174,Cláudia Batista Rocha,64,F,72,165,A+,Campinas,SUS,Pronto-socorro,2026-01-22,Dr. Marcos Vilela,fraqueza muscular e palpitações,insuficiência cardíaca;diabetes tipo 2,penicilina,carvedilol;furosemida;metformina,137,65,47,16,96,36.6
+175,Bruno Gomes Ribeiro,58,M,89,179,AB+,Osasco,Unimed,Pronto-socorro,2026-07-18,Dra. Helena Prado,desvio da face e fala arrastada,dislipidemia;fibrilação atrial,dipirona,sinvastatina;varfarina,192,86,81,17,95,37.4
+176,Hugo Machado Batista,74,M,93,189,A+,Guarulhos,SulAmérica,Pronto-socorro,2026-09-08,Dr. Renato Salles,"tosse noturna, chiado e dispneia",asma;tabagismo,,budesonida;salbutamol,126,67,125,27,92,36.4
+177,Gabriela Moreira Teixeira,51,F,64,151,A+,Osasco,SulAmérica,Observação,2026-02-20,Dra. Helena Prado,disúria e febre,,,,135,69,91,20,98,38.5
+178,Jorge Cardoso Cardoso,55,M,77,173,A+,Barueri,Particular,Pronto-socorro,2026-08-11,Dra. Cíntia Borges,"falta de ar, inchaço nas pernas e ganho de peso",fibrilação atrial,penicilina,varfarina,104,77,105,25,92,36.9
+179,Ana Campos Nunes,33,F,60,154,O+,São Paulo,Amil,Enfermaria,2026-02-19,Dra. Paula Menezes,"dor lombar após esforço, sem febre",,penicilina,,117,65,68,19,96,36.8
+180,Beatriz Cardoso Teixeira,35,F,64,170,B+,São Bernardo do Campo,SUS,Observação,2026-04-08,Dr. Renato Salles,diarreia e vômitos há 2 dias,,penicilina,,119,79,67,18,97,36.4
+181,Hugo Santos Guedes,18,M,103,165,O+,Barueri,Amil,Observação,2026-04-14,Dr. Renato Salles,"coriza, dor de garganta e febre baixa há 3 dias",,,,127,82,70,14,97,36.1
+182,Daniela Moreira Cardoso,38,F,84,175,O-,Campinas,SUS,UTI,2026-09-02,Dr. Marcos Vilela,dor e inchaço no tornozelo após torção,,AAS,,116,72,64,17,97,36.3
+183,Renata Araújo Moreira,70,F,104,162,A+,São Paulo,Particular,Pronto-socorro,2026-08-22,Dra. Helena Prado,"febre, confusão e taquipneia após infecção urinária",hipertensão,AAS,anlodipino;hidroclorotiazida;losartana,96,49,125,23,92,38.6
+184,Patrícia Silva Ribeiro,81,F,75,168,A-,Guarulhos,SUS,Enfermaria,2026-08-05,Dr. Marcos Vilela,dor torácica com sudorese irradiada para o braço esquerdo,,,,137,97,83,16,98,36.7
+185,Leonardo Pinto Moreira,60,M,75,185,A+,Osasco,Amil,Enfermaria,2026-04-25,Dra. Cíntia Borges,cefaleia intensa e visão turva,,,,183,134,77,18,98,36.9
+186,Natália Gomes Araújo,42,F,63,153,O-,Santos,Unimed,Observação,2026-10-11,Dra. Helena Prado,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 1;diabetes tipo 2,,insulina glargina;metformina,112,55,125,26,97,37.2
+187,Helena Duarte Gomes,87,F,74,170,O+,Osasco,SUS,Enfermaria,2026-03-28,Dr. Marcos Vilela,"tosse, febre e dor pleurítica",,sulfa,,109,71,99,25,92,39.2
+188,Carlos Lopes Campos,83,M,95,167,B+,Guarulhos,Amil,Enfermaria,2026-09-09,Dra. Helena Prado,fraqueza e palpitações,diabetes tipo 2;doença renal crônica,AAS,enalapril;metformina,133,77,65,20,97,36.2
+189,Vera Silva Guedes,50,F,104,152,A+,São Bernardo do Campo,Amil,Observação,2026-04-12,Dra. Cíntia Borges,desvio da face e fala arrastada,diabetes tipo 2,AAS,metformina,167,108,99,20,96,36.5
+190,Sérgio Xavier Batista,58,M,88,171,B-,Sorocaba,Bradesco Saúde,UTI,2026-06-06,Dr. Renato Salles,falta de ar e chiado no peito,asma,dipirona,budesonida;salbutamol,113,75,127,30,93,36.6
+191,Fernanda Campos Batista,55,F,97,172,O+,Guarulhos,SUS,UTI,2026-09-09,Dra. Helena Prado,"ardência ao urinar, polaciúria e dor lombar",,,,126,84,85,21,96,37.7
+192,Ana Gomes Cardoso,66,F,79,158,O-,Barueri,Bradesco Saúde,Enfermaria,2026-01-03,Dra. Cíntia Borges,"falta de ar, inchaço nas pernas e ganho de peso",insuficiência cardíaca,,carvedilol;furosemida,113,81,115,20,89,36.9
+193,Isabel Cardoso Cardoso,28,F,66,150,B+,Campinas,Amil,Pronto-socorro,2026-02-19,Dr. Marcos Vilela,"dor lombar após esforço, sem febre",obesidade;tabagismo,penicilina,,123,68,82,19,98,36.9
+194,Olívia Farias Nunes,70,F,79,168,O+,Guarulhos,Particular,Pronto-socorro,2026-04-17,Dra. Cíntia Borges,diarreia e vômitos há 2 dias,,sulfa,,113,69,81,15,98,36.3
+195,Olívia Ribeiro Moreira,31,F,94,160,B-,Osasco,SUS,Enfermaria,2026-02-10,Dra. Helena Prado,"coriza, dor de garganta e febre baixa há 3 dias",,dipirona,,113,66,77,16,98,36.8
+196,Tiago Nunes Ferreira,55,M,90,171,O+,Campinas,Particular,Pronto-socorro,2026-10-13,Dr. Renato Salles,dor e inchaço no tornozelo após torção,,AAS,,111,71,88,18,99,36.8
+197,Carlos Rocha Silva,60,M,64,189,B-,Santos,SUS,UTI,2026-10-02,Dra. Cíntia Borges,"febre, confusão e taquipneia após infecção urinária",câncer em quimioterapia,sulfa,,93,47,117,30,95,39.1
+198,Kátia Duarte Lopes,49,F,83,160,A+,Santos,Amil,UTI,2026-06-12,Dra. Helena Prado,dor torácica com sudorese irradiada para o braço esquerdo,,,,152,92,71,21,97,36.5
+199,Olívia Machado Dias,51,F,77,172,B-,Sorocaba,Unimed,Pronto-socorro,2026-05-17,Dr. Renato Salles,cefaleia e tontura com pressão muito elevada,,AAS,,193,115,94,19,97,36.2
+200,Vera Araújo Araújo,39,F,105,156,AB+,Osasco,Bradesco Saúde,Enfermaria,2026-06-20,Dra. Cíntia Borges,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 2,sulfa,metformina,96,55,116,27,98,36.8
+201,Nelson Teixeira Dias,50,M,81,174,B+,Santos,Unimed,Enfermaria,2026-01-12,Dr. Marcos Vilela,"tosse, febre e dor pleurítica",,,,129,73,96,32,87,38.0
+202,Eduardo Vieira Silva,84,M,64,184,A+,Sorocaba,SUS,Pronto-socorro,2026-08-24,Dra. Helena Prado,fraqueza muscular e palpitações,diabetes tipo 2,AAS,metformina,137,81,67,17,94,36.2
+203,Olívia Santos Campos,69,F,96,163,A-,Barueri,Amil,Pronto-socorro,2026-04-07,Dr. Marcos Vilela,desvio da face e fala arrastada,dislipidemia;fibrilação atrial,penicilina,sinvastatina;varfarina,195,107,79,19,97,36.2
+204,Vinícius Batista Silva,76,M,110,184,AB+,Campinas,Unimed,Pronto-socorro,2026-04-12,Dr. Renato Salles,falta de ar e chiado no peito,tabagismo,AAS,,128,74,122,28,89,36.6
+205,Mariana Santos Tavares,71,F,103,175,B-,Santos,Unimed,Pronto-socorro,2026-09-25,Dra. Helena Prado,"ardência ao urinar, polaciúria e dor lombar",,penicilina,,114,72,98,17,97,38.1
+206,Bruno Barbosa Moreira,68,M,92,175,O+,São Paulo,Bradesco Saúde,Observação,2026-04-18,Dra. Cíntia Borges,"falta de ar, inchaço nas pernas e ganho de peso",fibrilação atrial,,varfarina,128,64,102,26,91,36.6
+207,Renata Gomes Nunes,57,F,55,152,B-,São Bernardo do Campo,Unimed,Enfermaria,2026-08-06,Dr. Marcos Vilela,"dor lombar após esforço, sem febre",obesidade;tabagismo,AAS,,128,79,71,18,99,36.1
+208,Paulo Xavier Vieira,30,M,69,170,O-,Barueri,Amil,UTI,2026-08-09,Dr. Renato Salles,diarreia e vômitos há 2 dias,,,,132,72,76,16,98,36.5
+209,Patrícia Pinto Lopes,50,F,88,160,A+,Barueri,SulAmérica,Pronto-socorro,2026-01-28,Dr. Renato Salles,"coriza, dor de garganta e febre baixa há 3 dias",,,,112,79,94,16,97,36.5
+210,Tiago Santos Tavares,42,M,111,184,A+,Sorocaba,Unimed,UTI,2026-03-10,Dra. Helena Prado,dor e inchaço no tornozelo após torção,,,,124,78,86,19,96,36.4
+211,Ana Ribeiro Araújo,57,F,64,159,O-,Campinas,Bradesco Saúde,Pronto-socorro,2026-05-11,Dra. Cíntia Borges,"febre, confusão e taquipneia após infecção urinária",câncer em quimioterapia;diabetes tipo 2,látex,metformina,96,47,119,30,93,38.9
+212,Fábio Tavares Campos,44,M,117,177,O+,Santos,Amil,Observação,2026-01-24,Dr. Renato Salles,dor torácica em aperto há 40 minutos,,,,123,94,76,17,94,36.3
+213,Paulo Cardoso Santos,54,M,101,189,AB+,Campinas,Amil,Enfermaria,2026-07-14,Dra. Cíntia Borges,cefaleia intensa e visão turva,hipertensão;obesidade,,anlodipino;hidroclorotiazida;losartana,185,113,71,19,98,36.1
+214,Hugo Guedes Almeida,23,M,63,174,O+,Sorocaba,Particular,UTI,2026-09-05,Dra. Helena Prado,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 1,penicilina,insulina glargina,108,66,121,29,99,37.5
+215,Patrícia Gomes Tavares,50,F,84,158,O-,Guarulhos,Bradesco Saúde,Observação,2026-10-27,Dra. Helena Prado,"tosse produtiva, febre e dispneia",tabagismo,penicilina,,114,73,106,31,89,39.1
+216,Leonardo Santos Xavier,65,M,79,176,O+,Campinas,SulAmérica,Observação,2026-02-13,Dra. Cíntia Borges,fraqueza muscular e palpitações,diabetes tipo 2;insuficiência cardíaca,dipirona,carvedilol;furosemida;metformina,140,85,57,19,93,36.4
+217,Vera Duarte Farias,78,F,78,163,B-,São Bernardo do Campo,SulAmérica,Enfermaria,2026-08-21,Dra. Cíntia Borges,desvio da face e fala arrastada,hipertensão;diabetes tipo 2,,anlodipino;hidroclorotiazida;losartana;metformina,152,110,79,16,95,37.2
+218,Sérgio Dias Barbosa,36,M,91,174,O+,Campinas,SUS,Pronto-socorro,2026-04-15,Dra. Paula Menezes,falta de ar e chiado no peito,tabagismo,látex,,132,84,111,33,94,36.3
+219,Carlos Vieira Teixeira,41,M,77,164,A+,Osasco,SUS,UTI,2026-09-20,Dr. Renato Salles,"ardência ao urinar, polaciúria e dor lombar",hipertensão,,anlodipino;hidroclorotiazida;losartana,124,82,87,17,99,37.6
+220,Daniela Duarte Guedes,79,F,99,162,B+,Sorocaba,SUS,UTI,2026-10-11,Dr. Marcos Vilela,"falta de ar, inchaço nas pernas e ganho de peso",fibrilação atrial;insuficiência cardíaca,AAS,carvedilol;furosemida;varfarina,124,76,87,22,92,36.1
+221,Daniel Batista Campos,28,M,99,178,AB+,Barueri,Particular,Observação,2026-09-28,Dr. Marcos Vilela,"dor lombar após esforço, sem febre",,dipirona,,134,73,80,16,96,36.2
+222,Gustavo Ribeiro Moreira,80,M,79,165,A+,São Paulo,Bradesco Saúde,Pronto-socorro,2026-07-03,Dra. Cíntia Borges,diarreia e vômitos há 2 dias,hipertensão,,anlodipino;hidroclorotiazida;losartana,121,69,64,17,98,36.9
+223,Wagner Tavares Almeida,40,M,105,189,O-,São Bernardo do Campo,Particular,Pronto-socorro,2026-02-20,Dr. Renato Salles,"coriza, dor de garganta e febre baixa há 3 dias",,,,124,85,92,15,97,36.1
+224,Isabel Lopes Ferreira,38,F,80,159,AB+,Osasco,SulAmérica,Observação,2026-03-06,Dr. Marcos Vilela,dor e inchaço no tornozelo após torção,,,,135,85,83,17,96,36.9
+225,Daniela Pinto Dias,72,F,63,152,A-,São Bernardo do Campo,Amil,Enfermaria,2026-08-25,Dra. Helena Prado,"febre alta, calafrios e hipotensão",doença renal crônica,,enalapril,88,48,120,22,89,38.8
+226,Beatriz Farias Lopes,42,F,75,167,A+,Osasco,Amil,Enfermaria,2026-02-23,Dra. Paula Menezes,dor torácica e aperto no peito após esforço,,,,129,78,101,21,96,36.1
+227,Fábio Pinto Barbosa,82,M,77,175,A+,Barueri,SUS,Observação,2026-07-04,Dr. Marcos Vilela,cefaleia intensa e visão turva,hipertensão,,anlodipino;hidroclorotiazida;losartana,196,111,71,18,98,36.2
+228,Carlos Machado Silva,25,M,115,165,B-,Barueri,Bradesco Saúde,Observação,2026-02-22,Dr. Renato Salles,"poliúria, desidratação e hálito cetônico",diabetes tipo 2;diabetes tipo 1,penicilina,insulina glargina;metformina,99,62,127,27,96,36.6
+229,Jorge Cardoso Pinto,59,M,66,184,A+,São Paulo,Unimed,Enfermaria,2026-06-06,Dra. Cíntia Borges,"tosse produtiva, febre e dispneia",tabagismo,AAS,,115,73,96,26,94,38.8
+230,Igor Gomes Farias,63,M,101,162,O+,Sorocaba,SUS,Enfermaria,2026-10-11,Dra. Paula Menezes,fraqueza e palpitações,doença renal crônica;diabetes tipo 2,látex,enalapril;metformina,135,82,61,17,96,36.7
+231,Wagner Machado Moreira,71,M,87,179,O+,Osasco,Bradesco Saúde,Pronto-socorro,2026-08-25,Dra. Cíntia Borges,fraqueza súbita no braço direito e dificuldade para falar,fibrilação atrial;dislipidemia,penicilina,sinvastatina;varfarina,168,102,100,18,97,36.2
+232,Hugo Tavares Lopes,36,M,80,172,AB+,Guarulhos,Unimed,UTI,2026-05-21,Dra. Cíntia Borges,"tosse noturna, chiado e dispneia",tabagismo;rinite alérgica,,loratadina,135,75,122,26,91,36.4
+233,Isabel Machado Barbosa,70,F,94,168,A-,Campinas,Bradesco Saúde,Observação,2026-05-16,Dra. Helena Prado,"ardência ao urinar, polaciúria e dor lombar",litíase renal,sulfa,,134,75,97,22,98,37.6
+234,Kátia Duarte Farias,75,F,58,170,B-,Campinas,SUS,Enfermaria,2026-08-17,Dr. Renato Salles,"falta de ar, inchaço nas pernas e ganho de peso",hipertensão;insuficiência cardíaca,,anlodipino;carvedilol;furosemida;hidroclorotiazida;losartana,136,71,82,25,90,36.0
+235,Antônio Campos Campos,44,M,75,165,A+,Guarulhos,Amil,Enfermaria,2026-02-02,Dra. Paula Menezes,"dor lombar após esforço, sem febre",,penicilina,,113,71,66,14,98,36.2
+236,Tiago Santos Ribeiro,50,M,100,174,AB+,Guarulhos,Amil,Pronto-socorro,2026-09-26,Dra. Paula Menezes,diarreia e vômitos há 2 dias,,,,116,74,95,19,96,36.3
+237,Igor Guedes Xavier,47,M,71,189,B+,Barueri,SUS,Enfermaria,2026-08-28,Dr. Marcos Vilela,"coriza, dor de garganta e febre baixa há 3 dias",,,,127,74,82,15,98,36.6
+238,Cláudia Cardoso Cardoso,38,F,56,163,O+,Sorocaba,Bradesco Saúde,Observação,2026-04-13,Dra. Cíntia Borges,dor e inchaço no tornozelo após torção,,sulfa,,120,74,92,16,97,36.9
+239,Rodrigo Ribeiro Machado,79,M,75,162,A+,Barueri,Bradesco Saúde,UTI,2026-05-08,Dr. Marcos Vilela,"febre alta, calafrios e hipotensão",doença renal crônica;hipertensão,penicilina,anlodipino;enalapril;hidroclorotiazida;losartana,95,47,132,28,90,39.1
+240,Fábio Batista Vieira,41,M,73,185,B-,Santos,Particular,Observação,2026-09-28,Dra. Cíntia Borges,dor torácica com sudorese irradiada para o braço esquerdo,,,,160,80,86,16,97,36.8
+241,Vinícius Machado Ferreira,43,M,69,186,A-,Barueri,SulAmérica,Observação,2026-01-21,Dra. Helena Prado,cefaleia e tontura com pressão muito elevada,doença renal crônica;hipertensão,dipirona,anlodipino;enalapril;hidroclorotiazida;losartana,196,115,99,19,99,36.8
+242,Vera Ribeiro Barbosa,43,F,63,155,AB+,Sorocaba,SulAmérica,Pronto-socorro,2026-03-11,Dra. Cíntia Borges,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 2,,metformina,113,71,111,29,96,36.6
+243,Cláudia Almeida Ribeiro,60,F,50,151,B+,Guarulhos,Bradesco Saúde,Pronto-socorro,2026-09-16,Dra. Paula Menezes,"tosse, febre e dor pleurítica",DPOC;diabetes tipo 2,dipirona,formoterol/budesonida;metformina,111,75,97,26,94,38.6
+244,Mariana Tavares Machado,67,F,93,162,AB+,Barueri,SUS,Enfermaria,2026-07-07,Dr. Marcos Vilela,fraqueza e palpitações,insuficiência cardíaca;diabetes tipo 2,dipirona,carvedilol;furosemida;metformina,119,84,58,17,94,36.0
+245,Sérgio Vieira Silva,59,M,67,170,O+,Barueri,Bradesco Saúde,UTI,2026-10-19,Dr. Marcos Vilela,desvio da face e fala arrastada,fibrilação atrial;diabetes tipo 2,,metformina;varfarina,174,100,94,17,98,36.5
+246,Paulo Almeida Teixeira,62,M,103,174,O+,Santos,Amil,Observação,2026-09-05,Dra. Cíntia Borges,falta de ar e chiado no peito,asma;tabagismo,dipirona,budesonida;salbutamol,130,67,129,28,91,37.0
+247,Natália Campos Rocha,30,F,74,172,O+,São Bernardo do Campo,Unimed,Enfermaria,2026-10-08,Dra. Paula Menezes,"ardência ao urinar, polaciúria e dor lombar",,,,110,77,85,20,97,37.4
+248,Larissa Batista Dias,74,F,55,162,B+,São Paulo,Bradesco Saúde,UTI,2026-04-12,Dr. Marcos Vilela,"falta de ar, inchaço nas pernas e ganho de peso",insuficiência cardíaca;fibrilação atrial,dipirona,carvedilol;furosemida;varfarina,128,82,84,27,94,36.1
+249,Daniel Xavier Nunes,27,M,93,168,O-,Campinas,SulAmérica,UTI,2026-07-19,Dra. Paula Menezes,"dor lombar após esforço, sem febre",,,,121,75,63,15,97,36.4
+250,Igor Gomes Duarte,60,M,87,162,B+,Barueri,Particular,Observação,2026-04-16,Dr. Marcos Vilela,diarreia e vômitos há 2 dias,hipertensão,látex,anlodipino;hidroclorotiazida;losartana,115,84,92,19,98,36.1
+251,Paulo Tavares Santos,27,M,101,170,B+,Osasco,SulAmérica,Observação,2026-02-03,Dra. Helena Prado,"coriza, dor de garganta e febre baixa há 3 dias",,,,126,65,77,16,98,36.4
+252,Antônio Xavier Vieira,60,M,88,165,A+,São Bernardo do Campo,Unimed,Enfermaria,2026-08-21,Dr. Renato Salles,dor e inchaço no tornozelo após torção,,sulfa,,126,80,92,15,97,36.6
+253,Tiago Xavier Machado,42,M,111,165,O+,São Bernardo do Campo,SUS,Pronto-socorro,2026-10-15,Dra. Cíntia Borges,"febre alta, calafrios e hipotensão",hipertensão;doença renal crônica,AAS,anlodipino;enalapril;hidroclorotiazida;losartana,82,58,109,26,93,38.7
+254,Carlos Dias Dias,72,M,97,164,B+,São Bernardo do Campo,Amil,Enfermaria,2026-10-08,Dra. Cíntia Borges,dor torácica e aperto no peito após esforço,hipertensão,,anlodipino;hidroclorotiazida;losartana,156,81,102,17,94,36.5
+255,Tatiane Vieira Dias,54,F,65,165,B+,Osasco,Particular,Pronto-socorro,2026-02-26,Dra. Paula Menezes,cefaleia intensa e visão turva,obesidade;doença renal crônica,,enalapril,187,112,91,18,98,36.3
+256,Leonardo Nunes Batista,34,M,77,185,A+,Santos,SulAmérica,Observação,2026-09-01,Dra. Helena Prado,"poliúria, desidratação e hálito cetônico",diabetes tipo 2,dipirona,metformina,102,62,132,26,99,37.7
+257,Fábio Batista Rocha,79,M,85,181,A+,Sorocaba,Particular,Enfermaria,2026-07-22,Dra. Paula Menezes,"tosse produtiva, febre e dispneia",tabagismo;diabetes tipo 2,,metformina,111,76,99,30,90,38.4
+258,Tiago Campos Moreira,90,M,108,175,B+,Sorocaba,Unimed,Observação,2026-03-03,Dr. Marcos Vilela,fraqueza muscular e palpitações,doença renal crônica;insuficiência cardíaca,,carvedilol;enalapril;furosemida,139,70,64,19,97,36.8
+259,Patrícia Araújo Dias,85,F,76,161,O-,São Paulo,SUS,Observação,2026-07-09,Dr. Marcos Vilela,fraqueza súbita no braço direito e dificuldade para falar,fibrilação atrial,penicilina,varfarina,199,94,72,17,99,37.4
+260,Tatiane Dias Farias,33,F,82,166,A-,Santos,Amil,Observação,2026-09-15,Dra. Cíntia Borges,"tosse noturna, chiado e dispneia",tabagismo;asma,dipirona,budesonida;salbutamol,116,66,117,24,94,36.9
+261,Nelson Gomes Moreira,60,M,116,180,B+,São Bernardo do Campo,SulAmérica,UTI,2026-08-15,Dr. Renato Salles,disúria e febre,,,,129,76,88,22,96,37.4
+262,Daniel Tavares Ribeiro,70,M,118,167,O+,Campinas,Amil,Pronto-socorro,2026-01-16,Dr. Renato Salles,"falta de ar, inchaço nas pernas e ganho de peso",insuficiência cardíaca,,carvedilol;furosemida,107,75,92,28,95,36.4
+263,Natália Nunes Ferreira,57,F,74,156,O+,São Paulo,SUS,Pronto-socorro,2026-07-28,Dr. Renato Salles,"dor lombar após esforço, sem febre",,,,118,78,76,14,99,36.0
+264,Marcos Dias Pinto,18,M,87,176,O+,Campinas,Particular,UTI,2026-05-02,Dra. Paula Menezes,diarreia e vômitos há 2 dias,hipertensão,dipirona,anlodipino;hidroclorotiazida;losartana,120,84,78,17,96,36.1
+265,Rodrigo Rocha Silva,48,M,116,178,O+,São Bernardo do Campo,Amil,Observação,2026-10-24,Dr. Renato Salles,"coriza, dor de garganta e febre baixa há 3 dias",,penicilina,,124,73,72,18,98,36.4
+266,Vinícius Barbosa Tavares,57,M,108,169,O-,Guarulhos,Particular,Enfermaria,2026-10-19,Dr. Marcos Vilela,dor e inchaço no tornozelo após torção,,,,118,83,64,18,96,36.8
+267,Helena Farias Lopes,68,F,87,169,AB+,Sorocaba,SUS,Observação,2026-07-05,Dra. Cíntia Borges,"febre, confusão mental e hipotensão",doença renal crônica;hipertensão,látex,anlodipino;enalapril;hidroclorotiazida;losartana,97,46,115,27,94,38.3
+268,Patrícia Dias Moreira,59,F,104,153,A+,Sorocaba,Particular,UTI,2026-03-28,Dra. Paula Menezes,dor torácica em aperto há 40 minutos,,,,122,97,80,21,95,36.4
+269,Igor Rocha Ribeiro,74,M,107,175,B-,Santos,Amil,Pronto-socorro,2026-02-12,Dr. Renato Salles,cefaleia e tontura com pressão muito elevada,hipertensão;obesidade,,anlodipino;hidroclorotiazida;losartana,194,127,90,16,98,36.8
+270,Fernanda Moreira Cardoso,39,F,82,161,AB+,Barueri,SulAmérica,Enfermaria,2026-03-13,Dra. Helena Prado,"poliúria, desidratação e hálito cetônico",diabetes tipo 1,,insulina glargina,98,63,111,32,98,36.7
+271,Paulo Teixeira Teixeira,77,M,95,186,B+,Barueri,Bradesco Saúde,UTI,2026-02-08,Dra. Paula Menezes,"tosse, febre e dor pleurítica",DPOC;diabetes tipo 2,AAS,formoterol/budesonida;metformina,110,77,108,28,89,39.1
+272,Renata Duarte Moreira,79,F,68,171,B+,Barueri,SulAmérica,Observação,2026-03-09,Dra. Paula Menezes,fraqueza muscular e palpitações,insuficiência cardíaca,sulfa,carvedilol;furosemida,132,76,63,16,95,36.2
+273,Natália Tavares Almeida,63,F,62,159,O-,Sorocaba,SulAmérica,UTI,2026-07-12,Dr. Renato Salles,desvio da face e fala arrastada,dislipidemia;fibrilação atrial,,sinvastatina;varfarina,173,97,76,19,98,36.1
+274,Helena Cardoso Teixeira,65,F,104,158,O-,Sorocaba,Amil,UTI,2026-01-16,Dra. Paula Menezes,"tosse noturna, chiado e dispneia",tabagismo,sulfa,,130,76,119,26,92,36.6
+275,Beatriz Gomes Barbosa,28,F,55,154,B-,Osasco,Bradesco Saúde,Pronto-socorro,2026-03-18,Dra. Cíntia Borges,"ardência ao urinar, polaciúria e dor lombar",litíase renal,,,120,71,103,18,95,38.5
+276,Hugo Dias Barbosa,75,M,82,185,O-,Campinas,Unimed,Enfermaria,2026-06-22,Dra. Cíntia Borges,"falta de ar, inchaço nas pernas e ganho de peso",hipertensão,sulfa,anlodipino;hidroclorotiazida;losartana,131,68,96,22,89,36.2
+277,Daniela Machado Araújo,59,F,61,166,B-,Barueri,SulAmérica,Enfermaria,2026-07-03,Dra. Helena Prado,"dor lombar após esforço, sem febre",obesidade,,,110,79,76,17,97,36.6
+278,Tatiane Machado Tavares,49,F,50,156,A+,Barueri,Particular,Observação,2026-05-18,Dr. Renato Salles,diarreia e vômitos há 2 dias,hipertensão,sulfa,anlodipino;hidroclorotiazida;losartana,130,76,87,16,96,36.9
+279,Gabriela Teixeira Campos,19,F,58,152,B+,São Bernardo do Campo,Bradesco Saúde,UTI,2026-05-25,Dra. Paula Menezes,"coriza, dor de garganta e febre baixa há 3 dias",,dipirona,,119,80,81,15,98,36.1
+280,Igor Silva Vieira,29,M,80,162,B+,Santos,Unimed,Enfermaria,2026-02-21,Dra. Cíntia Borges,dor e inchaço no tornozelo após torção,,,,118,69,76,18,96,37.0
+281,Daniel Lopes Gomes,77,M,70,187,O+,Guarulhos,Unimed,Observação,2026-01-07,Dra. Paula Menezes,"febre, confusão e taquipneia após infecção urinária",doença renal crônica;hipertensão,AAS,anlodipino;enalapril;hidroclorotiazida;losartana,83,51,126,29,91,39.5
+282,Eduarda Machado Silva,71,F,58,163,A+,Campinas,SulAmérica,Observação,2026-07-05,Dra. Cíntia Borges,dor torácica com sudorese irradiada para o braço esquerdo,hipertensão,,anlodipino;hidroclorotiazida;losartana,129,89,87,22,95,36.7
+283,Tatiane Xavier Araújo,65,F,75,174,A+,Campinas,Bradesco Saúde,Observação,2026-02-07,Dra. Paula Menezes,cefaleia e tontura com pressão muito elevada,hipertensão,sulfa,anlodipino;hidroclorotiazida;losartana,192,129,71,18,97,36.2
+284,Marcos Silva Cardoso,27,M,101,174,O+,Campinas,SulAmérica,Pronto-socorro,2026-10-05,Dra. Helena Prado,"poliúria, desidratação e hálito cetônico",diabetes tipo 1;diabetes tipo 2,AAS,insulina glargina;metformina,104,69,118,28,95,37.1
+285,Rafael Ribeiro Silva,51,M,101,170,A-,São Bernardo do Campo,Bradesco Saúde,Pronto-socorro,2026-07-14,Dra. Helena Prado,"tosse, febre e dor pleurítica",insuficiência cardíaca,dipirona,carvedilol;furosemida,118,65,104,26,93,38.1
+286,Patrícia Pinto Vieira,63,F,56,173,AB+,Campinas,SulAmérica,Observação,2026-09-07,Dr. Marcos Vilela,fraqueza muscular e palpitações,insuficiência cardíaca,AAS,carvedilol;furosemida,116,81,55,20,95,36.9
+287,Cláudia Araújo Nunes,53,F,67,168,A+,Santos,SulAmérica,UTI,2026-08-06,Dra. Helena Prado,desvio da face e fala arrastada,fibrilação atrial;hipertensão,,anlodipino;hidroclorotiazida;losartana;varfarina,152,113,85,20,97,37.1
+288,Vinícius Moreira Araújo,31,M,71,181,O+,Osasco,SulAmérica,Pronto-socorro,2026-08-19,Dr. Renato Salles,"tosse noturna, chiado e dispneia",tabagismo,,,114,80,110,29,95,36.7
+289,Eduarda Araújo Duarte,73,F,56,162,A+,Campinas,Bradesco Saúde,Pronto-socorro,2026-04-19,Dra. Helena Prado,"ardência ao urinar, polaciúria e dor lombar",litíase renal;diabetes tipo 2,látex,metformina,121,75,84,18,96,38.3
+290,Beatriz Tavares Teixeira,58,F,70,159,A-,Santos,SUS,UTI,2026-04-03,Dr. Renato Salles,"falta de ar, inchaço nas pernas e ganho de peso",fibrilação atrial;hipertensão,,anlodipino;hidroclorotiazida;losartana;varfarina,122,85,111,27,91,36.1
+291,Rodrigo Ferreira Dias,46,M,109,167,B-,Sorocaba,Particular,Pronto-socorro,2026-06-28,Dra. Paula Menezes,"dor lombar após esforço, sem febre",obesidade;tabagismo,látex,,133,80,66,15,97,36.7
+292,Daniela Rocha Duarte,58,F,100,167,A-,Santos,Bradesco Saúde,Enfermaria,2026-08-07,Dra. Paula Menezes,diarreia e vômitos há 2 dias,,,,121,71,69,18,98,36.2
+293,Tatiane Moreira Farias,31,F,73,173,B+,Santos,SulAmérica,Enfermaria,2026-04-13,Dra. Cíntia Borges,"coriza, dor de garganta e febre baixa há 3 dias",,,,120,80,75,16,97,36.9
+294,Eduarda Batista Tavares,47,F,74,152,B+,Campinas,Unimed,Pronto-socorro,2026-05-18,Dr. Renato Salles,dor e inchaço no tornozelo após torção,,,,114,72,84,17,96,36.9
+295,Rodrigo Nunes Teixeira,90,M,87,169,B-,Sorocaba,Amil,Pronto-socorro,2026-05-09,Dra. Helena Prado,"febre alta, calafrios e hipotensão",doença renal crônica;câncer em quimioterapia,,enalapril,91,58,123,23,89,38.4
+296,Marcos Machado Teixeira,52,M,116,169,A+,Osasco,Unimed,Pronto-socorro,2026-09-06,Dra. Helena Prado,dor torácica e aperto no peito após esforço,tabagismo;hipertensão,penicilina,anlodipino;hidroclorotiazida;losartana,133,78,73,22,94,36.6
+297,Larissa Lopes Lopes,70,F,95,172,O+,Santos,Amil,Observação,2026-09-22,Dra. Cíntia Borges,cefaleia e tontura com pressão muito elevada,hipertensão,AAS,anlodipino;hidroclorotiazida;losartana,190,119,73,19,99,36.0
+298,Fábio Ferreira Farias,30,M,88,183,O+,Campinas,SulAmérica,Enfermaria,2026-10-04,Dr. Marcos Vilela,"vômitos, dor abdominal e hálito cetônico",diabetes tipo 2,,metformina,101,57,118,26,96,37.5
+299,Leonardo Duarte Almeida,61,M,89,185,AB+,Osasco,Bradesco Saúde,Pronto-socorro,2026-06-02,Dra. Cíntia Borges,"tosse, febre e dor pleurítica",DPOC;diabetes tipo 2,dipirona,formoterol/budesonida;metformina,111,63,110,30,89,38.3
+300,Marcos Xavier Machado,63,M,72,188,B-,Campinas,Unimed,Observação,2026-02-22,Dr. Marcos Vilela,fraqueza e palpitações,insuficiência cardíaca;diabetes tipo 2,dipirona,carvedilol;furosemida;metformina,132,79,61,18,93,36.9
