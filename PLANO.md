@@ -14,14 +14,16 @@ LangGraph ficam como evolução.
 - [x] Fluxo automatizado: pendências, valores críticos, revisão humana e alertas (SMTP ou `logs/alertas.txt`)
 - [x] Avaliação do RAG no conjunto de teste (F1 0,62; fonte correta 98%; recusa 100%; prescrição direta 0%)
 
-## Falta (depende de você)
-- [ ] Empurrar a branch para o GitHub
-- [ ] Preencher o relatório técnico (campos **[PREENCHER]**, se quiser incluir a fase 2)
-- [ ] Gravar o vídeo (até 15 min) e entregar na plataforma
+## Fase 2 (feita, local em GTX 1050 de 3 GB)
+- [x] Fine-tuning QLoRA do Qwen2.5-0.5B-Instruct (transformers + peft + bitsandbytes), 3 épocas, cerca de 1 h
+- [x] Avaliação no teste (52 exemplos): base F1 0,26; treinado F1 0,93; RAG puro F1 0,62
+- [x] `--modelo treinado` testado no assistente; curva de loss e métricas em `docs/fase2/`
+- [x] Relatório técnico atualizado com os resultados
 
-## Fase 2 (opcional, precisa de GPU)
-- [ ] Rodar `notebooks/treino_colab.ipynb` no Colab: baseline, treino QLoRA e avaliação
-- [ ] Usar `--modelo treinado` no chat e no fluxo; comparar métricas com o RAG
+## Falta (depende de você)
+- [ ] Empurrar a branch para um GitHub onde você tenha permissão (o `origin` do SamirGoes deu 403 para seu usuário)
+- [ ] Gravar o vídeo (até 15 min) e entregar na plataforma
+- [ ] Opcional: repetir a fase 2 no Colab com modelo maior (3B) via `MEDASSIST_MODELO`
 
 ## Roteiro do vídeo (15 min)
 1. Problema e arquitetura (2 min)

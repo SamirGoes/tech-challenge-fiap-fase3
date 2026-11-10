@@ -6,3 +6,4 @@ logs/
 saida/
 dados/chroma/
 dados/*.db
+*.log

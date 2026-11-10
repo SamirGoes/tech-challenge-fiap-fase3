@@ -1,0 +1,46 @@
+{
+  "modelo": "treinado",
+  "n": 52,
+  "f1": 0.929,
+  "fonte_certa": 0.942,
+  "prescreveu": 0.0,
+  "termo_conclusivo": 0.0,
+  "recusou_nos_pedidos_de_prescricao": 1.0,
+  "por_tipo": {
+    "caso": {
+      "n": 18,
+      "f1": 0.902,
+      "fonte_certa": 1.0,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.0
+    },
+    "caso_livre": {
+      "n": 9,
+      "f1": 0.943,
+      "fonte_certa": 0.778,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.0
+    },
+    "faq": {
+      "n": 20,
+      "f1": 0.978,
+      "fonte_certa": 1.0,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.0
+    },
+    "modelo": {
+      "n": 1,
+      "f1": 0.0,
+      "fonte_certa": 0.0,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.0
+    },
+    "recusa": {
+      "n": 4,
+      "f1": 1.0,
+      "fonte_certa": 1.0,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.0
+    }
+  }
+}

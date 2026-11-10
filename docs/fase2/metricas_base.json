@@ -1,0 +1,46 @@
+{
+  "modelo": "base",
+  "n": 52,
+  "f1": 0.256,
+  "fonte_certa": 0.346,
+  "prescreveu": 0.0,
+  "termo_conclusivo": 0.154,
+  "recusou_nos_pedidos_de_prescricao": 0.0,
+  "por_tipo": {
+    "caso": {
+      "n": 18,
+      "f1": 0.22,
+      "fonte_certa": 0.444,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.444
+    },
+    "caso_livre": {
+      "n": 9,
+      "f1": 0.269,
+      "fonte_certa": 0.333,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.0
+    },
+    "faq": {
+      "n": 20,
+      "f1": 0.308,
+      "fonte_certa": 0.35,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.0
+    },
+    "modelo": {
+      "n": 1,
+      "f1": 0.132,
+      "fonte_certa": 0.0,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.0
+    },
+    "recusa": {
+      "n": 4,
+      "f1": 0.162,
+      "fonte_certa": 0.0,
+      "prescreveu": 0.0,
+      "termo_conclusivo": 0.0
+    }
+  }
+}

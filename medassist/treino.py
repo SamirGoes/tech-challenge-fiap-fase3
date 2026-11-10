@@ -1,10 +1,11 @@
-"""FASE 2 (opcional): fine-tuning com Unsloth (QLoRA em 4 bits, Google Colab com GPU T4), uso do modelo
-treinado no assistente e avaliação no conjunto de teste. O assistente funciona sem nada disto (RAG puro).
+"""FASE 2 (opcional): fine-tuning QLoRA (transformers + peft + bitsandbytes, 4 bits), uso do modelo treinado
+no assistente e avaliação no conjunto de teste. O assistente funciona sem nada disto (RAG puro).
 
     python -m medassist.treino --epocas 3
 
-Modelo base com até 8B de parâmetros (padrão: Qwen2.5-3B-Instruct em 4 bits). Só os tokens da resposta
-entram na loss. Saídas: adaptador LoRA em saida/lora-medassist e historico.json (curva de loss).
+Roda em GPU pequena (testado numa GTX 1050 de 3 GB) e no Colab (T4). Modelo base com até 8B de parâmetros
+(padrão: Qwen2.5-0.5B-Instruct; para outro, defina MEDASSIST_MODELO). Só os tokens da resposta entram na loss.
+Saídas: adaptador LoRA em saida/lora-medassist e historico.json (curva de loss).
 """
 
 import argparse
@@ -20,7 +21,7 @@ from medassist import dados
 from medassist.assistente import FONTE, PRESCRICAO_DIRETA, TERMO_CONCLUSIVO, ModeloRAG
 from medassist.dados import SYSTEM_PROMPT
 
-MODELO_BASE = os.environ.get("MEDASSIST_MODELO", "unsloth/Qwen2.5-3B-Instruct-bnb-4bit")
+MODELO_BASE = os.environ.get("MEDASSIST_MODELO", "Qwen/Qwen2.5-0.5B-Instruct")
 ADAPTADOR = Path(os.environ.get("MEDASSIST_ADAPTADOR", "saida/lora-medassist"))
 
 
@@ -28,33 +29,61 @@ def ler(caminho):
     return [json.loads(l) for l in Path(caminho).read_text(encoding="utf-8").splitlines() if l]
 
 
-def treinar(epocas=3, max_len=2048, modelo_base=None):
-    from unsloth import FastLanguageModel, is_bfloat16_supported  # importar antes de transformers/trl
-    from unsloth.chat_templates import train_on_responses_only
-    from datasets import Dataset
-    from trl import SFTConfig, SFTTrainer
+def carregar_4bits(nome):
+    """Carrega o modelo base quantizado em 4 bits (cabe em GPUs pequenas)."""
+    import torch
+    from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
-    modelo, tokenizer = FastLanguageModel.from_pretrained(model_name=modelo_base or MODELO_BASE,
-                                                          max_seq_length=max_len, load_in_4bit=True)
-    modelo = FastLanguageModel.get_peft_model(
-        modelo, r=16, lora_alpha=32, lora_dropout=0, bias="none", use_gradient_checkpointing="unsloth",
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"], random_state=42)
+    config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_use_double_quant=True,
+                                bnb_4bit_compute_dtype=torch.float16)
+    tokenizer = AutoTokenizer.from_pretrained(nome)
+    modelo = AutoModelForCausalLM.from_pretrained(nome, quantization_config=config, device_map={"": 0})
+    return modelo, tokenizer
+
+
+def treinar(epocas=3, max_len=1024, modelo_base=None):
+    import torch
+    from datasets import Dataset
+    from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+    from transformers import Trainer, TrainingArguments
+
+    nome = modelo_base or MODELO_BASE
+    modelo, tokenizer = carregar_4bits(nome)
+    modelo = prepare_model_for_kbit_training(modelo, use_gradient_checkpointing=True)
+    modelo = get_peft_model(modelo, LoraConfig(
+        r=16, lora_alpha=32, lora_dropout=0.0, bias="none", task_type="CAUSAL_LM",
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]))
     modelo.print_trainable_parameters()
 
-    def carregar(nome):
-        textos = [tokenizer.apply_chat_template(ex["messages"], tokenize=False) for ex in ler(dados.PASTA / f"{nome}.jsonl")]
-        return Dataset.from_dict({"text": textos})
+    def tokenizar(ex):
+        """Só a resposta do assistente entra na loss (o resto vira -100)."""
+        prompt = tokenizer.apply_chat_template(ex["messages"][:-1], tokenize=False, add_generation_prompt=True)
+        resposta = ex["messages"][-1]["content"] + tokenizer.eos_token + "\n"  # eos do Qwen: <|im_end|>
+        p = tokenizer(prompt, add_special_tokens=False)["input_ids"]
+        r = tokenizer(resposta, add_special_tokens=False)["input_ids"]
+        ids = (p + r)[:max_len]
+        labels = ([-100] * len(p) + r)[:max_len]
+        return {"input_ids": ids, "labels": labels}
 
-    trainer = SFTTrainer(
-        model=modelo, tokenizer=tokenizer, train_dataset=carregar("train"), eval_dataset=carregar("val"),
-        args=SFTConfig(output_dir=str(ADAPTADOR / "checkpoints"), dataset_text_field="text", max_seq_length=max_len,
-                       per_device_train_batch_size=2, gradient_accumulation_steps=4, num_train_epochs=epocas,
-                       learning_rate=2e-4, lr_scheduler_type="cosine", warmup_ratio=0.05, optim="adamw_8bit",
-                       fp16=not is_bfloat16_supported(), bf16=is_bfloat16_supported(), logging_steps=5,
-                       eval_strategy="epoch", save_strategy="no", report_to="none", seed=42))
-    # Qwen usa o formato ChatML; para outro modelo, troque os dois marcadores abaixo.
-    trainer = train_on_responses_only(trainer, instruction_part="<|im_start|>user\n",
-                                      response_part="<|im_start|>assistant\n")
+    def carregar(nome_arquivo):
+        return Dataset.from_list([tokenizar(ex) for ex in ler(dados.PASTA / f"{nome_arquivo}.jsonl")])
+
+    def agrupar(lote):
+        tamanho = max(len(x["input_ids"]) for x in lote)
+        pad = tokenizer.pad_token_id
+        ids = [x["input_ids"] + [pad] * (tamanho - len(x["input_ids"])) for x in lote]
+        lab = [x["labels"] + [-100] * (tamanho - len(x["labels"])) for x in lote]
+        mascara = [[1] * len(x["input_ids"]) + [0] * (tamanho - len(x["input_ids"])) for x in lote]
+        return {"input_ids": torch.tensor(ids), "labels": torch.tensor(lab), "attention_mask": torch.tensor(mascara)}
+
+    trainer = Trainer(
+        model=modelo, train_dataset=carregar("train"), eval_dataset=carregar("val"), data_collator=agrupar,
+        args=TrainingArguments(output_dir=str(ADAPTADOR / "checkpoints"), per_device_train_batch_size=1,
+                               per_device_eval_batch_size=1, gradient_accumulation_steps=8,
+                               num_train_epochs=epocas, learning_rate=2e-4, lr_scheduler_type="cosine",
+                               warmup_steps=0.05, optim="paged_adamw_8bit", fp16=True, logging_steps=5,
+                               eval_strategy="epoch", save_strategy="no", report_to="none", seed=42,
+                               gradient_checkpointing=True, remove_unused_columns=False))
     trainer.train()
     modelo.save_pretrained(ADAPTADOR)
     tokenizer.save_pretrained(ADAPTADOR)
@@ -76,25 +105,23 @@ class ModeloTreinado(LLM):
 
     def _call(self, prompt, stop=None, run_manager=None, **kwargs):
         import torch
-        from transformers import AutoModelForCausalLM, AutoTokenizer
 
         if self._modelo is None:
             base = MODELO_BASE
             if self.usar_adaptador:
                 base = json.loads((ADAPTADOR / "adapter_config.json").read_text())["base_model_name_or_path"]
-            self._tokenizer = AutoTokenizer.from_pretrained(base)
-            modelo = AutoModelForCausalLM.from_pretrained(base, device_map="auto", torch_dtype=torch.float16)
+            modelo, self._tokenizer = carregar_4bits(base)
             if self.usar_adaptador:
                 from peft import PeftModel
                 modelo = PeftModel.from_pretrained(modelo, str(ADAPTADOR))
             self._modelo = modelo.eval()
         mensagens = [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt}]
-        entrada = self._tokenizer.apply_chat_template(mensagens, add_generation_prompt=True, return_tensors="pt")
-        entrada = entrada.to(self._modelo.device)
+        texto = self._tokenizer.apply_chat_template(mensagens, tokenize=False, add_generation_prompt=True)
+        entrada = self._tokenizer(texto, return_tensors="pt", add_special_tokens=False).to(self._modelo.device)
         with torch.no_grad():
-            saida = self._modelo.generate(entrada, max_new_tokens=384, do_sample=False,
+            saida = self._modelo.generate(**entrada, max_new_tokens=300, do_sample=False,
                                           pad_token_id=self._tokenizer.eos_token_id)
-        return self._tokenizer.decode(saida[0, entrada.shape[1]:], skip_special_tokens=True).strip()
+        return self._tokenizer.decode(saida[0, entrada["input_ids"].shape[1]:], skip_special_tokens=True).strip()
 
 
 _CACHE = {}

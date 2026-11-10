@@ -1,8 +1,8 @@
-# Fine-tuning no Google Colab (GPU T4). O notebook instala o Unsloth; aqui ficam as dependências do projeto.
+# Fase 2 (opcional): fine-tuning QLoRA. Precisa de uma GPU NVIDIA e do PyTorch com CUDA
+# (ex.: pip install torch --index-url https://download.pytorch.org/whl/cu126).
 -r requirements.txt
-unsloth
-trl
-datasets
+transformers
 peft
+datasets
 accelerate
 bitsandbytes

@@ -148,12 +148,25 @@ sempre saem; a sugestão da IA só vai no alerta se não exigir revisão ou se o
 
 ## Fase 2 (opcional): LLM com fine-tuning
 
-Abra `notebooks/treino_colab.ipynb` no Colab com GPU T4. Usa **Unsloth** com **Qwen2.5-3B-Instruct em 4 bits**
-(QLoRA, só os tokens da resposta entram na loss) e o mesmo prompt do assistente. Depois do treino:
+Usa **Qwen2.5-0.5B-Instruct em 4 bits** com **QLoRA** (`transformers` + `peft` + `bitsandbytes`; só os tokens da
+resposta entram na loss) e o mesmo prompt do assistente. Roda numa GPU NVIDIA pequena (testado numa GTX 1050 de 3 GB,
+cerca de 1 h de treino) ou no Colab (`notebooks/treino_colab.ipynb`). Precisa do PyTorch com CUDA.
 
 ```bash
+pip install torch --index-url https://download.pytorch.org/whl/cu126
 pip install -r requirements-treino.txt
-python -m medassist avaliar --modelo base
+python -m medassist.treino --epocas 3          # adaptador em saida/lora-medassist
+python -m medassist avaliar --modelo base      # baseline (lento em GPU pequena, cerca de 45 min)
 python -m medassist avaliar --modelo treinado
 python -m medassist chat --modelo treinado
 ```
+
+Para outro modelo base: `MEDASSIST_MODELO=Qwen/Qwen2.5-3B-Instruct` (precisa de mais VRAM).
+
+| Modelo (52 exemplos de teste) | F1 | Fonte correta | Recusa correta | Prescrição direta |
+|---|---|---|---|---|
+| RAG sem LLM | 0,62 | 98% | 100% | 0% |
+| Qwen2.5-0.5B base | 0,26 | 35% | 0% | 0% |
+| Qwen2.5-0.5B + LoRA | 0,93 | 94% | 100% | 0% |
+
+O F1 alto do modelo treinado reflete principalmente aderência ao formato do dataset sintético, não correção clínica.
