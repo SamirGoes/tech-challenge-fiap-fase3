@@ -8,3 +8,6 @@ dados/chroma/
 dados/*.db
 *.log
 notebooks/tech-challenge-fiap-fase3/
+docs/roteiro_apresentacao.md
+docs/demo/
+PLANO.md
