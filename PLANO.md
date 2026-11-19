@@ -26,6 +26,8 @@ LangGraph ficam como evolução.
 - [ ] Opcional: repetir a fase 2 no Colab com modelo maior (3B) via `MEDASSIST_MODELO`
 
 ## Roteiro do vídeo (15 min)
+Versão detalhada para 4 pessoas, com falas, comandos e perguntas prováveis: `docs/roteiro_apresentacao.md`.
+
 1. Problema e arquitetura (2 min)
 2. Dados: pacientes CSV, protocolos, anonimização (2 min)
 3. RAG mutável: adicionar um protocolo novo e perguntar sobre ele (2 min)
