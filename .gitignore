@@ -7,3 +7,4 @@ saida/
 dados/chroma/
 dados/*.db
 *.log
+notebooks/tech-challenge-fiap-fase3/
