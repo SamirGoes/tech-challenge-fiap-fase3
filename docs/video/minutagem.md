@@ -6,9 +6,29 @@ Tela: notebook `notebooks/treino_colab.ipynb` no Colab, com GPU T4, gravado em u
 As durações das células vêm da execução de teste na T4 em 22/11/2026, que rodou do início ao fim sem erros.
 A duração de cada fala é uma estimativa (cerca de 2,5 palavras por segundo, mais as pausas `<break>`). Depois de gerar o áudio, ajuste os inícios pela duração real de cada bloco.
 
+## Blocos do roteiro
+`roteiro_elevenlabs.txt` contém **só o texto falado**, sem títulos, para o ElevenLabs não ler "B09". Cada parágrafo é um bloco, na ordem abaixo.
+
+| Bloco | Assunto | Começa com |
+|---|---|---|
+| B01 | Abertura | “Oi, pessoal! Eu sou o Samir e,…” |
+| B02 | Problema e regras | “Então, qual é o problema? Um hospital…” |
+| B03 | Arquitetura | “Bom, esse aqui é o caminho de…” |
+| B04 | Ambiente e dados | “Vamos lá. No Colab, a primeira célula…” |
+| B05 | Fine-tuning | “Agora, o fine-tuning. A gente partiu do…” |
+| B06 | Loss e métricas | “No gráfico dá pra ver a loss…” |
+| B07 | Carregar o modelo e RAG | “Agora sim, o assistente funcionando, com o…” |
+| B08 | Pergunta 1 (sepse, paciente 1) | “Primeira pergunta, pra paciente um: o que…” |
+| B09 | Pergunta 2 (prescrição) | “Agora, vamos pedir uma prescrição: prescreva antibiótico…” |
+| B10 | Pergunta 3 (AVC, sem paciente) e log | “Agora sem paciente: qual a janela de…” |
+| B11 | RAG mutável | “Outra coisa: a base de conhecimento é…” |
+| B12 | Fluxo automatizado | “Além das perguntas, tem o fluxo automático…” |
+| B13 | Auditoria e testes | “Cada requisição tem um identificador único, o…” |
+| B14 | Limitações e conclusão | “Enquanto os testes rodam... as limitações. Os…” |
+
 ## Como gerar o áudio
 1. No ElevenLabs, use a sua voz clonada com o modelo multilíngue (Multilingual v2 ou v3), em português.
-2. **Gere um clipe por bloco** (B01 a B14). Copie só o texto, sem a linha `### Bxx`. Isso facilita encaixar cada fala no momento certo do vídeo, e se uma frase sair ruim você só refaz aquele bloco.
+2. **Gere um clipe por bloco** (B01 a B14): cada parágrafo do arquivo é um bloco. Isso facilita encaixar cada fala no momento certo do vídeo, e se uma frase sair ruim você só refaz aquele bloco.
 3. Os `<break time="…" />` viram pausas. Se o seu modelo não aceitar a tag, troque por reticências ou ponto final.
 4. Pronúncias para conferir no primeiro teste:
    - "Qwen": se sair errado, escreva "Kuen".
