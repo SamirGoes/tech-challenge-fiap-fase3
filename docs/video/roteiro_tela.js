@@ -13,8 +13,8 @@
 (() => {
   if (window.medassistDemo) window.medassistDemo.remover();
 
-  const DUR = { B01: 19, B02: 39, B03: 34, B04: 45, B05: 34, B06: 49, B07: 17,
-                B08: 23, B09: 12, B10: 25, B11: 33, B12: 44, B13: 22, B14: 39 };
+  const DUR = { B01: 21, B02: 41, B03: 42, B04: 46, B05: 38, B06: 52, B07: 18,
+                B08: 24, B09: 13, B10: 26, B11: 37, B12: 46, B13: 24, B14: 43 };
   const PAUSA_ENTRE_BLOCOS = 1;   // segundos de silêncio entre um clipe e o próximo
   const VELOCIDADE = 1;           // 0.5 = tudo duas vezes mais rápido (só para ensaiar)
 
@@ -31,12 +31,12 @@
     B07: [[0, 'ir', '4. Assistente'], [5, 'ir', 'criar_assistente(']],
     B08: [[0, 'rodar', '# Pergunta 1']],
     B09: [[0, 'rodar', '# Pergunta 2']],
-    B10: [[0, 'rodar', '# Pergunta 3'], [15, 'rodar', '# /log']],
+    B10: [[0, 'rodar', '# Pergunta 3'], [16, 'rodar', '# /log']],
     B11: [[0, 'ir', '5. RAG'], [3, 'rodar', 'rag buscar "risco'], [8, 'rodar', 'rag adicionar'],
-          [17, 'rodar', 'perguntar "Como'], [26, 'rodar', 'rag remover']],
-    B12: [[0, 'ir', '6. Fluxo'], [2, 'rodar', 'executar_fluxo'], [36, 'rodar', 'cat logs/alertas']],
+          [17, 'rodar', 'perguntar "Como'], [27, 'rodar', 'rag remover']],
+    B12: [[0, 'ir', '6. Fluxo'], [2, 'rodar', 'executar_fluxo'], [39, 'rodar', 'cat logs/alertas']],
     B13: [[0, 'ir', '7. Logs'], [1, 'rodar', 'medassist auditoria'], [5, 'rodar', 'linha do tempo da req'],
-          [16, 'rodar', 'pytest -q']],
+          [17, 'rodar', 'pytest -q']],
     B14: [],
   };
 

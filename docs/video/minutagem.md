@@ -1,4 +1,4 @@
-# Minutagem do vídeo MedAssist (~7 min 30 s)
+# Minutagem do vídeo MedAssist (~8 min)
 
 Narração: **uma voz** (Samir, gerada no ElevenLabs) a partir de `roteiro_elevenlabs.txt`.
 Tela: notebook `notebooks/treino_colab.ipynb` no Colab, com GPU T4, gravado em um take e editado por cima do áudio.
@@ -46,22 +46,22 @@ A tabela abaixo é o que o script faz em cada momento. Ela serve também para co
 
 | Bloco | Início–fim (fala) | Tela | Ação do operador | Tempo da célula |
 |---|---|---|---|---|
-| B01 Abertura | 0:00–0:19 | Topo do notebook (título e tabela) | — | — |
-| B02 Problema e regras | 0:20–0:58 | Mesma tela. Em "nunca prescreve", destacar a última linha do markdown | Rolar devagar | — |
-| B03 Arquitetura | 0:59–1:33 | Célula **Arquitetura** do notebook (diagrama) | Rolar até o diagrama | — |
-| B04 Ambiente e dados | 1:34–2:19 | Seções 1 e 2 já executadas: clone, saída do `preparar` (contagens), tabela de pacientes, PROT-001 | Rolar acompanhando a fala: "300 pacientes" → tabela; "357 exemplos" → JSON; "anonimização" → bloco `anonimizacoes`; "protocolos" → PROT-001 | já executada |
-| B05 Fine-tuning | 2:20–2:54 | Saída do treino: linha `trainable params: 8,798,208 … 1.7497`, depois as linhas de loss e "Adaptador salvo" | Rolar dentro da saída | já executada |
-| B06 Loss e métricas | 2:55–3:43 | Gráfico da loss, depois a **tabela de métricas** (RAG 0,615/98%/100%; base 0,220/23%/0%; treinado 0,930/94%/100%) | Rolar até o gráfico; em "Depois avaliamos", ir para a tabela | já executada |
-| B07 Modelo e RAG | 3:44–4:01 | Célula "carregar modelo", com a saída `Modelo treinado carregado: qwen-lora` | — | já executada |
-| B08 Pergunta 1 | 4:02–4:25 | Célula "Pergunta 1" | **Rodar no início do bloco.** A resposta aparece cerca de 9 s depois, durante a pausa de 1,5 s e a frase sobre o log | 8,6 s |
-| B09 Pergunta 2 | 4:26–4:38 | Célula "Pergunta 2" | **Rodar no início do bloco** | 6,6 s |
-| B10 Pergunta 3 + log | 4:39–5:04 | Célula "Pergunta 3", depois a célula `/log` | **Rodar a Pergunta 3 no início**; em "E aqui está o log", rodar a célula `/log` (linha `4. resposta 8116 ms`) | 9,7 s + 1,5 s |
-| B11 RAG mutável | 5:05–5:38 | Seção 5 | Em "Se buscamos": rodar `rag buscar` (4,5 s). Em "Agora adicionamos": rodar adicionar + buscar (9,8 s). Em "Perguntando": rodar `perguntar` (4,8 s). Em "E podemos removê-lo": rodar remover + listar (8,6 s) | 4,5 / 9,8 / 4,8 / 8,6 s |
-| B12 Fluxo | 5:39–6:23 | Seção 6 | **Rodar a célula do fluxo no início do bloco** (cerca de 19 s; a fala cobre esse tempo). Em "Eles ficam neste arquivo": rodar `cat logs/alertas.txt` | 18,8 s + 2,7 s |
-| B13 Auditoria e testes | 6:24–6:46 | Seção 7 | Em "Cada requisição": rodar `auditoria` (5,7 s). Em "Esta é a linha do tempo": rodar a linha do tempo (1,8 s). Em "Por fim, os dezessete testes": **rodar o pytest** | 5,7 / 1,8 s; pytest 45 s |
-| B14 Limitações e conclusão | 6:47–7:26 | Célula do pytest rodando, até aparecer `17 passed` | Esperar. O `17 passed` aparece por volta de 7:10, antes de "E os dezessete testes passaram" | (pytest termina) |
+| B01 Abertura | 0:00–0:21 | Topo do notebook (título e tabela) | — | — |
+| B02 Problema e regras | 0:22–1:03 | Mesma tela. Em "nunca prescreve", destacar a última linha do markdown | Rolar devagar | — |
+| B03 Arquitetura | 1:04–1:46 | Célula **Arquitetura** do notebook (diagrama) | Rolar até o diagrama | — |
+| B04 Ambiente e dados | 1:47–2:33 | Seções 1 e 2 já executadas: clone, saída do `preparar` (contagens), tabela de pacientes, PROT-001 | Rolar acompanhando a fala: "300 pacientes" → tabela; "357 exemplos" → JSON; "anonimização" → bloco `anonimizacoes`; "protocolos" → PROT-001 | já executada |
+| B05 Fine-tuning | 2:34–3:12 | Saída do treino: linha `trainable params: 8,798,208 … 1.7497`, depois as linhas de loss e "Adaptador salvo" | Rolar dentro da saída | já executada |
+| B06 Loss e métricas | 3:13–4:05 | Gráfico da loss, depois a **tabela de métricas** (RAG 0,615/98%/100%; base 0,220/23%/0%; treinado 0,930/94%/100%) | Rolar até o gráfico; em "Depois avaliamos", ir para a tabela | já executada |
+| B07 Modelo e RAG | 4:06–4:24 | Célula "carregar modelo", com a saída `Modelo treinado carregado: qwen-lora` | — | já executada |
+| B08 Pergunta 1 | 4:25–4:49 | Célula "Pergunta 1" | **Rodar no início do bloco.** A resposta aparece cerca de 9 s depois, durante a pausa de 1,5 s e a frase sobre o log | 8,6 s |
+| B09 Pergunta 2 | 4:50–5:03 | Célula "Pergunta 2" | **Rodar no início do bloco** | 6,6 s |
+| B10 Pergunta 3 + log | 5:04–5:30 | Célula "Pergunta 3", depois a célula `/log` | **Rodar a Pergunta 3 no início**; em "E aqui está o log", rodar a célula `/log` (linha `4. resposta 8116 ms`) | 9,7 s + 1,5 s |
+| B11 RAG mutável | 5:31–6:08 | Seção 5 | Em "Se eu busco": rodar `rag buscar` (4,5 s). Em "Aí eu adiciono": rodar adicionar + buscar (9,8 s). Em "Se eu pergunto": rodar `perguntar` (4,8 s). Em "E dá pra remover": rodar remover + listar (8,6 s) | 4,5 / 9,8 / 4,8 / 8,6 s |
+| B12 Fluxo | 6:09–6:55 | Seção 6 | **Rodar a célula do fluxo no início do bloco** (cerca de 19 s; a fala cobre esse tempo). Em "Eles ficam nesse arquivo": rodar `cat logs/alertas.txt` | 18,8 s + 2,7 s |
+| B13 Auditoria e testes | 6:56–7:20 | Seção 7 | Em "Cada requisição": rodar `auditoria` (5,7 s). Em "Essa aqui é a linha do tempo": rodar a linha do tempo (1,8 s). Em "E, por fim, os dezessete testes": **rodar o pytest** | 5,7 / 1,8 s; pytest 45 s |
+| B14 Limitações e conclusão | 7:21–8:04 | Célula do pytest rodando, até aparecer `17 passed` | Esperar. O `17 passed` aparece por volta de 7:58, antes de "E os dezessete testes passaram" | (pytest termina) |
 
-**Duração total estimada: cerca de 7 min 30 s**, contando 1 s entre blocos. Com a margem de edição, fica entre 8 e 9 min, bem abaixo dos 15 min de limite.
+**Duração total estimada: cerca de 8 min**, contando 1 s entre blocos. Com a margem de edição, fica entre 8 min 30 s e 9 min 30 s, bem abaixo dos 15 min de limite.
 
 ## Dicas de edição
 - Se uma célula terminar antes da fala, mantenha a tela parada. Se terminar depois (por exemplo, o pytest), acelere o trecho de espera em 2x ou corte.
