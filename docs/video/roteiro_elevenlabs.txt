@@ -1,0 +1,41 @@
+### B01 · Abertura
+Olá! Eu sou o Samir. Junto com [NOME 2] e [NOME 3], do grupo [NOME DO GRUPO], vou apresentar o MedAssist, o nosso Tech Challenge da Fase 3. <break time="0.6s" /> Tudo o que vocês vão ver roda neste notebook do Google Colab, do zero, numa GPU T4 gratuita.
+
+### B02 · Problema e regras
+Um hospital quer um assistente virtual para os médicos. O médico faz uma pergunta, por exemplo: o que fazer na primeira hora de uma sepse? E o assistente responde com base nos protocolos do hospital e nos dados do paciente. <break time="0.5s" /> Além disso, existe um fluxo automático, que verifica exames pendentes, identifica valores críticos e avisa a equipe. <break time="0.5s" /> Uma regra é inegociável: o assistente nunca prescreve. Ele só apoia a decisão, sempre cita a fonte e, quando há risco, pede a validação de um médico. <break time="0.4s" /> E todos os dados são fictícios, gerados por nós.
+
+### B03 · Arquitetura
+Este é o caminho de uma pergunta. <break time="0.4s" /> Primeiro, um guardrail de entrada remove dados pessoais e marca pedidos de prescrição. Depois buscamos o prontuário do paciente no banco SQLite e, logo depois, os trechos mais parecidos dos protocolos, na base vetorial. <break time="0.3s" /> Com isso, a LLM monta a resposta. Um guardrail de saída confere se não há prescrição, exige a fonte e acrescenta um aviso. <break time="0.4s" /> Cada etapa é uma peça do LangChain, encaixada em sequência, e todas ficam registradas num log de auditoria.
+
+### B04 · Ambiente e dados
+No Colab, a primeira célula clona o repositório e instala as dependências. <break time="0.5s" /> Em seguida, o comando preparar gera trezentos pacientes fictícios, com exames e sinais vitais, e carrega tudo num banco SQLite. <break time="0.4s" /> Ele também cria o dataset de treino: trezentos e cinquenta e sete exemplos de perguntas e respostas, divididos em duzentos e setenta para treino, trinta e cinco para validação e cinquenta e dois para teste. <break time="0.4s" /> Antes disso, os dados passam por anonimização, com nome, CPF, telefone e datas trocados por marcadores, por remoção de duplicados e por curadoria. <break time="0.5s" /> O conhecimento do hospital está em dez protocolos, como este de sepse, indexados na base vetorial Chroma.
+
+### B05 · Fine-tuning
+Agora o fine-tuning. A gente partiu do Qwen dois ponto cinco, com meio bilhão de parâmetros, bem abaixo do limite de oito bilhões do desafio. <break time="0.4s" /> Usamos a técnica Q-LoRA: o modelo é carregado em quatro bits, e só treinamos pequenas matrizes adaptadoras. São oito vírgula oito milhões de parâmetros, um vírgula setenta e cinco por cento do total. <break time="0.4s" /> E só a resposta do assistente entra no cálculo do erro. <break time="0.5s" /> Aqui na T4, as três épocas de treino levaram cerca de sete minutos.
+
+### B06 · Loss e métricas
+No gráfico, a loss de treino cai de quase um para perto de zero, e a de validação acompanha. <break time="0.5s" /> Depois avaliamos nos cinquenta e dois exemplos de teste, que o modelo nunca viu. <break time="0.4s" /> O Qwen sem treino tirou F1 de zero vírgula vinte e dois, acertou a fonte em só vinte e três por cento das respostas e não recusou nenhum pedido de prescrição. <break time="0.4s" /> Depois do treino: F1 de zero vírgula noventa e três, noventa e quatro por cento de fonte correta e cem por cento de recusa. <break time="0.5s" /> Um ponto de honestidade: como os dados são sintéticos e parecidos entre si, esse F1 mostra que o modelo aprendeu o formato. Não prova que ele está clinicamente correto.
+
+### B07 · Carregar o modelo e RAG
+Agora o assistente funcionando, com o modelo treinado já carregado na GPU. <break time="0.4s" /> Ele usa RAG: antes de responder, busca nos protocolos os trechos mais relevantes. Assim a resposta cita a fonte, e o conhecimento pode ser atualizado sem treinar de novo.
+
+### B08 · Pergunta 1 (sepse, paciente 1)
+Primeira pergunta, para a paciente um: o que fazer na primeira hora da sepse? <break time="1.5s" /> As linhas numeradas são o log em tempo real: entrada, prontuário, RAG, resposta, guardrail e saída. <break time="0.5s" /> A resposta traz o protocolo da sepse e termina com a fonte: PROT zero zero um, primeira hora. Essa é a nossa explicabilidade.
+
+### B09 · Pergunta 2 (prescrição)
+Agora um pedido de prescrição: prescreva antibiótico para ele. <break time="1.5s" /> O assistente recusa, explica que a prescrição é do médico responsável e marca revisão humana como verdadeira.
+
+### B10 · Pergunta 3 (AVC, sem paciente) e log
+Sem paciente, perguntamos qual a janela de trombólise no AVC. <break time="1.5s" /> Ele responde só com o protocolo, citando o PROT zero zero sete: até quatro horas e meia do início dos sintomas. <break time="0.5s" /> E aqui está o log completo dessa resposta, etapa por etapa, com o tempo de cada uma. Quase todo o tempo é da geração da LLM.
+
+### B11 · RAG mutável
+A base de conhecimento também é mutável. <break time="0.4s" /> Se buscamos risco de queda, não há nada. <break time="1.2s" /> Agora adicionamos um protocolo novo, de prevenção de queda, e buscamos de novo: a busca já encontra os três trechos. <break time="1.0s" /> Perguntando como prevenir queda num paciente idoso, o assistente responde com o protocolo recém-adicionado e cita a fonte. <break time="1.0s" /> E podemos removê-lo. A base volta aos dez protocolos originais. Tudo isso sem alterar o código e sem treinar de novo.
+
+### B12 · Fluxo automatizado
+Além das perguntas, há um fluxo automático por paciente, também orquestrado com LangChain. Ele verifica, em paralelo, exames pendentes e valores críticos, pede uma sugestão à LLM e decide se precisa de revisão humana. <break time="1.5s" /> Para a paciente um, ele encontrou dois valores críticos, lactato de quatro vírgula seis e pressão sistólica de oitenta e oito, e um exame pendente, a hemocultura. <break time="0.4s" /> Por haver valor crítico, a sugestão exigiu revisão médica. Aqui simulamos o médico aprovando. <break time="0.5s" /> Aí os alertas foram emitidos: crítico para a equipe médica e informativo para a enfermagem. Eles ficam neste arquivo, e podem sair por e-mail se configurarmos um servidor.
+
+### B13 · Auditoria e testes
+Cada requisição tem um identificador único, o trace ID. <break time="0.4s" /> Esta é a linha do tempo do fluxo: treze etapas, do início aos alertas, com a revisão do médico registrada. Dá para auditar exatamente o que aconteceu e quais fontes foram usadas. <break time="0.6s" /> Por fim, os dezessete testes automatizados: dados, RAG, guardrails, fluxo e avaliação.
+
+### B14 · Limitações e conclusão
+Enquanto os testes rodam, as limitações. <break time="0.3s" /> Os dados são sintéticos, então as métricas medem o formato, não a qualidade clínica. O modelo é pequeno. E os guardrails são regras fixas, não um modelo de segurança. <break time="0.4s" /> Os próximos passos seriam modelos maiores, LangGraph para pausar o fluxo na revisão humana e dados reais anonimizados, com aprovação de um comitê de ética. <break time="0.6s" /> Resumindo: um assistente médico com LangChain, RAG mutável, LLM com fine-tuning, guardrails, fluxo com revisão humana, alertas e logs de ponta a ponta. <break time="0.5s" /> E os dezessete testes passaram. O código está no repositório. Obrigado!
