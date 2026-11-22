@@ -36,7 +36,7 @@
           [17, 'rodar', 'perguntar "Como'], [27, 'rodar', 'rag remover']],
     B12: [[0, 'ir', '6. Fluxo'], [2, 'rodar', 'executar_fluxo'], [39, 'rodar', 'cat logs/alertas']],
     B13: [[0, 'ir', '7. Logs'], [1, 'rodar', 'medassist auditoria'], [5, 'rodar', 'linha do tempo da req'],
-          [17, 'rodar', 'pytest -q']],
+          [14, 'rodar', 'pytest -q']],
     B14: [],
   };
 

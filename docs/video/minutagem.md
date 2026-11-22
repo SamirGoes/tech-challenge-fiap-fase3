@@ -36,6 +36,12 @@ A duração de cada fala é uma estimativa (cerca de 2,5 palavras por segundo, m
    - "PROT zero zero um": já está por extenso.
    - Os números já estão escritos por extenso no roteiro.
 
+## Ensaio completo (22/11/2026, runtime novo na T4)
+Preparação do zero em cerca de 26 min: instalação 25 s, dados 11 s, treino 7 min 20 s, avaliações 17 min 23 s e carga do modelo 46 s.
+Depois, o `roteiro_tela.js` rodou do B01 ao B14, iniciado pelo atalho Option+Shift+S. Resultado: 31 ações executadas, nenhuma célula não encontrada, nenhuma célula rodando por cima de outra, e todas terminaram antes da ação seguinte.
+Tempos ao vivo: perguntas 5,8 a 8 s, fluxo 17 s, pytest 44 s (17 passed).
+Diferença encontrada: o F1 do modelo treinado deu 0,906, contra 0,930 no primeiro treino. A fala virou "mais ou menos zero vírgula nove".
+
 ## Antes de gravar (fora do vídeo, cerca de 27 min)
 Siga `preparar-ambiente-colab.md`. Deixe **já executadas** as seções 1, 2 e 3 (ambiente, dados, treino, gráfico, avaliações e tabela) e as células `!rm -rf logs` e "carregar modelo" do começo da seção 4.
 
@@ -71,15 +77,15 @@ A tabela abaixo é o que o script faz em cada momento. Ela serve também para co
 | B03 Arquitetura | 1:04–1:46 | Célula **Arquitetura** do notebook (diagrama) | Rolar até o diagrama | — |
 | B04 Ambiente e dados | 1:47–2:33 | Seções 1 e 2 já executadas: clone, saída do `preparar` (contagens), tabela de pacientes, PROT-001 | Rolar acompanhando a fala: "300 pacientes" → tabela; "357 exemplos" → JSON; "anonimização" → bloco `anonimizacoes`; "protocolos" → PROT-001 | já executada |
 | B05 Fine-tuning | 2:34–3:12 | Saída do treino: linha `trainable params: 8,798,208 … 1.7497`, depois as linhas de loss e "Adaptador salvo" | Rolar dentro da saída | já executada |
-| B06 Loss e métricas | 3:13–4:05 | Gráfico da loss, depois a **tabela de métricas** (RAG 0,615/98%/100%; base 0,220/23%/0%; treinado 0,930/94%/100%) | Rolar até o gráfico; em "Depois avaliamos", ir para a tabela | já executada |
+| B06 Loss e métricas | 3:13–4:05 | Gráfico da loss, depois a **tabela de métricas** (RAG 0,615/98%/100%; base 0,220/23%/0%; treinado ~0,91–0,93/94%/100%; o F1 varia um pouco a cada treino, por isso a fala diz "mais ou menos zero vírgula nove") | Rolar até o gráfico; em "Depois avaliamos", ir para a tabela | já executada |
 | B07 Modelo e RAG | 4:06–4:24 | Célula "carregar modelo", com a saída `Modelo treinado carregado: qwen-lora` | — | já executada |
 | B08 Pergunta 1 | 4:25–4:49 | Célula "Pergunta 1" | **Rodar no início do bloco.** A resposta aparece cerca de 9 s depois, durante a pausa de 1,5 s e a frase sobre o log | 8,6 s |
 | B09 Pergunta 2 | 4:50–5:03 | Célula "Pergunta 2" | **Rodar no início do bloco** | 6,6 s |
 | B10 Pergunta 3 + log | 5:04–5:30 | Célula "Pergunta 3", depois a célula `/log` | **Rodar a Pergunta 3 no início**; em "E aqui está o log", rodar a célula `/log` (linha `4. resposta 8116 ms`) | 9,7 s + 1,5 s |
 | B11 RAG mutável | 5:31–6:08 | Seção 5 | Em "Se eu busco": rodar `rag buscar` (4,5 s). Em "Aí eu adiciono": rodar adicionar + buscar (9,8 s). Em "Se eu pergunto": rodar `perguntar` (4,8 s). Em "E dá pra remover": rodar remover + listar (8,6 s) | 4,5 / 9,8 / 4,8 / 8,6 s |
 | B12 Fluxo | 6:09–6:55 | Seção 6 | **Rodar a célula do fluxo no início do bloco** (cerca de 19 s; a fala cobre esse tempo). Em "Eles ficam nesse arquivo": rodar `cat logs/alertas.txt` | 18,8 s + 2,7 s |
-| B13 Auditoria e testes | 6:56–7:20 | Seção 7 | Em "Cada requisição": rodar `auditoria` (5,7 s). Em "Essa aqui é a linha do tempo": rodar a linha do tempo (1,8 s). Em "E, por fim, os dezessete testes": **rodar o pytest** | 5,7 / 1,8 s; pytest 45 s |
-| B14 Limitações e conclusão | 7:21–8:04 | Célula do pytest rodando, até aparecer `17 passed` | Esperar. O `17 passed` aparece por volta de 7:58, antes de "E os dezessete testes passaram" | (pytest termina) |
+| B13 Auditoria e testes | 6:56–7:20 | Seção 7 | Em "Cada requisição": rodar `auditoria` (5,7 s). Em "Essa aqui é a linha do tempo": rodar a linha do tempo (1,8 s). Em "Então dá pra auditar" (3 s antes de "E, por fim, os dezessete testes"): **rodar o pytest** | 5,7 / 1,8 s; pytest 45 s |
+| B14 Limitações e conclusão | 7:21–8:04 | Célula do pytest rodando, até aparecer `17 passed` | Esperar. O `17 passed` aparece por volta de 7:54, antes de "E os dezessete testes passaram" | (pytest termina) |
 
 **Duração total estimada: cerca de 8 min**, contando 1 s entre blocos. Com a margem de edição, fica entre 8 min 30 s e 9 min 30 s, bem abaixo dos 15 min de limite.
 
