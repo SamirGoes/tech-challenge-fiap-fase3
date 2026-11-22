@@ -31,15 +31,24 @@ Siga `preparar-ambiente-colab.md`. Deixe **já executadas** as seções 1, 2 e 3
 | Tabela de métricas | 2 s |
 | **Carregar modelo treinado** | **47 s** |
 
-## Durante a gravação
+## Durante a gravação: automático com `roteiro_tela.js`
 
-"Rodar" quer dizer apertar Shift+Enter na célula. A coluna "tempo" é quanto a célula levou no teste.
+O script [roteiro_tela.js](roteiro_tela.js) faz no navegador **tudo o que está na coluna "Ação do operador"**: rola até cada célula, roda as células e acompanha a saída enquanto ela cresce. Ele foi testado no Colab de B07 a B14, e as 20 ações saíram na ordem e no tempo certos.
+
+1. Grave numa janela **normal** do Chrome, sem o Claude controlando a aba. Assim não aparece o aviso "o Claude está controlando este navegador". Feche o banner azul do Colab no X.
+2. Abra o Console (**Cmd+Option+J**), cole o conteúdo inteiro de `roteiro_tela.js` e aperte Enter. Na primeira vez, o Chrome pede para você digitar `allow pasting`.
+3. Feche o Console, clique no notebook, comece a gravar a tela e aperte **Option+Shift+S**. O roteiro começa no B01.
+   - **Option+Shift+X** para o roteiro.
+   - Para regravar um trecho, digite no Console, por exemplo, `medassistDemo.iniciar('B08')`.
+4. Depois de gerar o áudio, troque os valores de `DUR` no topo do script pela duração real de cada clipe, em segundos. Assim a tela acompanha a narração exatamente.
+
+A tabela abaixo é o que o script faz em cada momento. Ela serve também para conduzir à mão (Shift+Enter roda a célula). A coluna "tempo" é quanto a célula levou no teste.
 
 | Bloco | Início–fim (fala) | Tela | Ação do operador | Tempo da célula |
 |---|---|---|---|---|
 | B01 Abertura | 0:00–0:19 | Topo do notebook (título e tabela) | — | — |
 | B02 Problema e regras | 0:20–0:58 | Mesma tela. Em "nunca prescreve", destacar a última linha do markdown | Rolar devagar | — |
-| B03 Arquitetura | 0:59–1:33 | **README no GitHub**, diagrama da seção Arquitetura | Trocar de aba para o README | — |
+| B03 Arquitetura | 0:59–1:33 | Célula **Arquitetura** do notebook (diagrama) | Rolar até o diagrama | — |
 | B04 Ambiente e dados | 1:34–2:19 | Seções 1 e 2 já executadas: clone, saída do `preparar` (contagens), tabela de pacientes, PROT-001 | Rolar acompanhando a fala: "300 pacientes" → tabela; "357 exemplos" → JSON; "anonimização" → bloco `anonimizacoes`; "protocolos" → PROT-001 | já executada |
 | B05 Fine-tuning | 2:20–2:54 | Saída do treino: linha `trainable params: 8,798,208 … 1.7497`, depois as linhas de loss e "Adaptador salvo" | Rolar dentro da saída | já executada |
 | B06 Loss e métricas | 2:55–3:43 | Gráfico da loss, depois a **tabela de métricas** (RAG 0,615/98%/100%; base 0,220/23%/0%; treinado 0,930/94%/100%) | Rolar até o gráfico; em "Depois avaliamos", ir para a tabela | já executada |

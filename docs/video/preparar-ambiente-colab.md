@@ -17,7 +17,7 @@ https://colab.research.google.com/github/SamirGoes/tech-challenge-fiap-fase3/blo
 > Atalho: se o adaptador já estiver no Google Drive (seção 8), use a célula "Atalho" em vez do treino.
 
 ## 2. Durante a gravação
-Siga a `minutagem.md`. Ela diz em que momento rodar cada célula e o que aparece na tela.
+Grave numa janela normal do Chrome, sem a extensão do Claude controlando a aba, para não aparecer o aviso de controle. Cole `roteiro_tela.js` no Console e aperte **Option+Shift+S**. O script roda as células e faz o scroll sozinho, seguindo a `minutagem.md` (veja os detalhes lá).
 
 Daqui em diante, cada célula roda em poucos segundos:
 - as perguntas ao modelo treinado: cerca de 5 a 15 s cada;
