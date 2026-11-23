@@ -1,0 +1,5 @@
+MedAssist: assistente médico com IA (LangChain, RAG e fine-tuning QLoRA).
+Tech Challenge da Fase 3, Pós-Tech em Inteligência Artificial, FIAP. Novembro de 2026.
+Trabalho de Samir, Rafael, Ana Clara e Diogo.
+
+Tags: assistente médico com IA, LLM, RAG, LangChain, fine-tuning, QLoRA, Google Colab, FIAP, Tech Challenge, Pós Tech IA
