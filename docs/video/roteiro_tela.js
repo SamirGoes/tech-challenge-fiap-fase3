@@ -8,35 +8,37 @@
 //   Option+Shift+X (Alt+Shift+X)  -> para
 //   medassistDemo.iniciar('B08')  -> (no Console) começa de um bloco, para regravar um trecho
 //
-// Depois de gerar o áudio no ElevenLabs, troque os valores de DUR pela duração real de cada clipe, em segundos.
+// DUR = duração real de cada clipe (audios/01.mp3 … 14.mp3). A trilha audios/narracao_completa.m4a tem os 14 clipes
+// com 1 s entre eles: na edição, alinhe o início dela com o momento em que você apertou Option+Shift+S.
 
 (() => {
   if (window.medassistDemo) window.medassistDemo.remover();
 
-  const DUR = { B01: 21, B02: 41, B03: 42, B04: 46, B05: 38, B06: 52, B07: 18,
-                B08: 24, B09: 13, B10: 26, B11: 37, B12: 46, B13: 24, B14: 43 };
+  const DUR = { B01: 16.0, B02: 35.4, B03: 32.9, B04: 40.0, B05: 30.7, B06: 40.1, B07: 16.0,
+                B08: 22.0, B09: 12.1, B10: 20.2, B11: 28.5, B12: 38.1, B13: 22.6, B14: 40.3 };
   const PAUSA_ENTRE_BLOCOS = 1;   // segundos de silêncio entre um clipe e o próximo
   const VELOCIDADE = 1;           // 0.5 = tudo duas vezes mais rápido (só para ensaiar)
 
   // [segundos dentro do bloco, ação, texto que identifica a célula]
-  // ações: topo | ir (rola até o início da célula) | fim (rola até o fim da célula) | rodar (roda e acompanha a saída)
+  // ações: topo | ir (rola até o início) | fim (rola até o fim) | rodar (roda e acompanha a saída)
+  //        disparar (roda sem mexer na tela) | acompanhar (rola até a célula e acompanha a saída, sem rodar de novo)
   const ROTEIRO = {
     B01: [[0, 'topo']],
     B02: [],
     B03: [[0, 'ir', 'Arquitetura']],
-    B04: [[0, 'ir', '1. Ambiente'], [7, 'ir', 'medassist preparar'], [16, 'fim', 'medassist preparar'],
-          [27, 'ir', 'pacientes.head'], [36, 'ir', 'PROT-001.md']],
-    B05: [[0, 'ir', 'medassist.treino'], [14, 'fim', 'medassist.treino']],
-    B06: [[0, 'ir', 'plt.plot'], [10, 'ir', 'DataFrame(linhas)']],
-    B07: [[0, 'ir', '4. Assistente'], [5, 'ir', 'criar_assistente(']],
+    B04: [[0, 'ir', '1. Ambiente'], [6, 'ir', 'medassist preparar'], [14, 'fim', 'medassist preparar'],
+          [23, 'ir', 'pacientes.head'], [31, 'ir', 'PROT-001.md']],
+    B05: [[0, 'ir', 'medassist.treino'], [11, 'fim', 'medassist.treino']],
+    B06: [[0, 'ir', 'plt.plot'], [8, 'ir', 'DataFrame(linhas)']],
+    B07: [[0, 'ir', '4. Assistente'], [4, 'ir', 'criar_assistente(']],
     B08: [[0, 'rodar', '# Pergunta 1']],
     B09: [[0, 'rodar', '# Pergunta 2']],
-    B10: [[0, 'rodar', '# Pergunta 3'], [16, 'rodar', '# /log']],
-    B11: [[0, 'ir', '5. RAG'], [3, 'rodar', 'rag buscar "risco'], [8, 'rodar', 'rag adicionar'],
-          [17, 'rodar', 'perguntar "Como'], [27, 'rodar', 'rag remover']],
-    B12: [[0, 'ir', '6. Fluxo'], [2, 'rodar', 'executar_fluxo'], [39, 'rodar', 'cat logs/alertas']],
+    B10: [[0, 'rodar', '# Pergunta 3'], [12, 'rodar', '# /log']],
+    B11: [[0, 'ir', '5. RAG'], [2, 'rodar', 'rag buscar "risco'], [7, 'rodar', 'rag adicionar'],
+          [13, 'rodar', 'perguntar "Como'], [21, 'rodar', 'rag remover']],
+    B12: [[0, 'ir', '6. Fluxo'], [2, 'rodar', 'executar_fluxo'], [32, 'rodar', 'cat logs/alertas']],
     B13: [[0, 'ir', '7. Logs'], [1, 'rodar', 'medassist auditoria'], [5, 'rodar', 'linha do tempo da req'],
-          [14, 'rodar', 'pytest -q']],
+          [6, 'disparar', 'pytest -q'], [13, 'acompanhar', 'pytest -q']],
     B14: [],
   };
 
@@ -44,7 +46,7 @@
   let timers = [], seguindo = null, cursor = 1;
 
   const celulas = () => [...document.querySelectorAll('.cell')];
-  const texto = c => ((c.querySelector('.view-lines, .text-top-div, .markdown') || c).innerText || '').replace(/ /g, ' ');
+  const texto = c => ((c.querySelector('.view-lines, .text-top-div, .markdown') || c).innerText || '').replace(/\u00a0/g, ' ');
   const achar = chave => {
     const cs = celulas();
     for (let i = cursor; i < cs.length; i++) if (texto(cs[i]).includes(chave)) { cursor = i; return cs[i]; }
@@ -60,10 +62,11 @@
     topo() { pararDeSeguir(); document.querySelector('colab-scroller')?.scrollTo({ top: 0, behavior: 'smooth' }); },
     ir(c) { pararDeSeguir(); c.scrollIntoView({ behavior: 'smooth', block: 'start' }); },
     fim(c) { pararDeSeguir(); c.scrollIntoView({ behavior: 'smooth', block: 'end' }); },
-    rodar(c) {
+    disparar(c) { c.querySelector('colab-run-button')?.click(); },
+    rodar(c) { acoes.disparar(c); acoes.acompanhar(c); },
+    acompanhar(c) {
       pararDeSeguir();
       c.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      c.querySelector('colab-run-button')?.click();
       let ultimaAltura = 0, paradoDesde = Date.now();
       seguindo = setInterval(() => {            // acompanha a saída enquanto ela cresce
         const r = c.getBoundingClientRect();

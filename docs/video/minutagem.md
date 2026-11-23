@@ -1,10 +1,32 @@
-# Minutagem do vídeo MedAssist (~8 min)
+# Minutagem do vídeo MedAssist (6 min 48 s)
 
 Narração: **uma voz** (Samir, gerada no ElevenLabs) a partir de `roteiro_elevenlabs.txt`.
 Tela: notebook `notebooks/treino_colab.ipynb` no Colab, com GPU T4, gravado em um take e editado por cima do áudio.
 
 As durações das células vêm da execução de teste na T4 em 22/11/2026, que rodou do início ao fim sem erros.
 A duração de cada fala é uma estimativa (cerca de 2,5 palavras por segundo, mais as pausas `<break>`). Depois de gerar o áudio, ajuste os inícios pela duração real de cada bloco.
+
+## Áudio pronto
+Os clipes gerados estão em `audios/01.mp3` a `audios/14.mp3`. A trilha **`audios/narracao_completa.m4a`** junta os 14, com 1 s de silêncio entre eles, e tem 6 min 48 s.
+O `roteiro_tela.js` já usa a duração real de cada clipe. Os tempos dentro de cada bloco foram ajustados na mesma proporção da fala.
+**Na edição:** coloque a trilha inteira no início do vídeo, alinhada com o momento em que você apertou Option+Shift+S. O primeiro scroll do script (B01, ir para o topo) é a referência visual. Não precisa encaixar clipe por clipe.
+
+| Bloco | Clipe | Começa na trilha em |
+|---|---|---|
+| B01 | 01.mp3 | 0:00.0 |
+| B02 | 02.mp3 | 0:17.0 |
+| B03 | 03.mp3 | 0:53.4 |
+| B04 | 04.mp3 | 1:27.3 |
+| B05 | 05.mp3 | 2:08.3 |
+| B06 | 06.mp3 | 2:40.1 |
+| B07 | 07.mp3 | 3:21.2 |
+| B08 | 08.mp3 | 3:38.1 |
+| B09 | 09.mp3 | 4:01.1 |
+| B10 | 10.mp3 | 4:14.2 |
+| B11 | 11.mp3 | 4:35.4 |
+| B12 | 12.mp3 | 5:05.0 |
+| B13 | 13.mp3 | 5:44.1 |
+| B14 | 14.mp3 | 6:07.7 |
 
 ## Blocos do roteiro
 `roteiro_elevenlabs.txt` contém **só o texto falado**, sem títulos, para o ElevenLabs não ler "B09". Cada parágrafo é um bloco, na ordem abaixo.
@@ -72,22 +94,22 @@ A tabela abaixo é o que o script faz em cada momento. Ela serve também para co
 
 | Bloco | Início–fim (fala) | Tela | Ação do operador | Tempo da célula |
 |---|---|---|---|---|
-| B01 Abertura | 0:00–0:21 | Topo do notebook (título e tabela) | — | — |
-| B02 Problema e regras | 0:22–1:03 | Mesma tela. Em "nunca prescreve", destacar a última linha do markdown | Rolar devagar | — |
-| B03 Arquitetura | 1:04–1:46 | Célula **Arquitetura** do notebook (diagrama) | Rolar até o diagrama | — |
-| B04 Ambiente e dados | 1:47–2:33 | Seções 1 e 2 já executadas: clone, saída do `preparar` (contagens), tabela de pacientes, PROT-001 | Rolar acompanhando a fala: "300 pacientes" → tabela; "357 exemplos" → JSON; "anonimização" → bloco `anonimizacoes`; "protocolos" → PROT-001 | já executada |
-| B05 Fine-tuning | 2:34–3:12 | Saída do treino: linha `trainable params: 8,798,208 … 1.7497`, depois as linhas de loss e "Adaptador salvo" | Rolar dentro da saída | já executada |
-| B06 Loss e métricas | 3:13–4:05 | Gráfico da loss, depois a **tabela de métricas** (RAG 0,615/98%/100%; base 0,220/23%/0%; treinado ~0,91–0,93/94%/100%; o F1 varia um pouco a cada treino, por isso a fala diz "mais ou menos zero vírgula nove") | Rolar até o gráfico; em "Depois avaliamos", ir para a tabela | já executada |
-| B07 Modelo e RAG | 4:06–4:24 | Célula "carregar modelo", com a saída `Modelo treinado carregado: qwen-lora` | — | já executada |
-| B08 Pergunta 1 | 4:25–4:49 | Célula "Pergunta 1" | **Rodar no início do bloco.** A resposta aparece cerca de 9 s depois, durante a pausa de 1,5 s e a frase sobre o log | 8,6 s |
-| B09 Pergunta 2 | 4:50–5:03 | Célula "Pergunta 2" | **Rodar no início do bloco** | 6,6 s |
-| B10 Pergunta 3 + log | 5:04–5:30 | Célula "Pergunta 3", depois a célula `/log` | **Rodar a Pergunta 3 no início**; em "E aqui está o log", rodar a célula `/log` (linha `4. resposta 8116 ms`) | 9,7 s + 1,5 s |
-| B11 RAG mutável | 5:31–6:08 | Seção 5 | Em "Se eu busco": rodar `rag buscar` (4,5 s). Em "Aí eu adiciono": rodar adicionar + buscar (9,8 s). Em "Se eu pergunto": rodar `perguntar` (4,8 s). Em "E dá pra remover": rodar remover + listar (8,6 s) | 4,5 / 9,8 / 4,8 / 8,6 s |
-| B12 Fluxo | 6:09–6:55 | Seção 6 | **Rodar a célula do fluxo no início do bloco** (cerca de 19 s; a fala cobre esse tempo). Em "Eles ficam nesse arquivo": rodar `cat logs/alertas.txt` | 18,8 s + 2,7 s |
-| B13 Auditoria e testes | 6:56–7:20 | Seção 7 | Em "Cada requisição": rodar `auditoria` (5,7 s). Em "Essa aqui é a linha do tempo": rodar a linha do tempo (1,8 s). Em "Então dá pra auditar" (3 s antes de "E, por fim, os dezessete testes"): **rodar o pytest** | 5,7 / 1,8 s; pytest 45 s |
-| B14 Limitações e conclusão | 7:21–8:04 | Célula do pytest rodando, até aparecer `17 passed` | Esperar. O `17 passed` aparece por volta de 7:54, antes de "E os dezessete testes passaram" | (pytest termina) |
+| B01 Abertura | 0:00–0:16 | Topo do notebook (título e tabela) | — | — |
+| B02 Problema e regras | 0:17–0:52 | Mesma tela. Em "nunca prescreve", destacar a última linha do markdown | Rolar devagar | — |
+| B03 Arquitetura | 0:53–1:26 | Célula **Arquitetura** do notebook (diagrama) | Rolar até o diagrama | — |
+| B04 Ambiente e dados | 1:27–2:07 | Seções 1 e 2 já executadas: clone, saída do `preparar` (contagens), tabela de pacientes, PROT-001 | Rolar acompanhando a fala: "300 pacientes" → tabela; "357 exemplos" → JSON; "anonimização" → bloco `anonimizacoes`; "protocolos" → PROT-001 | já executada |
+| B05 Fine-tuning | 2:08–2:39 | Saída do treino: linha `trainable params: 8,798,208 … 1.7497`, depois as linhas de loss e "Adaptador salvo" | Rolar dentro da saída | já executada |
+| B06 Loss e métricas | 2:40–3:20 | Gráfico da loss, depois a **tabela de métricas** (RAG 0,615/98%/100%; base 0,220/23%/0%; treinado ~0,91–0,93/94%/100%; o F1 varia um pouco a cada treino, por isso a fala diz "mais ou menos zero vírgula nove") | Rolar até o gráfico; em "Depois avaliamos", ir para a tabela | já executada |
+| B07 Modelo e RAG | 3:21–3:37 | Célula "carregar modelo", com a saída `Modelo treinado carregado: qwen-lora` | — | já executada |
+| B08 Pergunta 1 | 3:38–4:00 | Célula "Pergunta 1" | **Rodar no início do bloco.** A resposta aparece cerca de 9 s depois, durante a pausa de 1,5 s e a frase sobre o log | 8,6 s |
+| B09 Pergunta 2 | 4:01–4:13 | Célula "Pergunta 2" | **Rodar no início do bloco** | 6,6 s |
+| B10 Pergunta 3 + log | 4:14–4:34 | Célula "Pergunta 3", depois a célula `/log` | **Rodar a Pergunta 3 no início**; em "E aqui está o log", rodar a célula `/log` (linha `4. resposta 8116 ms`) | 9,7 s + 1,5 s |
+| B11 RAG mutável | 4:35–5:04 | Seção 5 | Em "Se eu busco": rodar `rag buscar` (4,5 s). Em "Aí eu adiciono": rodar adicionar + buscar (9,8 s). Em "Se eu pergunto": rodar `perguntar` (4,8 s). Em "E dá pra remover": rodar remover + listar (8,6 s) | 4,5 / 9,8 / 4,8 / 8,6 s |
+| B12 Fluxo | 5:05–5:43 | Seção 6 | **Rodar a célula do fluxo no início do bloco** (cerca de 19 s; a fala cobre esse tempo). Em "Eles ficam nesse arquivo": rodar `cat logs/alertas.txt` | 18,8 s + 2,7 s |
+| B13 Auditoria e testes | 5:44–6:07 | Seção 7 | Em "Cada requisição": rodar `auditoria` (5,7 s). Em "Essa aqui é a linha do tempo": rodar a linha do tempo (1,8 s). O pytest **começa sozinho aos 6 s do bloco, sem mexer na tela** (a linha do tempo continua visível). Em "E, por fim, os dezessete testes", a tela desce até ele | 5,7 / 1,8 s; pytest 45 s |
+| B14 Limitações e conclusão | 6:08–6:48 | Célula do pytest rodando, até aparecer `17 passed` | Esperar. O `17 passed` aparece por volta de 6:34, uns 9 s antes de, antes de "E os dezessete testes passaram" | (pytest termina) |
 
-**Duração total estimada: cerca de 8 min**, contando 1 s entre blocos. Com a margem de edição, fica entre 8 min 30 s e 9 min 30 s, bem abaixo dos 15 min de limite.
+**Duração total: 6 min 48 s** (é a duração da trilha `audios/narracao_completa.m4a`). Fica bem abaixo dos 15 min de limite.
 
 ## Dicas de edição
 - Se uma célula terminar antes da fala, mantenha a tela parada. Se terminar depois (por exemplo, o pytest), acelere o trecho de espera em 2x ou corte.
